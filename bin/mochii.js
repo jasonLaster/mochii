@@ -4,15 +4,15 @@ const shell = require("shelljs");
 const chalk = require("chalk");
 const path = require("path");
 const fs = require("fs");
-const minimist = require("minimist");
 
-const { runMochitests } = require("../index");
+const { getArgs } = require("../src/getArgs");
+const { runMochitests, readOutput } = require("../index");
 
 async function run(args) {
-  if (!shell.test("-d", args.directory)) {
+  if (!shell.test("-d", args.mc)) {
     console.log(
       chalk.red("Oops"),
-      `looks like directory "${args.directory}" does not exist.`
+      `looks like directory "${args.mc}" does not exist.`
     );
     return;
   }
@@ -23,26 +23,16 @@ async function run(args) {
   runMochitests(args);
 }
 
-if (process.mainModule.filename.includes("bin/mochii.js")) {
-  const argString = process.argv[0].includes("bin/node")
-    ? process.argv.slice(2)
-    : process.argv
-  const args = minimist(argString, {
-    alias: {
-      directory: "d",
-      read: "r"
-    },
-    default: {
-      _: ["devtools/client/debugger/new"],
-      d: ".",
-    }
-  });
+const argString = process.argv[0].includes("bin/node")
+  ? process.argv.slice(2)
+  : process.argv;
 
-  if (args.read) {
-    const _path = path.join(__dirname, "..", args.read);
-    const text = fs.readFileSync(_path, { encoding: "utf8" });
-    console.log(readOutput(text).join("\n"));
-  } else {
-    run(args);
-  }
+const args = getArgs(argString);
+
+if (args.read) {
+  const _path = path.join(__dirname, "..", args.read);
+  const text = fs.readFileSync(_path, { encoding: "utf8" });
+  console.log(readOutput(text).join("\n"));
+} else {
+  run(args);
 }
