@@ -256,8 +256,8 @@ async function startWebpack() {
 }
 
 function runMochitests(args) {
-  shell.cd("firefox");
-  const command = `./mach mochitest ${args.join(" ")}`;
+  shell.cd(args.directory);
+  const command = `./mach mochitest ${args._.join(" ")}`;
   console.log(chalk.blue(command));
 
   const child = shell.exec(

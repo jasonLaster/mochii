@@ -9,5 +9,5 @@ An opinionated mochitest wrapper for running mochitests and reporting the result
 
 ```bash
 npm i -g mochii
-mochii
+mochii ./browser/somedir/somefile.js -d firefox -- --jsdebugger
 ```
