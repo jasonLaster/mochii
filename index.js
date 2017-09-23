@@ -161,13 +161,17 @@ function onLine(line, data) {
 }
 
 function onTestInfo(line, data) {
-  const res = line.match(/(TEST-[A-Z-]*).* \| (.*\.js)( \| (.*))?$/);
+  const res = line.match(/(TEST-[A-Z-]*).*\|\s*(.*\.js)\s*(\|(.*))?$/);
 
   if (!res) {
     return line.trim();
   }
 
-  const [, type, _path, , msg] = res;
+  let [, type, _path, , msg] = res;
+
+  if (msg) {
+    msg = msg.trim();
+  }
 
   if (type == "TEST-PASS") {
     return ` ${chalk.cyan(type)} ${msg}`;
