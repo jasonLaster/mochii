@@ -180,7 +180,7 @@ function onTestInfo(line, data) {
   const file = path.basename(_path);
 
   if (type == "TEST-UNEXPECTED-FAIL") {
-    const [, errorPath, error] = msg.match(/(.*)-(.*)/);
+    const [, errorPath, error] = msg.match(/(.*)(.*)/);
     const errorFile = path.basename(errorPath);
 
     return ` ${chalk.red(type)} ${errorFile}\n${chalk.yellow(error)}`;
