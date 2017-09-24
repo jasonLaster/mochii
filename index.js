@@ -1,9 +1,6 @@
 const shell = require("shelljs");
 const chalk = require("chalk");
 const path = require("path");
-const fs = require("fs");
-
-// const minimist = require("minimist");
 
 const blacklist = [
   "^s*$",
@@ -66,16 +63,16 @@ function onFrame(line, data) {
 function onGecko(line, data) {
   const [, msg] = line.match(/^GECKO.*?\|(.*)$/);
 
-  if (data.mode == "starting") {
+  if (data.mode === "starting") {
     return;
   }
 
   if (line.match(/\*{5,}/)) {
-    data.mode = data.mode == "gecko-error" ? null : "gecko-error";
+    data.mode = data.mode === "gecko-error" ? null : "gecko-error";
     return;
   }
 
-  if (data.mode == "gecko-error") {
+  if (data.mode === "gecko-error") {
     return;
   }
 
@@ -84,7 +81,7 @@ function onGecko(line, data) {
     return `  ${chalk.red("Console Error")}`;
   }
 
-  if (data.mode == "console-error") {
+  if (data.mode === "console-error") {
     if (line.includes("Handler function")) {
       return;
     }
@@ -105,8 +102,6 @@ function onDone(line) {
     const [, file] = line.match(/.*\|(.*?)\|.*/);
     return `${chalk.red("failed test")}: ${file}`;
   }
-
-  return;
 }
 
 function onLine(line, data) {
@@ -116,11 +111,11 @@ function onLine(line, data) {
     return;
   }
 
-  if (data.mode == "done") {
+  if (data.mode === "done") {
     return onDone(line);
   }
 
-  if (data.mode == "stack-trace") {
+  if (data.mode === "stack-trace") {
     if (line.match(/@/)) {
       return onFrame(line);
     } else {
@@ -155,7 +150,7 @@ function onLine(line, data) {
     return `\n  ${chalk.bold("Stack trace")}`;
   }
 
-  if (data.mode != "starting") {
+  if (data.mode !== "starting") {
     return `${line}`;
   }
 }
@@ -173,20 +168,20 @@ function onTestInfo(line, data) {
     msg = msg.trim();
   }
 
-  if (type == "TEST-PASS") {
+  if (type === "TEST-PASS") {
     return ` ${chalk.cyan(type)} ${msg}`;
   }
 
   const file = path.basename(_path);
 
-  if (type == "TEST-UNEXPECTED-FAIL") {
+  if (type === "TEST-UNEXPECTED-FAIL") {
     const [, errorPath, error] = msg.match(/(.*)-(.*)/);
     const errorFile = path.basename(errorPath);
 
     return ` ${chalk.red(type)} ${errorFile}\n${chalk.yellow(error)}`;
   }
 
-  let prefix = type == "TEST-OK" ? chalk.green(type) : chalk.blue(type);
+  let prefix = type === "TEST-OK" ? chalk.green(type) : chalk.blue(type);
 
   return `${prefix} ${file}`;
 }
@@ -196,13 +191,13 @@ function onInfo(line, data) {
 
   if (
     msg.includes("Start BrowserChrome Test Results") &&
-    data.mode == "starting"
+    data.mode === "starting"
   ) {
     data.mode = null;
     return;
   }
 
-  if (data.mode == "starting") {
+  if (data.mode === "starting") {
     return;
   }
 
@@ -221,13 +216,11 @@ function onConsole(line, data) {
       return line;
     }
 
-    const [, msg, data] = res;
-
-    const err = data;
+    const [, msg] = res;
     return `  ${chalk.red("JS warning: ")}${msg}`;
   }
 
-  return line; //
+  return line;
 }
 
 function readOutput(text) {
@@ -237,26 +230,6 @@ function readOutput(text) {
     .map(line => onLine(line, data))
     .filter(i => i);
   return out;
-}
-
-async function startWebpack() {
-  console.log(chalk.blue("Starting webpack"));
-
-  const command = path.resolve(__dirname, "copy-assets.js");
-  const child = shell.exec(`node ${command} --watch --symlink`, {
-    async: true,
-    silent: true
-  });
-
-  return new Promise(resolve => {
-    child.on.stdout(data => {
-      const isDone = data.includes("done");
-      if (isDone) {
-        console.log(chalk.blue("webpack is done building"));
-        resolve();
-      }
-    });
-  });
 }
 
 function runMochitests(args) {
@@ -277,7 +250,7 @@ function runMochitests(args) {
 
   child.stdout.on("data", function(data) {
     data = data.trim();
-    const lines = data.split("\n").forEach(line => {
+    data.split("\n").forEach(line => {
       const out = onLine(line.trim(), testData);
       if (out) {
         console.log(out);
