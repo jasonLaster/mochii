@@ -232,9 +232,8 @@ function readOutput(text) {
   return out;
 }
 
-function runMochitests(args) {
-  shell.cd(args.directory);
-  const command = `./mach mochitest ${args._.join(" ")}`;
+function runMochitests(argString) {
+  const command = `./mach mochitest ${argString}`;
   console.log(chalk.blue(command));
 
   const child = shell.exec(
