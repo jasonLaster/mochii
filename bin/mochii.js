@@ -5,10 +5,10 @@ const chalk = require("chalk");
 const path = require("path");
 const fs = require("fs");
 
-const { getArgs } = require("../src/getArgs");
+const { getArgs, getArgString } = require("../src/args");
 const { runMochitests, readOutput } = require("../index");
 
-async function run(args) {
+function moveDirectory(args) {
   if (!shell.test("-d", args.mc)) {
     console.log(
       chalk.red("Oops"),
@@ -16,11 +16,12 @@ async function run(args) {
     );
     return;
   }
+  shell.cd(args.mc);
+}
 
-  // TODO: it would be nice to automate the full workflow so users can
-  // run one test and then be able to kill the run and re-run. kinda like jest --watch
-  // await startWebpack()
-  runMochitests(args);
+async function run(args) {
+  moveDirectory(args);
+  runMochitests(getArgString(args));
 }
 
 const argString = process.argv[0].includes("bin/node")

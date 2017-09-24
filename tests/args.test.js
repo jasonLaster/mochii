@@ -1,4 +1,4 @@
-const { getArgs } = require("../src/getArgs");
+const { getArgs, getArgString } = require("../src/args");
 
 function _getArgs(string) {
   return getArgs(string.split(" "));
@@ -9,8 +9,8 @@ function paramDefaults(overrides) {
     {},
     {
       _: [],
-      p: ".",
-      mc: "."
+      mc: ".",
+      "default-test-path": ""
     },
     overrides
   );
@@ -25,8 +25,7 @@ describe("utils", () => {
     it("mc path", () => {
       expect(_getArgs("--mc foo")).toEqual(
         paramDefaults({
-          mc: "foo",
-          p: "foo"
+          mc: "foo"
         })
       );
     });
@@ -40,9 +39,8 @@ describe("utils", () => {
     });
 
     it("mochitest output", () => {
-      expect(_getArgs("-i file.log")).toEqual(
+      expect(_getArgs("--read file.log")).toEqual(
         paramDefaults({
-          i: "file.log",
           read: "file.log"
         })
       );
@@ -70,6 +68,36 @@ describe("utils", () => {
           _: ["--jsdebugger", "expressions"]
         })
       );
+    });
+  });
+
+  describe("getArgString", () => {
+    it("nothing", () => {
+      expect(getArgString(_getArgs(""))).toEqual("");
+    });
+
+    it("params", () => {
+      expect(getArgString(_getArgs("--jsdebugger --set-env=headless"))).toEqual(
+        "--jsdebugger=true --set-env=headless"
+      );
+    });
+
+    it("defaults", () => {
+      expect(
+        getArgString(_getArgs("--jsdebugger --default-test-path=foo/bar"))
+      ).toEqual("--jsdebugger=true foo/bar");
+    });
+
+    it("mc included", () => {
+      expect(getArgString(_getArgs("--jsdebugger --mc bazz"))).toEqual(
+        "--jsdebugger=true"
+      );
+    });
+
+    it("test path  included", () => {
+      expect(
+        getArgString(_getArgs("--jsdebugger --default-test-path=foo/bar bazz"))
+      ).toEqual("--jsdebugger=true bazz");
     });
   });
 });
