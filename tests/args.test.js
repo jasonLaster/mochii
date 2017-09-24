@@ -77,27 +77,27 @@ describe("utils", () => {
     });
 
     it("params", () => {
-      expect(getArgString(_getArgs("--jsdebugger --set-env=headless"))).toEqual(
-        "--jsdebugger=true --set-env=headless"
-      );
+      expect(
+        getArgString(_getArgs("--jsdebugger --setenv MOZ_HEADLESS=1"))
+      ).toEqual("--jsdebugger --setenv MOZ_HEADLESS=1");
     });
 
     it("defaults", () => {
       expect(
-        getArgString(_getArgs("--jsdebugger --default-test-path=foo/bar"))
-      ).toEqual("--jsdebugger=true foo/bar");
+        getArgString(_getArgs("--jsdebugger --default-test-path foo/bar"))
+      ).toEqual("--jsdebugger foo/bar");
     });
 
     it("mc included", () => {
       expect(getArgString(_getArgs("--jsdebugger --mc bazz"))).toEqual(
-        "--jsdebugger=true"
+        "--jsdebugger"
       );
     });
 
     it("test path  included", () => {
       expect(
-        getArgString(_getArgs("--jsdebugger --default-test-path=foo/bar bazz"))
-      ).toEqual("--jsdebugger=true bazz");
+        getArgString(_getArgs("--jsdebugger --default-test-path foo/bar bazz"))
+      ).toEqual("--jsdebugger bazz");
     });
   });
 });

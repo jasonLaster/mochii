@@ -22,7 +22,13 @@ function getArgString(args) {
   delete args._;
 
   const paths = includedPaths.length > 0 ? includedPaths : defaultPath;
-  const params = Object.keys(args).map(key => `--${key}=${args[key]}`);
+  const params = Object.keys(args).map(key => {
+    let param = `--${key}`;
+    if (args[key] === true) {
+      return param;
+    }
+    return `${param} ${args[key]}`;
+  });
 
   return params
     .concat(...paths)
