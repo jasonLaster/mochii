@@ -1,17 +1,17 @@
-const minimist = require("minimist");
+const minimist = require('minimist')
 
-function getArgs(argString) {
+function getArgs (argString) {
   return minimist(argString, {
-    string: ["default-test-path"],
+    string: ['default-test-path'],
     alias: {
-      mc: "p",
-      read: "i"
+      mc: 'p',
+      read: 'i'
     },
     default: {
-      _: ["."],
-      p: "."
+      _: ['.'],
+      p: '.'
     }
-  });
+  })
 }
 
-module.exports = { getArgs };
+module.exports = { getArgs }

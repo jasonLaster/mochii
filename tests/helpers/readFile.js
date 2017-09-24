@@ -1,13 +1,13 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs')
+const path = require('path')
 
-function readFile(name) {
+function readFile (name) {
   const text = fs.readFileSync(
     path.join(__dirname, `../fixtures/${name}`),
-    "utf8"
-  );
+    'utf8'
+  )
 
-  return text;
+  return text
 }
 
-module.exports = readFile;
+module.exports = readFile
