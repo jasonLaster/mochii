@@ -61,14 +61,6 @@ describe("utils", () => {
         })
       );
     });
-
-    it("mochitest params passed in", () => {
-      expect(_getArgs("-- --jsdebugger expressions")).toEqual(
-        paramDefaults({
-          _: ["--jsdebugger", "expressions"]
-        })
-      );
-    });
   });
 
   describe("getArgString", () => {
@@ -94,9 +86,17 @@ describe("utils", () => {
       );
     });
 
-    it("test path  included", () => {
+    it("test path included", () => {
       expect(
         getArgString(_getArgs("--jsdebugger --default-test-path foo/bar bazz"))
+      ).toEqual("--jsdebugger bazz");
+    });
+
+    it("initial dashes are removed", () => {
+      expect(
+        getArgString(
+          _getArgs("-- --jsdebugger --default-test-path foo/bar bazz")
+        )
       ).toEqual("--jsdebugger bazz");
     });
   });
