@@ -1,6 +1,9 @@
 const minimist = require("minimist");
 
 function getArgs(argString) {
+  if (argString[0] === "--") {
+    argString.shift();
+  }
   return minimist(argString, {
     string: ["default-test-path", "mc", "read"],
     default: {
