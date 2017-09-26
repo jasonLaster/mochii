@@ -23,6 +23,16 @@ describe("mochi", () => {
     expect(out).toMatchSnapshot();
   });
 
+  it("ufail", () => {
+    const out = simulateMochitest("ufail.txt");
+    expect(out).toMatchSnapshot();
+  });
+
+  it("mochi-fail", () => {
+    const out = simulateMochitest("mochi-fail.txt");
+    expect(out).toMatchSnapshot();
+  });
+
   it("console_error", () => {
     const out = simulateMochitest("console_error.txt");
     expect(out).toMatchSnapshot();
