@@ -1,0 +1,26 @@
+Error running mach:
+
+    ['mochitest', 'browser_dbg-minified.js']
+
+The error occurred in code that was called by the mach command. This is either
+a bug in the called code itself or in the way that mach is calling it.
+
+You should consider filing a bug for this issue.
+
+If filing a bug, please include the full output of mach, including this error
+message.
+
+The details of the failure are as follows:
+
+ErrorMessage: Symlink target path does not exist: /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/examples/doc-minified2.html
+
+  File "/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py", line 315, in run_mochitest_general
+    driver.install_tests(tests)
+  File "/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/controller/building.py", line 696, in install_tests
+    '_tests', test_objs)
+  File "/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py", line 513, in install_test_files
+    remove_unaccounted=False)
+  File "/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/copier.py", line 431, in copy
+    copy_results.append((destfile, f.copy(destfile, skip_if_older)))
+  File "/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/files.py", line 336, in copy
+    raise ErrorMessage('Symlink target path does not exist: %s' % self.path)

@@ -1014,3 +1014,63 @@ Array [
   "[34mMode[39m: e10s",
 ]
 `;
+
+exports[`mochi mochi-fail 1`] = `
+Array [
+  "Error running mach:",
+  "['mochitest', 'browser_dbg-minified.js']",
+  "The error occurred in code that was called by the mach command. This is either",
+  "a bug in the called code itself or in the way that mach is calling it.",
+  "You should consider filing a bug for this issue.",
+  "If filing a bug, please include the full output of mach, including this error",
+  "message.",
+  "The details of the failure are as follows:",
+  "ErrorMessage: Symlink target path does not exist: /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/examples/doc-minified2.html",
+  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 315, in run_mochitest_general",
+  "driver.install_tests(tests)",
+  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/controller/building.py\\", line 696, in install_tests",
+  "'_tests', test_objs)",
+  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py\\", line 513, in install_test_files",
+  "remove_unaccounted=False)",
+  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/copier.py\\", line 431, in copy",
+  "copy_results.append((destfile, f.copy(destfile, skip_if_older)))",
+  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/files.py\\", line 336, in copy",
+  "raise ErrorMessage('Symlink target path does not exist: %s' % self.path)",
+]
+`;
+
+exports[`mochi ufail 1`] = `
+Array [
+  "[34mTEST-START[39m browser_dbg-sources.js",
+  "   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html",
+  "   Console message: [JavaScript Warning: \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
+  "   Waiting on sources: simple1, simple2, nested-source, long.js",
+  " [36mTEST-PASS[39m undefined assertion name -",
+  " [36mTEST-PASS[39m undefined assertion name -",
+  " [36mTEST-PASS[39m undefined assertion name -",
+  " [36mTEST-PASS[39m Source is not focused -",
+  "   Waiting for SELECT_SOURCE to dispatch 1 time(s)",
+  "   SELECT_SOURCE dispatched 1 time(s)",
+  " [36mTEST-PASS[39m Source is focused -",
+  " [36mTEST-PASS[39m The right source is selected -",
+  " [36mTEST-PASS[39m The dynamic script exists -",
+  "   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html",
+  "   Console message: [JavaScript Warning: \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
+  "   Waiting on sources: simple1, simple2, nested-source, long.js",
+  " [31mTEST-UNEXPECTED-FAIL[39m the folder exists 
+[33m Got (no domain), expected (sdf)[39m",
+  "
+  [1mStack trace[22m",
+  "
+",
+  "chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79",
+  " [36mTEST-PASS[39m the eval script exists -",
+  "[32mTEST-OK[39m browser_dbg-sources.js",
+  "174 INFO TEST-START | Shutdown",
+  "[34mPassed[39m: 8",
+  "[34mFailed[39m: 1",
+  "[34mTodo[39m: 0",
+  "[34mMode[39m: e10s",
+  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js ",
+]
+`;

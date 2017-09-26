@@ -44,6 +44,7 @@ const blacklist = [
   "Opening the toolbox",
   "Toolbox opened and focused",
   "Tab added and finished loading",
+  "g_object_ref",
   "MOZ_UPLOAD_DIR"
 ];
 
@@ -111,6 +112,10 @@ function onLine(line, data) {
     return;
   }
 
+  if (data.mode === "failed") {
+    return line;
+  }
+
   if (data.mode === "done") {
     return onDone(line);
   }
@@ -122,6 +127,11 @@ function onLine(line, data) {
       data.mode = null;
       return "\n";
     }
+  }
+
+  if (line.includes("Error running mach")) {
+    data.mode = "failed";
+    return line;
   }
 
   if (line.includes("End BrowserChrome Test Results")) {
@@ -175,7 +185,7 @@ function onTestInfo(line, data) {
   const file = path.basename(_path);
 
   if (type === "TEST-UNEXPECTED-FAIL") {
-    const [, errorPath, error] = msg.match(/(.*)-(.*)/);
+    const [, errorPath, error] = (msg || line).match(/(.*)-(.*)/);
     const errorFile = path.basename(errorPath);
 
     return ` ${chalk.red(type)} ${errorFile}\n${chalk.yellow(error)}`;

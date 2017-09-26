@@ -1,0 +1,253 @@
+
+######
+### Now running mochitest-browser with subsuite devtools.
+######
+
+Checking for ssltunnel processes...
+  501 52703     1   0  5:16PM ttys000    0:00.05 /Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/ssltunnel /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/ssltunnelvNEu_7.cfg
+Checking for xpcshell processes...
+SUITE-START | Running 1 tests
+Running manifest: devtools/client/debugger/new/test/mochitest/browser.ini
+pk12util: PKCS12 IMPORT SUCCESSFUL
+MochitestServer : launching [u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/xpcshell', '-g', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/Resources', '-v', '170', '-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/components/httpd.js', '-e', "const _PROFILE_PATH = '/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmp7R09f_.mozrunner'; const _SERVER_PORT = '8888'; const _SERVER_ADDR = '127.0.0.1'; const _TEST_PREFIX = undefined; const _DISPLAY_RESULTS = false;", '-f', '/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/_tests/testing/mochitest/server.js']
+runtests.py | Server pid: 70406
+runtests.py | Websocket server pid: 70407
+runtests.py | SSL tunnel pid: 70408
+failed to bind socket on port 4443: error -5982
+Shutting down...
+runtests.py | Running with e10s: True
+runtests.py | Running tests: start.
+
+Application command: /Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/MacOS/firefox -marionette -foreground -profile /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmp7R09f_.mozrunner
+runtests.py | Application pid: 70409
+TEST-INFO | started process GECKO(70409)
+GECKO(70409) | 1506463995063	Marionette	INFO	Enabled via --marionette
+GECKO(70409) | 1506463996573	Marionette	INFO	Listening on port 2828
+GECKO(70409) | 1506463996639	Marionette	DEBUG	Register listener.js for window 2147483649
+0 INFO *** Start BrowserChrome Test Results ***
+1 INFO checking window state
+2 INFO TEST-START | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js
+3 INFO Entering test bound
+4 INFO Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html
+5 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+6 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+7 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 438}]
+8 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 439}]
+9 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 447}]
+10 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 451}]
+11 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 453}]
+12 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 459}]
+13 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-moz-tree-line’.  Ruleset ignored due to bad selector." {file: "chrome://global/content/xul.css" line: 658}]
+14 INFO Console message: [JavaScript Warning: "Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”." {file: "http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html" line: 22}]
+15 INFO Tab added and finished loading
+16 INFO Opening the toolbox
+17 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 227 column: 29 source: ".CodeMirror-gutter-wrapper ::selection { background-color: transparent }"}]
+18 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-border-radius’.  Declaration dropped." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 236 column: 20 source: "  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;"}]
+19 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 319 column: 18 source: ".CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }"}]
+20 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 321 column: 13 source: "  user-select: none;"}]
+21 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 393 column: 2 source: "::-webkit-scrollbar {"}]
+22 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-track’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 399 column: 2 source: "::-webkit-scrollbar-track {"}]
+23 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-thumb’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 404 column: 2 source: "::-webkit-scrollbar-thumb {"}]
+24 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 501 column: 13 source: "  user-select: none;"}]
+25 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 876 column: 13 source: "  user-select: none;"}]
+26 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1041 column: 13 source: "  user-select: none;"}]
+27 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1135 column: 11 source: "  display: "flex";"}]
+28 INFO Console message: [JavaScript Warning: "Unknown property ‘grow’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1136 column: 6 source: "  grow: 1;"}]
+29 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1179 column: 13 source: "  user-select: none;"}]
+30 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1312 column: 13 source: "  user-select: none;"}]
+31 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1326 column: 13 source: "  user-select: none;"}]
+32 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1399 column: 13 source: "  user-select: none;"}]
+33 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1451 column: 13 source: "  user-select: none;"}]
+34 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1582 column: 13 source: "  user-select: none;"}]
+35 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1594 column: 13 source: "  user-select: none;"}]
+36 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1664 column: 13 source: "  user-select: none;"}]
+37 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1980 column: 13 source: "  user-select: none;"}]
+38 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2172 column: 11 source: "  display: -ms-flexbox;"}]
+39 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2476 column: 13 source: "  user-select: none;"}]
+40 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘content’.  Error in parsing value for ‘flex’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2539 column: 12 source: "  flex: 0 1 content;"}]
+41 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2719 column: 13 source: "  user-select: none;"}]
+42 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2807 column: 13 source: "  user-select: none;"}]
+43 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2839 column: 13 source: "  user-select: none;"}]
+44 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2878 column: 13 source: "  user-select: none;"}]
+45 INFO Console message: [JavaScript Warning: "Unknown property ‘appearance’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2951 column: 12 source: "  appearance: none;"}]
+46 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3080 column: 13 source: "  user-select: none;"}]
+47 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3102 column: 13 source: "  user-select: none;"}]
+48 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3146 column: 13 source: "  user-select: none;"}]
+49 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+50 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+51 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+52 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+53 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+54 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+55 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+56 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+57 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19969 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+58 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19969 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+59 INFO Toolbox opened and focused
+60 INFO Waiting on sources: simple1, simple2, nested-source, long.js
+61 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | undefined assertion name -
+62 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | undefined assertion name -
+63 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | undefined assertion name -
+64 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | Source is not focused -
+65 INFO Waiting for SELECT_SOURCE to dispatch 1 time(s)
+66 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+67 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+68 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+69 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+70 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+71 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+72 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+73 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+74 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+75 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+76 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+77 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+78 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+79 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+80 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+81 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+82 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+83 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+84 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+85 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+86 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+87 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+88 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+89 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+90 INFO SELECT_SOURCE dispatched 1 time(s)
+91 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | Source is focused -
+92 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | The right source is selected -
+93 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | The dynamic script exists -
+94 INFO Leaving test bound
+95 INFO Entering test bound
+96 INFO Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html
+97 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+98 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+99 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+100 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+101 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+102 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 438}]
+103 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 439}]
+104 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 447}]
+105 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 451}]
+106 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 453}]
+107 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 459}]
+108 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-moz-tree-line’.  Ruleset ignored due to bad selector." {file: "chrome://global/content/xul.css" line: 658}]
+109 INFO Console message: [JavaScript Warning: "Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”." {file: "http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html" line: 22}]
+110 INFO Tab added and finished loading
+111 INFO Opening the toolbox
+112 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 321 column: 13 source: "  user-select: none;"}]
+113 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 393 column: 2 source: "::-webkit-scrollbar {"}]
+114 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-track’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 399 column: 2 source: "::-webkit-scrollbar-track {"}]
+115 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-thumb’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 404 column: 2 source: "::-webkit-scrollbar-thumb {"}]
+116 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 501 column: 13 source: "  user-select: none;"}]
+117 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 876 column: 13 source: "  user-select: none;"}]
+118 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1041 column: 13 source: "  user-select: none;"}]
+119 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1135 column: 11 source: "  display: "flex";"}]
+120 INFO Console message: [JavaScript Warning: "Unknown property ‘grow’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1136 column: 6 source: "  grow: 1;"}]
+121 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1179 column: 13 source: "  user-select: none;"}]
+122 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1312 column: 13 source: "  user-select: none;"}]
+123 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1326 column: 13 source: "  user-select: none;"}]
+124 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1399 column: 13 source: "  user-select: none;"}]
+125 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1451 column: 13 source: "  user-select: none;"}]
+126 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1582 column: 13 source: "  user-select: none;"}]
+127 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1594 column: 13 source: "  user-select: none;"}]
+128 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1664 column: 13 source: "  user-select: none;"}]
+129 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1980 column: 13 source: "  user-select: none;"}]
+130 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2172 column: 11 source: "  display: -ms-flexbox;"}]
+131 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2476 column: 13 source: "  user-select: none;"}]
+132 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘content’.  Error in parsing value for ‘flex’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2539 column: 12 source: "  flex: 0 1 content;"}]
+133 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2719 column: 13 source: "  user-select: none;"}]
+134 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2807 column: 13 source: "  user-select: none;"}]
+135 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2839 column: 13 source: "  user-select: none;"}]
+136 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2878 column: 13 source: "  user-select: none;"}]
+137 INFO Console message: [JavaScript Warning: "Unknown property ‘appearance’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2951 column: 12 source: "  appearance: none;"}]
+138 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3080 column: 13 source: "  user-select: none;"}]
+139 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3102 column: 13 source: "  user-select: none;"}]
+140 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3146 column: 13 source: "  user-select: none;"}]
+141 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+142 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+143 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+144 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+145 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+146 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+147 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+148 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+149 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19969 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+150 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19969 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+151 INFO Toolbox opened and focused
+152 INFO Waiting on sources: simple1, simple2, nested-source, long.js
+153 INFO TEST-UNEXPECTED-FAIL | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | the folder exists - Got (no domain), expected (sdf)
+Stack trace:
+chrome://mochikit/content/browser-test.js:test_is:1007
+chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79
+154 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | the eval script exists -
+155 INFO Leaving test bound
+156 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+157 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+158 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+159 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+160 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+161 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+162 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+163 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+164 INFO Removing tab.
+165 INFO Waiting for event: 'TabClose' on [object XULElement].
+166 INFO Got event: 'TabClose' on [object XULElement].
+167 INFO Tab removed and finished closing
+168 INFO Removing tab.
+169 INFO Waiting for event: 'TabClose' on [object XULElement].
+170 INFO Got event: 'TabClose' on [object XULElement].
+171 INFO Tab removed and finished closing
+GECKO(70409) | MEMORY STAT vsizeMaxContiguous not supported in this build configuration.
+GECKO(70409) | MEMORY STAT | vsize 4486MB | residentFast 562MB | heapAllocated 224MB
+172 INFO TEST-OK | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | took 3095ms
+173 INFO checking window state
+GECKO(70409) | Completed ShutdownLeaks collections in process 70415
+GECKO(70409) | Completed ShutdownLeaks collections in process 70417
+GECKO(70409) | Completed ShutdownLeaks collections in process 70416
+GECKO(70409) | Completed ShutdownLeaks collections in process 70412
+GECKO(70409) | Completed ShutdownLeaks collections in process 70409
+174 INFO TEST-START | Shutdown
+175 INFO Browser Chrome Test Summary
+176 INFO Passed:  8
+177 INFO Failed:  1
+178 INFO Todo:    0
+179 INFO Mode:    e10s
+180 INFO *** End BrowserChrome Test Results ***
+GECKO(70409) | *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+TEST-INFO | Main app process: exit 0
+runtests.py | Application ran for: 0:00:11.721082
+zombiecheck | Reading PID log: /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpN42jMPpidlog
+==> process 70409 launched child process 70412
+==> process 70409 launched child process 70415
+==> process 70409 launched child process 70416
+==> process 70409 launched child process 70417
+zombiecheck | Checking for orphan process with PID: 70412
+zombiecheck | Checking for orphan process with PID: 70415
+zombiecheck | Checking for orphan process with PID: 70416
+zombiecheck | Checking for orphan process with PID: 70417
+Stopping web server
+Stopping web socket server
+Stopping ssltunnel
+leakcheck | refcount logging is off, so leaks can't be detected!
+runtests.py | Running tests: end.
+Buffered messages finished
+TEST-INFO | checking window state
+Browser Chrome Test Summary
+	Passed: 8
+	Failed: 1
+	Todo: 0
+	Mode: e10s
+*** End BrowserChrome Test Results ***
+The following tests failed:
+181 INFO TEST-UNEXPECTED-FAIL | devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js | the folder exists - Got (no domain), expected (sdf)
+Stack trace:
+chrome://mochikit/content/browser-test.js:test_is:1007
+chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79
+Buffered messages finished
+SUITE-END | took 12s
