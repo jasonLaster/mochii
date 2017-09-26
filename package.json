@@ -1,6 +1,6 @@
 {
   "name": "mochii",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Mochitest CLI & Reporter",
   "main": "index.js",
   "bin": "bin/mochii.js",
