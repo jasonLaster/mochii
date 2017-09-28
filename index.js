@@ -129,7 +129,7 @@ function onLine(line, data) {
     }
   }
 
-  if (line.includes("Error running mach")) {
+  if (line.includes("Error running mach") || line.includes("Traceback (most recent call last):")) {
     data.mode = "failed";
     return line;
   }
