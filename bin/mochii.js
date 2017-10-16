@@ -21,7 +21,7 @@ function moveDirectory(args) {
 
 async function run(args) {
   moveDirectory(args);
-  runMochitests(getArgString(args));
+  runMochitests(getArgString(args), args);
 }
 
 const argString = process.argv[0].includes("bin/node")

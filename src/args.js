@@ -6,9 +6,11 @@ function getArgs(argString) {
   }
   return minimist(argString, {
     string: ["default-test-path", "mc", "read"],
+    boolean: ["interactive"],
     default: {
       mc: ".",
-      "default-test-path": ""
+      "default-test-path": "",
+      interactive: false
     }
   });
 }
@@ -20,6 +22,8 @@ function getArgString(args) {
 
   const defaultPath = args["default-test-path"].split(",");
   delete args["default-test-path"];
+
+  delete args["interactive"];
 
   const includedPaths = args._;
   delete args._;
