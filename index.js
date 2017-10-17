@@ -1,11 +1,13 @@
 const shell = require("shelljs");
 const chalk = require("chalk");
 const path = require("path");
+const inquirer = require("inquirer");
 
 const blacklist = [
   "^s*$",
   '^"}]',
   "Unknown property",
+  "Unable to read VR Path Registry",
   "Error in parsing value",
   "Unknown pseudo-class",
   "unreachable code",
@@ -129,7 +131,10 @@ function onLine(line, data) {
     }
   }
 
-  if (line.includes("Error running mach") || line.includes("Traceback (most recent call last):")) {
+  if (
+    line.includes("Error running mach") ||
+    line.includes("Traceback (most recent call last):")
+  ) {
     data.mode = "failed";
     return line;
   }
@@ -242,7 +247,7 @@ function readOutput(text) {
   return out;
 }
 
-function runMochitests(argString) {
+async function runMochitests(argString, args) {
   const command = `./mach mochitest ${argString}`;
   console.log(chalk.blue(command));
 
@@ -252,7 +257,16 @@ function runMochitests(argString) {
       async: true,
       silent: true
     },
-    code => shell.exit(code)
+    async code => {
+      if (args.interactive) {
+        const shouldReRun = await rerun();
+        if (shouldReRun) {
+          setTimeout(() => runMochitests(argString, args), 0);
+        }
+      } else {
+        shell.exit(code);
+      }
+    }
   );
 
   let testData = { mode: "starting" };
@@ -266,6 +280,18 @@ function runMochitests(argString) {
       }
     });
   });
+}
+
+async function rerun() {
+  const { rerun } = await inquirer.prompt([
+    {
+      type: "confirm",
+      name: "rerun",
+      message: "Rerun the tests?",
+      default: true
+    }
+  ]);
+  return rerun;
 }
 
 module.exports = { runMochitests, readOutput };

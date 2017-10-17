@@ -10,7 +10,8 @@ function paramDefaults(overrides) {
     {
       _: [],
       mc: ".",
-      "default-test-path": ""
+      "default-test-path": "",
+      interactive: false
     },
     overrides
   );
@@ -42,6 +43,14 @@ describe("utils", () => {
       expect(_getArgs("--read file.log")).toEqual(
         paramDefaults({
           read: "file.log"
+        })
+      );
+    });
+
+    it("interactive", () => {
+      expect(_getArgs("--interactive")).toEqual(
+        paramDefaults({
+          interactive: true
         })
       );
     });
