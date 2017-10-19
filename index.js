@@ -6,6 +6,11 @@ const inquirer = require("inquirer");
 const blacklist = [
   "^s*$",
   '^"}]',
+  "^Version:",
+  "^Vendor:",
+  "^Renderer:",
+  "^FBO Texture Target:",
+  "OpenGL compositor Initialized Succesfully.",
   "Unknown property",
   "Unable to read VR Path Registry",
   "Error in parsing value",
@@ -274,9 +279,13 @@ async function runMochitests(argString, args) {
   child.stdout.on("data", function(data) {
     data = data.trim();
     data.split("\n").forEach(line => {
-      const out = onLine(line.trim(), testData);
-      if (out) {
-        console.log(out);
+      try {
+        const out = onLine(line.trim(), testData);
+        if (out) {
+          console.log(out);
+        }
+      } catch (e) {
+        console.error(e);
       }
     });
   });
