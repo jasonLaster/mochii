@@ -1,0 +1,308 @@
+######
+### Now running mochitest-browser with subsuite devtools.
+######
+
+Checking for ssltunnel processes...
+Checking for xpcshell processes...
+SUITE-START | Running 1 tests
+Running manifest: devtools/client/debugger/new/test/mochitest/browser.ini
+pk12util: PKCS12 IMPORT SUCCESSFUL
+MochitestServer : launching [u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/xpcshell', '-g', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/Resources', '-v', '170', '-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/components/httpd.js', '-e', "const _PROFILE_PATH = '/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpJZ7qQQ.mozrunner'; const _SERVER_PORT = '8888'; const _SERVER_ADDR = '127.0.0.1'; const _TEST_PREFIX = undefined; const _DISPLAY_RESULTS = false;", '-f', '/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/_tests/testing/mochitest/server.js']
+runtests.py | Server pid: 10395
+runtests.py | Websocket server pid: 10396
+runtests.py | SSL tunnel pid: 10398
+runtests.py | Running with e10s: True
+runtests.py | Running tests: start.
+Application command: /Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/MacOS/firefox -marionette -foreground -profile /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpJZ7qQQ.mozrunner
+runtests.py | Application pid: 10399
+TEST-INFO | started process GECKO(10399)
+GECKO(10399) | *** You are running in headless mode.
+GECKO(10399) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(10399) | 1508798905978	Marionette	INFO	Enabled via --marionette
+GECKO(10399) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(10399) | 2017-10-23 18:48:26.692 plugin-container[10402:2726051] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb337, name = 'com.apple.tsm.portname'
+GECKO(10399) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+GECKO(10399) | 1508798906893	Marionette	INFO	Listening on port 2828
+GECKO(10399) | 1508798907044	Marionette	DEBUG	Register listener.js for window 2147483649
+0 INFO *** Start BrowserChrome Test Results ***
+1 INFO checking window state
+2 INFO TEST-START | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js
+GECKO(10399) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+3 INFO Entering test bound
+4 INFO Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html
+5 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(10399) | 2017-10-23 18:48:27.899 plugin-container[10404:2726157] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xab3b, name = 'com.apple.tsm.portname'
+GECKO(10399) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+GECKO(10399) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+6 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(10399) | 2017-10-23 18:48:28.066 plugin-container[10405:2726210] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xad33, name = 'com.apple.tsm.portname'
+GECKO(10399) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+7 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 439}]
+8 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 440}]
+9 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 448}]
+10 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 452}]
+11 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 454}]
+12 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 460}]
+13 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-moz-tree-line’.  Ruleset ignored due to bad selector." {file: "chrome://global/content/xul.css" line: 659}]
+14 INFO Console message: [JavaScript Error: "The character encoding of the HTML document was not declared. The document will render with garbled text in some browser configurations if the document contains characters from outside the US-ASCII range. The character encoding of the page must be declared in the document or in the transfer protocol." {file: "http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html" line: 0}]
+15 INFO Tab added and finished loading
+16 INFO Opening the toolbox
+17 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 227 column: 29 source: ".CodeMirror-gutter-wrapper ::selection { background-color: transparent }"}]
+18 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-border-radius’.  Declaration dropped." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 236 column: 20 source: "  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;"}]
+19 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 319 column: 18 source: ".CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }"}]
+20 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 45 column: 13 source: "  user-select: none;"}]
+21 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 117 column: 2 source: "::-webkit-scrollbar {"}]
+22 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-track’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 123 column: 2 source: "::-webkit-scrollbar-track {"}]
+23 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-thumb’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 128 column: 2 source: "::-webkit-scrollbar-thumb {"}]
+24 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 625 column: 13 source: "  user-select: none;"}]
+25 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1021 column: 13 source: "  user-select: none;"}]
+26 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1186 column: 13 source: "  user-select: none;"}]
+27 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1280 column: 11 source: "  display: "flex";"}]
+28 INFO Console message: [JavaScript Warning: "Unknown property ‘grow’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1281 column: 6 source: "  grow: 1;"}]
+29 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1321 column: 13 source: "  user-select: none;"}]
+30 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1383 column: 13 source: "  user-select: none;"}]
+31 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1399 column: 13 source: "  user-select: none;"}]
+32 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1451 column: 13 source: "  user-select: none;"}]
+33 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1562 column: 13 source: "  user-select: none;"}]
+34 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1574 column: 13 source: "  user-select: none;"}]
+35 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1653 column: 13 source: "  user-select: none;"}]
+36 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1969 column: 13 source: "  user-select: none;"}]
+37 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2168 column: 11 source: "  display: -ms-flexbox;"}]
+38 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2501 column: 13 source: "  user-select: none;"}]
+39 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘content’.  Error in parsing value for ‘flex’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2573 column: 12 source: "  flex: 0 1 content;"}]
+40 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2758 column: 13 source: "  user-select: none;"}]
+41 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2846 column: 13 source: "  user-select: none;"}]
+42 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2878 column: 13 source: "  user-select: none;"}]
+43 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2917 column: 13 source: "  user-select: none;"}]
+44 INFO Console message: [JavaScript Warning: "Unknown property ‘appearance’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2985 column: 12 source: "  appearance: none;"}]
+45 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3132 column: 13 source: "  user-select: none;"}]
+46 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3154 column: 13 source: "  user-select: none;"}]
+47 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3230 column: 13 source: "  user-select: none;"}]
+48 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3417 column: 13 source: "  user-select: none;"}]
+GECKO(10399) | [ACTION] SET_WORKERS  - {"type":"SET_WORKERS","workers":{"from":"server1.conn0.child1/tab1","workers":[]}}
+GECKO(10399) | [ACTION] ADD_SOURCE  - {"type":"ADD_SOURCE","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(10399) | [ACTION] ADD_SOURCE  - {"type":"ADD_SOURCE","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(10399) | [ACTION] CONNECT  - {"type":"CONNECT","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html"}
+GECKO(10399) | [ACTION] SET_EXPANDED_STATE  - {"type":"SET_EXPANDED_STATE","expanded":{}}
+49 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+50 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+51 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+52 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+53 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+54 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+55 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+56 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+57 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19854 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+58 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19854 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+59 INFO Toolbox opened and focused
+60 INFO Waiting for thread event 'paused' to fire.
+GECKO(10399) | [ACTION] NAVIGATE  - {"type":"NAVIGATE","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html"}
+GECKO(10399) | [ACTION] ADD_SOURCE  - {"type":"ADD_SOURCE","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(10399) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+61 INFO Thread event 'paused' fired.
+62 INFO Waiting for state change:
+GECKO(10399) | [ACTION] PAUSED  - {"type":"PAUSED","pauseInfo":{"why":{"type":"debuggerStatement"}},"frames":[{"id":"server1.conn0.child1/frame31","location":{"sourceId":"server1.conn0.child1/source27","line":8,"column":6},"displayName":"(global)"}],"scopes":[],"selectedFrameId":"server1.conn0.child1/frame31","loadedObjects":[]}
+GECKO(10399) | [ACTION] LOAD_OBJECT_PROPERTIES [start] - {}
+63 INFO Finished waiting for state change:
+64 INFO Finished waiting for state change:
+GECKO(10399) | [ACTION] TOGGLE_ACTIVE_SEARCH  - {"type":"TOGGLE_ACTIVE_SEARCH","value":null}
+GECKO(10399) | [ACTION] ADD_TAB  - {"type":"ADD_TAB","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"tabIndex":0}
+GECKO(10399) | [ACTION] LOAD_SOURCE_TEXT [start] - {"type":"LOAD_SOURCE_TEXT","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"seqId":"2","status":"start"}
+GECKO(10399) | [ACTION] SELECT_SOURCE [start] - {"type":"SELECT_SOURCE","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"location":{},"seqId":"3","status":"start"}
+GECKO(10399) | 2017-10-23 18:48:29.306 plugin-container[10408:2726294] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xae3b, name = 'com.apple.tsm.portname'
+GECKO(10399) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+65 INFO Waiting for state change: loaded source
+66 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+67 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+68 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+69 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+70 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+71 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+72 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+73 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+74 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+75 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+76 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+77 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+78 INFO Console message: While creating services from category 'speech-synth-started', could not create service for entry 'OSX Speech Synth', contract ID '@mozilla.org/synthsystem;1'
+79 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/NetUtil.jsm" line: 307}]
+GECKO(10399) | [ACTION] LOAD_OBJECT_PROPERTIES [done] - {}
+80 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+81 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+82 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+83 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+84 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+85 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+86 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+87 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+88 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+89 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+90 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+91 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+92 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+93 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+94 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+95 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+GECKO(10399) | [ACTION] LOAD_SOURCE_TEXT [done] - {"type":"LOAD_SOURCE_TEXT","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"seqId":"2","status":"done","value":{"id":"server1.conn0.child1/source27","text":"","contentType":"text/html"}}
+96 INFO Finished waiting for state change: loaded source
+97 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | top frame's source is selected -
+98 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | Line is highlighted as paused -
+99 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | expression is highlighted as paused -
+100 INFO Resuming
+GECKO(10399) | [ACTION] COMMAND  - {"type":"COMMAND","value":{"type":"resume"}}
+101 INFO Waiting for state change: resumed
+GECKO(10399) | [ACTION] RESUME  - {"type":"RESUME"}
+102 INFO Finished waiting for state change: resumed
+103 INFO Waiting for thread event 'paused' to fire.
+GECKO(10399) | [ACTION] CLEAR_COMMAND  - {"type":"CLEAR_COMMAND"}
+GECKO(10399) | [ACTION] SET_SYMBOLS  - {}
+104 INFO Console message: [JavaScript Error: "The character encoding of the HTML document was not declared. The document will render with garbled text in some browser configurations if the document contains characters from outside the US-ASCII range. The character encoding of the page must be declared in the document or in the transfer protocol." {file: "http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html" line: 0}]
+GECKO(10399) | [ACTION] SET_EMPTY_LINES  - {"type":"SET_EMPTY_LINES","source":{"text":""},"emptyLines":[1,2,3,4,5,6,7,9,10,11,13]}
+GECKO(10399) | [ACTION] OUT_OF_SCOPE_LOCATIONS  - {}
+GECKO(10399) | [ACTION] SELECT_SOURCE [done] - {"type":"SELECT_SOURCE","source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"location":{},"seqId":"3","status":"done"}
+GECKO(10399) | [ACTION] ADD_SOURCE  - {"type":"ADD_SOURCE","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+105 INFO Thread event 'paused' fired.
+106 INFO Waiting for state change:
+GECKO(10399) | [ACTION] PAUSED  - {"type":"PAUSED","pauseInfo":{"why":{"type":"debuggerStatement"}},"frames":[{"id":"server1.conn0.child1/frame1057","location":{"sourceId":"server1.conn0.child1/source28","line":8,"column":6},"displayName":"(global)"}],"scopes":[],"selectedFrameId":"server1.conn0.child1/frame1057","loadedObjects":[]}
+GECKO(10399) | [ACTION] LOAD_OBJECT_PROPERTIES [start] - {}
+107 INFO Finished waiting for state change:
+108 INFO Finished waiting for state change:
+GECKO(10399) | [ACTION] TOGGLE_ACTIVE_SEARCH  - {"type":"TOGGLE_ACTIVE_SEARCH","value":null}
+GECKO(10399) | [ACTION] ADD_TAB  - {"type":"ADD_TAB","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"tabIndex":0}
+GECKO(10399) | [ACTION] LOAD_SOURCE_TEXT [start] - {"type":"LOAD_SOURCE_TEXT","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"seqId":"5","status":"start"}
+GECKO(10399) | [ACTION] SELECT_SOURCE [start] - {"type":"SELECT_SOURCE","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"location":{},"seqId":"6","status":"start"}
+109 INFO Waiting for state change: loaded source
+110 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+111 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+112 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+113 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+114 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+115 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+116 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+117 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+118 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+119 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+120 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+121 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+122 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/NetUtil.jsm" line: 307}]
+GECKO(10399) | [ACTION] LOAD_OBJECT_PROPERTIES [done] - {}
+123 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+124 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+125 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+126 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+127 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+128 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+129 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+130 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+131 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+132 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+133 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+134 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+135 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+136 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+137 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+138 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+139 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+140 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+141 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+142 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+143 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+144 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+145 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+146 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+GECKO(10399) | [ACTION] LOAD_SOURCE_TEXT [done] - {"type":"LOAD_SOURCE_TEXT","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"seqId":"5","status":"done","value":{"id":"server1.conn0.child1/source28","text":"","contentType":"text/html"}}
+147 INFO Finished waiting for state change: loaded source
+148 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | top frame's source is selected -
+149 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | Line is highlighted as paused -
+150 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | expression is highlighted as paused -
+151 INFO Resuming
+GECKO(10399) | [ACTION] COMMAND  - {"type":"COMMAND","value":{"type":"resume"}}
+152 INFO Waiting for state change: resumed
+GECKO(10399) | [ACTION] SET_SYMBOLS  - {}
+GECKO(10399) | [ACTION] RESUME  - {"type":"RESUME"}
+153 INFO Finished waiting for state change: resumed
+154 INFO Waiting for thread event 'paused' to fire.
+GECKO(10399) | [ACTION] CLEAR_COMMAND  - {"type":"CLEAR_COMMAND"}
+GECKO(10399) | [ACTION] SET_EMPTY_LINES  - {"type":"SET_EMPTY_LINES","source":{"text":""},"emptyLines":[1,2,3,4,5,6,7,10,15,17,19,21,24]}
+GECKO(10399) | [ACTION] OUT_OF_SCOPE_LOCATIONS  - {}
+GECKO(10399) | [ACTION] SELECT_SOURCE [done] - {"type":"SELECT_SOURCE","source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"},"location":{},"seqId":"6","status":"done"}
+155 INFO Thread event 'paused' fired.
+156 INFO Waiting for state change:
+GECKO(10399) | [ACTION] PAUSED  - {"type":"PAUSED","pauseInfo":{"why":{"type":"debuggerStatement"}},"frames":[{"id":"server1.conn0.child1/frame2087","location":{"sourceId":"server1.conn0.child1/source28","line":12,"column":8},"displayName":"test"},{"id":"server1.conn0.child1/frame1057","location":{"sourceId":"server1.conn0.child1/source28","line":9,"column":6},"displayName":"(global)"}],"scopes":[],"selectedFrameId":"server1.conn0.child1/frame2087","loadedObjects":[]}
+GECKO(10399) | [ACTION] LOAD_OBJECT_PROPERTIES [start] - {}
+157 INFO Finished waiting for state change:
+158 INFO Finished waiting for state change:
+GECKO(10399) | [ACTION] TOGGLE_ACTIVE_SEARCH  - {"type":"TOGGLE_ACTIVE_SEARCH","value":null}
+GECKO(10399) | [ACTION] ADD_TAB  - {"type":"ADD_TAB","source":{"text":""},"tabIndex":0}
+GECKO(10399) | [ACTION] SELECT_SOURCE [start] - {"type":"SELECT_SOURCE","source":{"text":""},"location":{},"seqId":"8","status":"start"}
+159 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | top frame's source is selected -
+160 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | Line is highlighted as paused -
+161 INFO TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | expression is highlighted as paused -
+GECKO(10399) | [ACTION] OUT_OF_SCOPE_LOCATIONS  - {}
+162 INFO Leaving test bound
+163 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+164 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+165 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+166 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+167 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+168 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+169 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+170 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+171 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+172 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+173 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+174 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+175 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+176 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+177 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+178 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+179 INFO Removing tab.
+180 INFO Waiting for event: 'TabClose' on [object XULElement].
+181 INFO Got event: 'TabClose' on [object XULElement].
+182 INFO Tab removed and finished closing
+GECKO(10399) | MEMORY STAT vsizeMaxContiguous not supported in this build configuration.
+GECKO(10399) | MEMORY STAT | vsize 4216MB | residentFast 406MB | heapAllocated 197MB
+183 INFO TEST-OK | devtools/client/debugger/new/test/mochitest/browser_dbg-iframes.js | took 3015ms
+184 INFO checking window state
+185 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(10399) | Completed ShutdownLeaks collections in process 10408
+GECKO(10399) | Completed ShutdownLeaks collections in process 10404
+GECKO(10399) | Completed ShutdownLeaks collections in process 10405
+GECKO(10399) | Completed ShutdownLeaks collections in process 10402
+GECKO(10399) | Completed ShutdownLeaks collections in process 10399
+186 INFO TEST-START | Shutdown
+187 INFO Browser Chrome Test Summary
+188 INFO Passed:  9
+189 INFO Failed:  0
+190 INFO Todo:    0
+191 INFO Mode:    e10s
+192 INFO *** End BrowserChrome Test Results ***
+GECKO(10399) | *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+TEST-INFO | Main app process: exit 0
+runtests.py | Application ran for: 0:00:08.086079
+zombiecheck | Reading PID log: /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmp2UfbWgpidlog
+==> process 10399 launched child process 10402
+==> process 10399 launched child process 10404
+==> process 10399 launched child process 10405
+==> process 10399 launched child process 10408
+zombiecheck | Checking for orphan process with PID: 10402
+zombiecheck | Checking for orphan process with PID: 10404
+zombiecheck | Checking for orphan process with PID: 10405
+zombiecheck | Checking for orphan process with PID: 10408
+Stopping web server
+Stopping web socket server
+Stopping ssltunnel
+leakcheck | refcount logging is off, so leaks can't be detected!
+runtests.py | Running tests: end.
+Buffered messages finished
+TEST-INFO | checking window state
+Browser Chrome Test Summary
+	Passed: 9
+	Failed: 0
+	Todo: 0
+	Mode: e10s
+*** End BrowserChrome Test Results ***
+Buffered messages finished
+SUITE-END | took 8s
