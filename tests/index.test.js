@@ -42,4 +42,19 @@ describe("mochi", () => {
     const out = simulateMochitest("console_error.txt");
     expect(out).toMatchSnapshot();
   });
+
+  it("actions", () => {
+    const out = simulateMochitest("actions.txt");
+    expect(out).toMatchSnapshot();
+  });
+
+  it("frame", () => {
+    const out = simulateMochitest("frame.txt");
+    expect(out).toMatchSnapshot();
+  });
+
+  it("error2", () => {
+    const out = simulateMochitest("error2.txt");
+    expect(out).toMatchSnapshot();
+  });
 });

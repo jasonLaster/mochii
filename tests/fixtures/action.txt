@@ -1,0 +1,163 @@
+
+######
+### Now running mochitest-browser with subsuite devtools.
+######
+
+Checking for ssltunnel processes...
+killing {'username': 'jlaster', 'ppid': 1, 'pid': 21280, 'name': 'ssltunnel'}
+Checking for xpcshell processes...
+SUITE-START | Running 1 tests
+Running manifest: devtools/client/debugger/new/test/mochitest/browser.ini
+pk12util: PKCS12 IMPORT SUCCESSFUL
+MochitestServer : launching [u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/xpcshell', '-g', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/Resources', '-v', '170', '-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/components/httpd.js', '-e', "const _PROFILE_PATH = '/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpcnFAte.mozrunner'; const _SERVER_PORT = '8888'; const _SERVER_ADDR = '127.0.0.1'; const _TEST_PREFIX = undefined; const _DISPLAY_RESULTS = false;", '-f', '/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/_tests/testing/mochitest/server.js']
+runtests.py | Server pid: 21433
+runtests.py | Websocket server pid: 21434
+runtests.py | SSL tunnel pid: 21435
+runtests.py | Running with e10s: True
+runtests.py | Running tests: start.
+
+Application command: /Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/MacOS/firefox -marionette -foreground -profile /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpcnFAte.mozrunner
+runtests.py | Application pid: 21436
+TEST-INFO | started process GECKO(21436)
+GECKO(21436) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(21436) | 1508539621240	Marionette	INFO	Enabled via --marionette
+GECKO(21436) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(21436) | 2017-10-20 18:47:01.966 plugin-container[21439:714918] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb537, name = 'com.apple.tsm.portname'
+GECKO(21436) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+GECKO(21436) | 1508539622331	Marionette	INFO	Listening on port 2828
+GECKO(21436) | 1508539622459	Marionette	DEBUG	Register listener.js for window 2147483649
+GECKO(21436) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+0 INFO *** Start BrowserChrome Test Results ***
+1 INFO checking window state
+2 INFO TEST-START | devtools/client/debugger/new/test/mochitest/browser_dbg-wasm-sourcemaps.js
+3 INFO Entering test bound
+4 INFO Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-wasm-sourcemaps.html
+GECKO(21436) | 2017-10-20 18:47:03.066 plugin-container[21440:715033] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xab3f, name = 'com.apple.tsm.portname'
+GECKO(21436) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+5 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(21436) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+6 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(21436) | 2017-10-20 18:47:03.307 plugin-container[21441:715078] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xab3b, name = 'com.apple.tsm.portname'
+GECKO(21436) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+7 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 439}]
+8 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 440}]
+9 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 448}]
+10 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-opacity’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 452}]
+11 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 454}]
+12 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-window-transform’.  Declaration dropped." {file: "chrome://global/content/xul.css" line: 460}]
+13 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-moz-tree-line’.  Ruleset ignored due to bad selector." {file: "chrome://global/content/xul.css" line: 659}]
+14 INFO Tab added and finished loading
+15 INFO Opening the toolbox
+16 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 227 column: 29 source: ".CodeMirror-gutter-wrapper ::selection { background-color: transparent }"}]
+17 INFO Console message: [JavaScript Warning: "Unknown property ‘-moz-border-radius’.  Declaration dropped." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 236 column: 20 source: "  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;"}]
+18 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 319 column: 18 source: ".CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }"}]
+19 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 45 column: 13 source: "  user-select: none;"}]
+20 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 117 column: 2 source: "::-webkit-scrollbar {"}]
+21 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-track’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 123 column: 2 source: "::-webkit-scrollbar-track {"}]
+22 INFO Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-thumb’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 128 column: 2 source: "::-webkit-scrollbar-thumb {"}]
+23 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 625 column: 13 source: "  user-select: none;"}]
+24 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1021 column: 13 source: "  user-select: none;"}]
+25 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1186 column: 13 source: "  user-select: none;"}]
+26 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1280 column: 11 source: "  display: "flex";"}]
+27 INFO Console message: [JavaScript Warning: "Unknown property ‘grow’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1281 column: 6 source: "  grow: 1;"}]
+28 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1321 column: 13 source: "  user-select: none;"}]
+29 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1383 column: 13 source: "  user-select: none;"}]
+30 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1399 column: 13 source: "  user-select: none;"}]
+31 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1451 column: 13 source: "  user-select: none;"}]
+32 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1562 column: 13 source: "  user-select: none;"}]
+33 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1574 column: 13 source: "  user-select: none;"}]
+34 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1653 column: 13 source: "  user-select: none;"}]
+35 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1969 column: 13 source: "  user-select: none;"}]
+36 INFO Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2168 column: 11 source: "  display: -ms-flexbox;"}]
+37 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2501 column: 13 source: "  user-select: none;"}]
+38 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘content’.  Error in parsing value for ‘flex’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2573 column: 12 source: "  flex: 0 1 content;"}]
+39 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2758 column: 13 source: "  user-select: none;"}]
+40 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2846 column: 13 source: "  user-select: none;"}]
+41 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2878 column: 13 source: "  user-select: none;"}]
+42 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2917 column: 13 source: "  user-select: none;"}]
+43 INFO Console message: [JavaScript Warning: "Unknown property ‘appearance’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2985 column: 12 source: "  appearance: none;"}]
+44 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3132 column: 13 source: "  user-select: none;"}]
+45 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3154 column: 13 source: "  user-select: none;"}]
+46 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3230 column: 13 source: "  user-select: none;"}]
+47 INFO Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3417 column: 13 source: "  user-select: none;"}]
+GECKO(21436) | [ACTION] SET_WORKERS [done] - {"workers":{"from":"server1.conn0.child1/tab1","workers":[]}}
+GECKO(21436) | [ACTION] SET_WORKERS [start] - {"workers":{"from":"server1.conn0.child1/tab1","workers":[]}}
+GECKO(21436) | [ACTION] ADD_SOURCE  - {"source":{"id":"server1.conn0.child1/source28","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-wasm-sourcemaps.html","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(21436) | [ACTION] ADD_SOURCE  - {"source":{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/wasm-sourcemaps/average.js","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(21436) | [ACTION] ADD_SOURCE  - {"source":{"id":"server1.conn0.child1/source29","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/wasm-sourcemaps/utils.js","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(21436) | [ACTION] ADD_SOURCE  - {"source":{"id":"server1.conn0.child1/source30","url":"wasm:http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/wasm-sourcemaps/average.js","isPrettyPrinted":false,"isWasm":true,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}}
+GECKO(21436) | [ACTION] CONNECT  - {"url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-wasm-sourcemaps.html"}
+GECKO(21436) | [ACTION] SET_EXPANDED_STATE  - {"expanded":{}}
+48 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+49 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+50 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+51 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+52 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+53 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+54 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+55 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+56 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+57 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+58 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+59 INFO Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+60 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19854 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+61 INFO Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 19854 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+62 INFO Toolbox opened and focused
+63 INFO Waiting for state change
+64 INFO Leaving test bound
+65 INFO Removing tab.
+66 INFO Waiting for event: 'TabClose' on [object XULElement].
+67 INFO Got event: 'TabClose' on [object XULElement].
+68 INFO Tab removed and finished closing
+69 INFO TEST-UNEXPECTED-FAIL | devtools/client/debugger/new/test/mochitest/browser_dbg-wasm-sourcemaps.js | This test contains no passes, no fails and no todos. Maybe it threw a silent exception? Make sure you use waitForExplicitFinish() if you need it. -
+GECKO(21436) | MEMORY STAT vsizeMaxContiguous not supported in this build configuration.
+GECKO(21436) | MEMORY STAT | vsize 4415MB | residentFast 500MB | heapAllocated 207MB
+70 INFO TEST-OK | devtools/client/debugger/new/test/mochitest/browser_dbg-wasm-sourcemaps.js | took 1404ms
+71 INFO checking window state
+GECKO(21436) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(21436) | 2017-10-20 18:47:04.564 plugin-container[21444:715170] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb137, name = 'com.apple.tsm.portname'
+GECKO(21436) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+72 INFO Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(21436) | Completed ShutdownLeaks collections in process 21444
+GECKO(21436) | Completed ShutdownLeaks collections in process 21440
+GECKO(21436) | Completed ShutdownLeaks collections in process 21441
+GECKO(21436) | Completed ShutdownLeaks collections in process 21439
+GECKO(21436) | Completed ShutdownLeaks collections in process 21436
+73 INFO TEST-START | Shutdown
+74 INFO Browser Chrome Test Summary
+75 INFO Passed:  0
+76 INFO Failed:  1
+77 INFO Todo:    0
+78 INFO Mode:    e10s
+79 INFO *** End BrowserChrome Test Results ***
+GECKO(21436) | *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+TEST-INFO | Main app process: exit 0
+runtests.py | Application ran for: 0:00:06.393942
+zombiecheck | Reading PID log: /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpPKhxXepidlog
+==> process 21436 launched child process 21439
+==> process 21436 launched child process 21440
+==> process 21436 launched child process 21441
+==> process 21436 launched child process 21444
+zombiecheck | Checking for orphan process with PID: 21439
+zombiecheck | Checking for orphan process with PID: 21440
+zombiecheck | Checking for orphan process with PID: 21441
+zombiecheck | Checking for orphan process with PID: 21444
+Stopping web server
+Stopping web socket server
+Stopping ssltunnel
+leakcheck | refcount logging is off, so leaks can't be detected!
+runtests.py | Running tests: end.
+Buffered messages finished
+TEST-INFO | checking window state
+Browser Chrome Test Summary
+	Passed: 0
+	Failed: 1
+	Todo: 0
+	Mode: e10s
+*** End BrowserChrome Test Results ***
+The following tests failed:
+80 INFO TEST-UNEXPECTED-FAIL | devtools/client/debugger/new/test/mochitest/browser_dbg-wasm-sourcemaps.js | This test contains no passes, no fails and no todos. Maybe it threw a silent exception? Make sure you use waitForExplicitFinish() if you need it. -
+Buffered messages finished
+SUITE-END | took 6s
