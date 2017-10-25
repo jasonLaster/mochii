@@ -1,6 +1,6 @@
 const chalk = require("chalk");
 
-function pausedAction(action) {
+function pausedAction (action) {
   const why = action.pauseInfo.why.type;
   const frame = action.frames[0];
   const { line, column, sourceId } = frame.location;
@@ -8,16 +8,16 @@ function pausedAction(action) {
   return `${why}: ${sourceId}:${line}:${column}`;
 }
 
-function formatUrl(url) {
+function formatUrl (url) {
   return url ? url.split("/").pop() : "";
 }
 
-function formatSource(source) {
+function formatSource (source) {
   return `${source.id} - ${formatUrl(source.url)}`;
 }
 
-function onAction(line, data) {
-  const [_, action, status, actionData] = line.match(
+function onAction (line, data) {
+  const [, action, status, actionData] = line.match(
     /\[ACTION\] (\w+)\s*(\[\w+\])?\s*-\s*(.*)$/
   );
 
@@ -45,7 +45,7 @@ function onAction(line, data) {
   return chalk`   {blue.dim ${action}} {dim ${statusStr}${dataStr} }`;
 }
 
-function onGecko(line, data) {
+function onGecko (line, data) {
   if (line.match(/\[ACTION\]/)) {
     return onAction(line, data);
   }

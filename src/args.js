@@ -1,6 +1,6 @@
 const minimist = require("minimist");
 
-function getArgs(argString) {
+function getArgs (argString) {
   if (argString[0] === "--") {
     argString.shift();
   }
@@ -15,7 +15,7 @@ function getArgs(argString) {
   });
 }
 
-function getArgString(args) {
+function getArgString (args) {
   args = Object.assign({}, args);
 
   delete args.mc;
