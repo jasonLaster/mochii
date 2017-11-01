@@ -7,8 +7,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix . && yarn prettier",
-    "prettier":
-      "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
+    "prettier": "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
   },
   "repository": {
     "type": "git",
@@ -39,6 +38,7 @@
     "jest-in-case": "^1.0.2",
     "jsesc": "^2.5.1",
     "minimist": "^1.2.0",
+    "node-emoji": "^1.8.1",
     "shelljs": "^0.7.8"
   }
 }
