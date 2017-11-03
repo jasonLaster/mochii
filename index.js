@@ -95,6 +95,21 @@ function onLine(line, data) {
   line = sanitizeLine(line);
   // line += data.mode;
 
+  if (line.includes("Stack:")) {
+    // console.log("Stack", line);
+  }
+
+  if (!line.includes("GECKO") && data.mode === "console-error") {
+    if (line.includes("Handler function")) {
+      return;
+    }
+
+    if (line.match(/@/)) {
+      const newMsg = line.match(/Stack:/) ? line.match(/Stack:(.*)/)[1] : line;
+      return onFrame(newMsg);
+    }
+  }
+
   if (line.match(new RegExp(`(${blacklist.join("|")})`))) {
     return;
   }
@@ -133,16 +148,16 @@ function onLine(line, data) {
     return onTestInfo(line, data);
   }
 
+  if (line.match(/Console message/)) {
+    return onConsole(line, data);
+  }
+
   if (line.match(/INFO/)) {
     return onInfo(line, data);
   }
 
   if (line.match(/GECKO\(/)) {
     return onGecko(line, data);
-  }
-
-  if (line.match(/Console message/)) {
-    return onConsole(line, data);
   }
 
   if (line.includes("Stack trace")) {
@@ -181,7 +196,10 @@ function onTestInfo(line, data) {
     return ` ${chalk.red(type)} ${errorFile}\n${chalk.yellow(error)}`;
   }
 
-  let prefix = type === "TEST-OK" ? chalk.green(type) : chalk.blue(type);
+  const testFinish = type === "TEST-OK";
+  let prefix = testFinish ? chalk.green(type) : chalk.blue(type);
+
+  hooks.testFinish(type, msg);
 
   return `${prefix} ${file}`;
 }
@@ -217,7 +235,19 @@ function onConsole(line, data) {
     }
 
     const [, msg] = res;
-    return `  ${chalk.red("JS warning: ")}${msg}`;
+    return `  ${chalk.red("JS warning: ")}\n   ${msg}`;
+  }
+
+  if (line.match(/JavaScript Error/)) {
+    data.mode = "console-error";
+    const res = line.match(/^.*JavaScript Error: (.*)$/);
+    if (!res) {
+      return line;
+    }
+
+    const [, msg] = res;
+
+    return `  ${chalk.red("JS Error: ")}\n    ${msg}`;
   }
 
   return line;

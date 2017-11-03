@@ -57,4 +57,9 @@ describe("mochi", () => {
     const out = simulateMochitest("error2.txt");
     expect(out).toMatchSnapshot();
   });
+
+  it("unformatted stack", () => {
+    const out = simulateMochitest("unformatted_stack.txt");
+    expect(out).toMatchSnapshot();
+  });
 });
