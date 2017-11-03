@@ -15,6 +15,11 @@ function sanitizeLine(line) {
     .replace(/\\"/g, '"');
 }
 
+function testPassed(lines) {
+  const text = lines.join("\n");
+  return !text.includes("TEST-UNEXPECTED-FAIL");
+}
+
 function onFrame(line, data) {
   const [, fnc, _path, _line, column] = line.match(/(.*)@(.*):(.*):(.*)/);
 
@@ -71,9 +76,8 @@ function onGecko(line, data) {
 
   if (line.includes("Stack:")) {
     data.mode = "console-error";
-    const message = data.extra;
     data.extra = null;
-    return `   ${chalk.red("Console Error")}: ${message}`;
+    return `   ${chalk.red("Console Error")}`;
   }
 
   const response = hooks.onGecko(line, data);
@@ -94,6 +98,10 @@ function onDone(line) {
 function onLine(line, data) {
   line = sanitizeLine(line);
   // line += data.mode;
+
+  if (data.extra && data.extra.testFinish) {
+    delete data.extra.testFinish;
+  }
 
   if (line.includes("Stack:")) {
     // console.log("Stack", line);
@@ -198,7 +206,7 @@ function onTestInfo(line, data) {
 
   const testFinish = type === "TEST-OK";
   let prefix = testFinish ? chalk.green(type) : chalk.blue(type);
-
+  data.extra = { testFinish };
   hooks.testFinish(type, msg);
 
   return `${prefix} ${file}`;
@@ -253,6 +261,24 @@ function onConsole(line, data) {
   return line;
 }
 
+function handleCILine(testData, testLines) {
+  if (!testData.extra || !testData.extra.testFinish) {
+    return testLines;
+  }
+
+  if (!testPassed(testLines)) {
+    console.log(testLines.join("\n"));
+  } else {
+    const text = testLines.join("\n");
+    if (text.match(/.*TEST-OK.*/g)) {
+      const [test] = text.match(/.*TEST-OK.*/g);
+      console.log(test);
+    }
+  }
+
+  return [];
+}
+
 function readOutput(text) {
   let data = { mode: "starting" };
   const out = text
@@ -287,8 +313,8 @@ async function runMochitests(argString, args) {
     }
   );
 
-  let testData = { mode: "starting" };
-
+  let testData = { mode: "starting", extra: null };
+  let testLines = [];
   child.stdout.on("data", function(data) {
     data = data.trim();
     data.split("\n").forEach(line => {
@@ -296,7 +322,12 @@ async function runMochitests(argString, args) {
         rawLines.push(line);
         const out = onLine(line.trim(), testData);
         if (out) {
-          console.log(out);
+          if (args.ci) {
+            testLines.push(out);
+            testLines = handleCILine(testData, testLines);
+          } else {
+            console.log(out);
+          }
         }
       } catch (e) {
         console.error(e);

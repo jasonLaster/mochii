@@ -1,21 +1,22 @@
 const minimist = require("minimist");
 
-function getArgs(argString) {
+function getArgs (argString) {
   if (argString[0] === "--") {
     argString.shift();
   }
   return minimist(argString, {
     string: ["default-test-path", "mc", "read"],
-    boolean: ["interactive"],
+    boolean: ["interactive", "ci"],
     default: {
       mc: ".",
+      ci: false,
       "default-test-path": "",
       interactive: false
     }
   });
 }
 
-function getArgString(args) {
+function getArgString (args) {
   args = Object.assign({}, args);
 
   delete args.mc;
@@ -24,6 +25,7 @@ function getArgString(args) {
   delete args["default-test-path"];
 
   delete args["interactive"];
+  delete args["ci"];
 
   const includedPaths = args._;
   delete args._;
