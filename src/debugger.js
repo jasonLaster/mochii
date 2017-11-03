@@ -1,7 +1,7 @@
 const chalk = require("chalk");
 // const hankey = require("hankey");
 // var emoji = require("node-emoji");
-function pausedAction (action) {
+function pausedAction(action) {
   const why = action.pauseInfo.why.type;
   const frame = action.frames[0];
   const { line, column, sourceId } = frame.location;
@@ -9,11 +9,11 @@ function pausedAction (action) {
   return `${why}: ${sourceId}:${line}:${column}`;
 }
 
-function formatUrl (url) {
+function formatUrl(url) {
   return url ? url.split("/").pop() : "";
 }
 
-function formatSource (source) {
+function formatSource(source) {
   return `${source.id} - ${formatUrl(source.url)}`;
 }
 
@@ -30,10 +30,10 @@ const map = {
 };
 
 // const emojis = {
-  // PAUSED: "clock130"
+// PAUSED: "clock130"
 // };
 
-function onAction (line, data) {
+function onAction(line, data) {
   const [, action, status, actionData] = line.match(
     /\[ACTION\] (\w+)\s*(\[\w+\])?\s*-\s*(.*)$/
   );
@@ -67,7 +67,7 @@ function onAction (line, data) {
   return chalk`   {dim {blue ${count} ${action}} ${icon}${statusStr}${dataStr}}`;
 }
 
-function onGecko (line, data) {
+function onGecko(line, data) {
   if (line.match(/\[ACTION\]/)) {
     return onAction(line, data);
   }
@@ -75,6 +75,11 @@ function onGecko (line, data) {
   return false;
 }
 
+function testFinish(type, msg) {
+  counts = {};
+}
+
 module.exports = {
-  onGecko
+  onGecko,
+  testFinish
 };
