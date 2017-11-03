@@ -10,6 +10,7 @@ function paramDefaults(overrides) {
     {
       _: [],
       mc: ".",
+      ci: false,
       "default-test-path": "",
       interactive: false
     },
