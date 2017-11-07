@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mochi actions 1`] = `
+exports[`mochi actions.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-iframes.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m[39m",
@@ -91,7 +91,7 @@ Array [
 ]
 `;
 
-exports[`mochi basic 1`] = `
+exports[`mochi basic.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-chrome-create.js",
   "[34mTEST-SKIP[39m browser_dbg-chrome-create.js",
@@ -107,7 +107,7 @@ Array [
 ]
 `;
 
-exports[`mochi build-fail 1`] = `
+exports[`mochi build-fail.txt 1`] = `
 Array [
   "Traceback (most recent call last):",
   "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/build/gen_test_backend.py\\", line 39, in <module>",
@@ -167,7 +167,7 @@ Array [
 ]
 `;
 
-exports[`mochi console_error 1`] = `
+exports[`mochi console_error.txt 1`] = `
 Array [
   "   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
   "   [31mConsole Error[39m",
@@ -183,7 +183,7 @@ Array [
 ]
 `;
 
-exports[`mochi error 1`] = `
+exports[`mochi error.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg_keyboard-shortcuts.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m",
@@ -212,7 +212,7 @@ Array [
 ]
 `;
 
-exports[`mochi error2 1`] = `
+exports[`mochi error2.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-sourcemaps2.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m",
@@ -289,7 +289,7 @@ Array [
 ]
 `;
 
-exports[`mochi frame 1`] = `
+exports[`mochi frame.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-pretty-print.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m",
@@ -337,7 +337,7 @@ Array [
 ]
 `;
 
-exports[`mochi full run 1`] = `
+exports[`mochi full.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-chrome-create.js",
   "[34mTEST-SKIP[39m browser_dbg-chrome-create.js",
@@ -1199,7 +1199,7 @@ Array [
 ]
 `;
 
-exports[`mochi mochi-fail 1`] = `
+exports[`mochi mochi-fail.txt 1`] = `
 Array [
   "Error running mach:",
   "['mochitest', 'browser_dbg-minified.js']",
@@ -1223,7 +1223,7 @@ Array [
 ]
 `;
 
-exports[`mochi ufail 1`] = `
+exports[`mochi ufail.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-sources.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m",
@@ -1259,7 +1259,7 @@ Array [
 ]
 `;
 
-exports[`mochi unformatted stack 1`] = `
+exports[`mochi unformatted_stack.txt 1`] = `
 Array [
   "[34mTEST-START[39m browser_dbg-pause-exceptions.js",
   "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m[39m",
