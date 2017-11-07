@@ -4,15 +4,16 @@ const cases = require("jest-in-case");
 
 function simulateMochitest(file) {
   const out = readOutput(readFile(file), { ci: false });
-  // console.log(out.join("\n"));
-  return out;
+  const ci = readOutput(readFile(file), { ci: true });
+  return { out, ci };
 }
 
 cases(
   "mochi",
   ({ name }) => {
-    const out = simulateMochitest(name);
+    const { out, ci } = simulateMochitest(name);
     expect(out).toMatchSnapshot();
+    expect(ci).toMatchSnapshot();
   },
   [
     { name: "basic.txt" },
