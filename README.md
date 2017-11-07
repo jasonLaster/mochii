@@ -73,3 +73,41 @@ mochii --read result.log
 ```
 
 [dh]:https://github.com/devtools-html/debugger.html
+
+
+### Contributing to Mochii
+
+There are two ways to contribute to Mochii
+
+Link a local version so that local changes are seen when you run `yarn mochi`
+
+```
+git clone
+cd mochii
+yarn
+yarn link
+
+cd <debugger.html>
+yarn link mochii
+yarn mochih <test>
+```
+
+Work on a known mochitest log. This is the easiest way to quickly update the log format.
+
+```
+cd <debugger.html>
+yarn mochih <test>
+cp firefox/mochi_log.txt ../mochi/tests/fixtures/unformatted_stack.txt
+cd <mochii>
+add the test test/index.test.js
+jest --watch
+```
+
+```js
+
+  fit("multiple-failes", () => {
+    const out = simulateMochitest("mutliple_fails.txt");
+    console.log(out)
+    expect(out).toMatchSnapshot();
+  });
+```
