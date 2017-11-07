@@ -99,7 +99,7 @@ function onDone(line) {
   }
 }
 
-function onLine(line, data) {
+function handleLine(line, data) {
   line = sanitizeLine(line);
   // line += data.mode;
 
@@ -266,37 +266,58 @@ function onConsole(line, data) {
 }
 
 function handleCILine(testData, testLines) {
-  if (!testData.extra || !testData.extra.testFinish) {
-    return testLines;
-  }
-
   if (!testPassed(testLines)) {
-    console.log(testLines.join("\n"));
+    return testLines.join("\n");
   } else {
     const text = testLines.join("\n");
     if (text.match(/.*TEST-OK.*/g)) {
       const [test] = text.match(/.*TEST-OK.*/g);
-      console.log(test);
+      return test;
+    }
+    if (testData.mode == "done") {
+      return testLines.join("\n");
+    }
+  }
+}
+
+function runner(options) {
+  let testData = { mode: "starting", extra: null };
+  let testLines = [];
+  const rawLines = [];
+
+  function onLine(line) {
+    rawLines.push(line);
+    const out = handleLine(line.trim(), testData);
+    if (out) {
+      if (options.ci) {
+        testLines.push(out);
+        // console.log({ testData });
+        if (testData.extra && testData.extra.testFinish) {
+          const out = handleCILine(testData, testLines);
+          testLines = [];
+          return out;
+        }
+      } else {
+        return out;
+      }
     }
   }
 
-  return [];
-}
+  function onDone(code) {
+    return rawLines.join("\n");
+  }
 
-function readOutput(text) {
-  let data = { mode: "starting" };
-  const out = text
-    .split("\n")
-    .map(line => onLine(line, data))
-    .filter(i => i);
-  return out;
+  return {
+    onLine,
+    onDone
+  };
 }
 
 async function runMochitests(argString, args) {
   const command = `./mach mochitest --setpref=javascript.options.asyncstack=true ${argString}`;
-  const rawLines = [];
 
   console.log(chalk.blue(command));
+  const { onLine, onDone } = runner();
 
   const child = shell.exec(
     command,
@@ -305,7 +326,8 @@ async function runMochitests(argString, args) {
       silent: true
     },
     async code => {
-      fs.writeFileSync("./mochi_log.txt", rawLines.join("\n"));
+      const text = onDone(code);
+      fs.writeFileSync("./mochi_log.txt", text);
       if (args.interactive) {
         const shouldReRun = await rerun();
         if (shouldReRun) {
@@ -317,22 +339,12 @@ async function runMochitests(argString, args) {
     }
   );
 
-  let testData = { mode: "starting", extra: null };
-  let testLines = [];
   child.stdout.on("data", function(data) {
     data = data.trim();
     data.split("\n").forEach(line => {
       try {
-        rawLines.push(line);
-        const out = onLine(line.trim(), testData);
-        if (out) {
-          if (args.ci) {
-            testLines.push(out);
-            testLines = handleCILine(testData, testLines);
-          } else {
-            console.log(out);
-          }
-        }
+        const out = onLine(line);
+        console.log(out);
       } catch (e) {
         console.error(e);
       }
@@ -350,6 +362,17 @@ async function rerun() {
     }
   ]);
   return rerun;
+}
+
+function readOutput(text, options = { ci: true }) {
+  let data = { mode: "starting" };
+  const { onLine } = runner(options);
+
+  const out = text
+    .split("\n")
+    .map(line => onLine(line))
+    .filter(i => i);
+  return out;
 }
 
 module.exports = { runMochitests, readOutput };
