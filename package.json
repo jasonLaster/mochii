@@ -1,13 +1,14 @@
 {
   "name": "mochii",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A Mochitest CLI & Reporter",
   "main": "index.js",
   "bin": "bin/mochii.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix . && yarn prettier",
-    "prettier": "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
+    "prettier":
+      "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
   },
   "repository": {
     "type": "git",

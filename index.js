@@ -153,6 +153,7 @@ function handleLine(line, data) {
 
   if (line.includes("End BrowserChrome Test Results")) {
     data.mode = "done";
+
     return;
   }
 
@@ -274,7 +275,8 @@ function handleCILine(testData, testLines) {
       const [test] = text.match(/.*TEST-OK.*/g);
       return test;
     }
-    if (testData.mode == "done") {
+
+    if (testData.mode === "done") {
       return testLines.join("\n");
     }
   }
@@ -291,7 +293,6 @@ function runner(options) {
     if (out) {
       if (options.ci) {
         testLines.push(out);
-        // console.log({ testData });
         if (testData.extra && testData.extra.testFinish) {
           const out = handleCILine(testData, testLines);
           testLines = [];
@@ -365,13 +366,13 @@ async function rerun() {
 }
 
 function readOutput(text, options = { ci: true }) {
-  let data = { mode: "starting" };
   const { onLine } = runner(options);
 
   const out = text
     .split("\n")
     .map(line => onLine(line))
-    .filter(i => i);
+    .filter(i => i)
+    .join("\n");
   return out;
 }
 

@@ -1,1341 +1,1504 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`mochi actions.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-iframes.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m[39m",
-  "   [2m[34m1 SET_WORKERS[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "   [2m[34m2 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m",
-  "   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "   [2m[34m1 NAVIGATE[39m[22m[2m [22m",
-  "   [2m[34m3 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Waiting for state change:[22m[39m",
-  "   [2m[34m1 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:8:6[22m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "[33m[2m   Waiting for state change: loaded source[22m[39m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m",
-  "   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "[33m[2m   Finished waiting for state change: loaded source[22m[39m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "   [2m[34m1 COMMAND[39m[22m[2m undefined[22m",
-  "[33m[2m   Waiting for state change: resumed[22m[39m",
-  "   [2m[34m1 RESUME[39m[22m[2m [22m",
-  "[33m[2m   Finished waiting for state change: resumed[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "   [2m[34m1 CLEAR_COMMAND[39m[22m[2m [22m",
-  "   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m",
-  "   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m",
-  "   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - doc-iframes.html[22m",
-  "   [2m[34m4 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Waiting for state change:[22m[39m",
-  "   [2m[34m2 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source28:8:6[22m",
-  "   [2m[34m2 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m2 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "[33m[2m   Waiting for state change: loaded source[22m[39m",
-  "   [2m[34m2 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m",
-  "   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "[33m[2m   Finished waiting for state change: loaded source[22m[39m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "   [2m[34m2 COMMAND[39m[22m[2m undefined[22m",
-  "[33m[2m   Waiting for state change: resumed[22m[39m",
-  "   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m",
-  "   [2m[34m2 RESUME[39m[22m[2m [22m",
-  "[33m[2m   Finished waiting for state change: resumed[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "   [2m[34m2 CLEAR_COMMAND[39m[22m[2m [22m",
-  "   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m",
-  "   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Waiting for state change:[22m[39m",
-  "   [2m[34m3 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source28:12:8[22m",
-  "   [2m[34m3 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m3 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m3 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "[32mTEST-OK[39m browser_dbg-iframes.js",
-  "186 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 9",
-  "[34mFailed[39m: 0",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-]
+"[34mTEST-START[39m browser_dbg-iframes.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m[39m
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-iframes.html[22m
+   [2m[34m2 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+   [2m[34m1 NAVIGATE[39m[22m[2m [22m
+   [2m[34m3 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-iframes.html[22m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting for state change:[22m[39m
+   [2m[34m1 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:8:6[22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Finished waiting for state change:[22m[39m
+[33m[2m   Finished waiting for state change:[22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+[33m[2m   Waiting for state change: loaded source[22m[39m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+[33m[2m   Finished waiting for state change: loaded source[22m[39m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+   [2m[34m1 COMMAND[39m[22m[2m undefined[22m
+[33m[2m   Waiting for state change: resumed[22m[39m
+   [2m[34m1 RESUME[39m[22m[2m [22m
+[33m[2m   Finished waiting for state change: resumed[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+   [2m[34m1 CLEAR_COMMAND[39m[22m[2m [22m
+   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+   [2m[34m4 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting for state change:[22m[39m
+   [2m[34m2 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source28:8:6[22m
+   [2m[34m2 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Finished waiting for state change:[22m[39m
+[33m[2m   Finished waiting for state change:[22m[39m
+   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m2 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+[33m[2m   Waiting for state change: loaded source[22m[39m
+   [2m[34m2 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+[33m[2m   Finished waiting for state change: loaded source[22m[39m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+   [2m[34m2 COMMAND[39m[22m[2m undefined[22m
+[33m[2m   Waiting for state change: resumed[22m[39m
+   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m2 RESUME[39m[22m[2m [22m
+[33m[2m   Finished waiting for state change: resumed[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+   [2m[34m2 CLEAR_COMMAND[39m[22m[2m [22m
+   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting for state change:[22m[39m
+   [2m[34m3 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source28:12:8[22m
+   [2m[34m3 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Finished waiting for state change:[22m[39m
+[33m[2m   Finished waiting for state change:[22m[39m
+   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m3 ADD_TAB[39m[22m[2m [22m
+   [2m[34m3 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+[32mTEST-OK[39m browser_dbg-iframes.js
+186 INFO TEST-START | Shutdown
+[34mPassed[39m: 9
+[34mFailed[39m: 0
+[34mTodo[39m: 0
+[34mMode[39m: e10s"
 `;
+
+exports[`mochi actions.txt 2`] = `"[32mTEST-OK[39m browser_dbg-iframes.js"`;
 
 exports[`mochi basic.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-chrome-create.js",
-  "[34mTEST-SKIP[39m browser_dbg-chrome-create.js",
-  "[34mTEST-START[39m browser_dbg-chrome-debugging.js",
-  "[34mTEST-SKIP[39m browser_dbg-chrome-debugging.js",
-  "[34mTEST-START[39m browser_dbg-breakpoints-cond.js",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s) $[22m[39m",
-  "[34mTEST-SKIP[39m browser_dbg-chrome-create.js",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]",
-]
+"[34mTEST-START[39m browser_dbg-chrome-create.js
+[34mTEST-SKIP[39m browser_dbg-chrome-create.js
+[34mTEST-START[39m browser_dbg-chrome-debugging.js
+[34mTEST-SKIP[39m browser_dbg-chrome-debugging.js
+[34mTEST-START[39m browser_dbg-breakpoints-cond.js
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s) $[22m[39m
+[34mTEST-SKIP[39m browser_dbg-chrome-create.js
+ [36mTEST-PASS[39m undefined assertion name -
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]"
 `;
+
+exports[`mochi basic.txt 2`] = `""`;
 
 exports[`mochi build-fail.txt 1`] = `
-Array [
-  "Traceback (most recent call last):",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/build/gen_test_backend.py\\", line 39, in <module>",
-  "sys.exit(gen_test_backend())",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/build/gen_test_backend.py\\", line 35, in gen_test_backend",
-  "backend.consume(data)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/backend/base.py\\", line 126, in consume",
-  "for obj in objs:",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 182, in emit",
-  "objs = list(emitfn(out))",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1219, in _process_test_manifests",
-  "for obj in self._process_test_manifest(context, info, path, manifest):",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1335, in _process_test_manifest",
-  "context)",
-  "mozbuild.frontend.reader.SandboxValidationError:",
-  "==============================",
-  "ERROR PROCESSING MOZBUILD FILE",
-  "==============================",
-  "The error occurred while processing the following file or one of the files it includes:",
-  "/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/moz.build",
-  "The error occurred when validating the result of the execution. The reported error is:",
-  "Error processing test manifest file /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/browser.ini: Traceback (most recent call last):",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1264, in _process_test_manifest",
-  "path, ', '.join(missing)), context)",
-  "SandboxValidationError:",
-  "==============================",
-  "ERROR PROCESSING MOZBUILD FILE",
-  "==============================",
-  "The error occurred while processing the following file or one of the files it includes:",
-  "/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/moz.build",
-  "The error occurred when validating the result of the execution. The reported error is:",
-  "Test manifest (/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/browser.ini) lists test that does not exist: browser_dbg-expressions-error.js",
-  "make: *** [backend.TestManifestBackend] Error 1",
-  "Error running mach:",
-  "['mochitest', 'devtools/client/debugger/new']",
-  "The error occurred in code that was called by the mach command. This is either",
-  "a bug in the called code itself or in the way that mach is calling it.",
-  "You should consider filing a bug for this issue.",
-  "If filing a bug, please include the full output of mach, including this error",
-  "message.",
-  "The details of the failure are as follows:",
-  "Exception: Process executed with non-0 exit code 2: [u'/usr/bin/make', u'-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/build/rebuild-backend.mk', u'-j8', u'-s', u'backend.TestManifestBackend']",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 312, in run_mochitest_general",
-  "tests = mochitest.resolve_tests(test_paths, test_objects, cwd=self._mach_context.cwd)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 111, in resolve_tests",
-  "resolver = self._spawn(TestResolver)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 727, in _spawn",
-  "topobjdir=self.topobjdir)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py\\", line 195, in __init__",
-  "self.topsrcdir, 'build', 'gen_test_backend.py'),",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 655, in _run_make",
-  "return fn(**params)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 710, in _run_command_in_objdir",
-  "return self.run_process(cwd=self.topobjdir, **args)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mach/mach/mixin/process.py\\", line 147, in run_process",
-  "raise Exception('Process executed with non-0 exit code %d: %s' % (status, args))",
-]
+"Traceback (most recent call last):
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/build/gen_test_backend.py\\", line 39, in <module>
+sys.exit(gen_test_backend())
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/build/gen_test_backend.py\\", line 35, in gen_test_backend
+backend.consume(data)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/backend/base.py\\", line 126, in consume
+for obj in objs:
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 182, in emit
+objs = list(emitfn(out))
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1219, in _process_test_manifests
+for obj in self._process_test_manifest(context, info, path, manifest):
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1335, in _process_test_manifest
+context)
+mozbuild.frontend.reader.SandboxValidationError:
+==============================
+ERROR PROCESSING MOZBUILD FILE
+==============================
+The error occurred while processing the following file or one of the files it includes:
+/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/moz.build
+The error occurred when validating the result of the execution. The reported error is:
+Error processing test manifest file /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/browser.ini: Traceback (most recent call last):
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/frontend/emitter.py\\", line 1264, in _process_test_manifest
+path, ', '.join(missing)), context)
+SandboxValidationError:
+==============================
+ERROR PROCESSING MOZBUILD FILE
+==============================
+The error occurred while processing the following file or one of the files it includes:
+/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/moz.build
+The error occurred when validating the result of the execution. The reported error is:
+Test manifest (/Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/browser.ini) lists test that does not exist: browser_dbg-expressions-error.js
+make: *** [backend.TestManifestBackend] Error 1
+Error running mach:
+['mochitest', 'devtools/client/debugger/new']
+The error occurred in code that was called by the mach command. This is either
+a bug in the called code itself or in the way that mach is calling it.
+You should consider filing a bug for this issue.
+If filing a bug, please include the full output of mach, including this error
+message.
+The details of the failure are as follows:
+Exception: Process executed with non-0 exit code 2: [u'/usr/bin/make', u'-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/build/rebuild-backend.mk', u'-j8', u'-s', u'backend.TestManifestBackend']
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 312, in run_mochitest_general
+tests = mochitest.resolve_tests(test_paths, test_objects, cwd=self._mach_context.cwd)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 111, in resolve_tests
+resolver = self._spawn(TestResolver)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 727, in _spawn
+topobjdir=self.topobjdir)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py\\", line 195, in __init__
+self.topsrcdir, 'build', 'gen_test_backend.py'),
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 655, in _run_make
+return fn(**params)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/base.py\\", line 710, in _run_command_in_objdir
+return self.run_process(cwd=self.topobjdir, **args)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mach/mach/mixin/process.py\\", line 147, in run_process
+raise Exception('Process executed with non-0 exit code %d: %s' % (status, args))"
 `;
+
+exports[`mochi build-fail.txt 2`] = `""`;
 
 exports[`mochi console_error.txt 1`] = `
-Array [
-  "   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-]
+"   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0"
 `;
+
+exports[`mochi console_error.txt 2`] = `""`;
 
 exports[`mochi error.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg_keyboard-shortcuts.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [31mTEST-UNEXPECTED-FAIL[39m head.js:243 
-[33m TypeError: lineInfo is null[39m",
-  "     assertPausedLocation [2mbrowser/devtools/client/debugger/new/test/mochitest/head.js 243:1[22m",
-  "      [2mbrowser/devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-shortcuts.js 33:3[22m",
-  "     Tester_execTest [2mbrowser-test.js 789:9[22m",
-  "     Tester.prototype.nextTest</< [2mbrowser-test.js 689:7[22m",
-  "     SimpleTest.waitForFocus/waitForFocusInner/focusedOrLoaded/< [2mtests/SimpleTest/SimpleTest.js 795:59[22m",
-  "     Tester_execTest [2mbrowser-test.js 789:9[22m",
-  "     Tester.prototype.nextTest</< [2mbrowser-test.js 689:7[22m",
-  "     SimpleTest.waitForFocus/waitForFocusInner/focusedOrLoaded/< [2mtests/SimpleTest/SimpleTest.js 795:59[22m",
-  "
-",
-  "143 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 1",
-  "[34mFailed[39m: 1",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-shortcuts.js ",
-  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-navigation.js ",
-]
+"[34mTEST-START[39m browser_dbg_keyboard-shortcuts.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [31mTEST-UNEXPECTED-FAIL[39m head.js:243 
+[33m TypeError: lineInfo is null[39m
+     assertPausedLocation [2mbrowser/devtools/client/debugger/new/test/mochitest/head.js 243:1[22m
+      [2mbrowser/devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-shortcuts.js 33:3[22m
+     Tester_execTest [2mbrowser-test.js 789:9[22m
+     Tester.prototype.nextTest</< [2mbrowser-test.js 689:7[22m
+     SimpleTest.waitForFocus/waitForFocusInner/focusedOrLoaded/< [2mtests/SimpleTest/SimpleTest.js 795:59[22m
+     Tester_execTest [2mbrowser-test.js 789:9[22m
+     Tester.prototype.nextTest</< [2mbrowser-test.js 689:7[22m
+     SimpleTest.waitForFocus/waitForFocusInner/focusedOrLoaded/< [2mtests/SimpleTest/SimpleTest.js 795:59[22m
+
+
+143 INFO TEST-START | Shutdown
+[34mPassed[39m: 1
+[34mFailed[39m: 1
+[34mTodo[39m: 0
+[34mMode[39m: e10s
+[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-shortcuts.js 
+[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg_keyboard-navigation.js "
 `;
 
+exports[`mochi error.txt 2`] = `""`;
+
 exports[`mochi error2.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-sourcemaps2.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m",
-  "   [2m[34m1 SET_WORKERS[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - main.min.js[22m",
-  "   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m",
-  "   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_SOURCES[39m[22m[2m [22m",
-  "   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m",
-  "[33m[2m   Waiting on sources: main.js, main.min.js[22m[39m",
-  " [36mTEST-PASS[39m Original sources exist -",
-  "[33m[2m   Selecting source: [object Object][22m[39m",
-  "   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m",
-  "   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - main.min.js[22m",
-  "   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m",
-  "   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m",
-  "   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m",
-  "   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m2 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m",
-  "   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m",
-  "   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m",
-  "   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m",
-  "   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m",
-  "   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [31m[done][39m [22m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  "[33m[2m   Invoking function logMessage in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Waiting for state change:[22m[39m",
-  "   [2m[34m1 PAUSED[39m[22m[2m breakpoint: server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04:4:2[22m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "[33m[2m   Finished waiting for state change:[22m[39m",
-  "   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m3 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m3 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [31mConsole Error[39m",
-  "     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m",
-  "     handler [2mdevtools/shared/protocol.js 1106:19[22m",
-  "     onPacket [2mdevtools/server/main.js 1791:15[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  "     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m",
-  "     handler [2mdevtools/shared/protocol.js 1106:19[22m",
-  "     onPacket [2mdevtools/server/main.js 1791:15[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  " [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
-[33m stack: null[39m",
-  "
-",
-  "chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449",
-  "testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11",
-  "run@chrome://mochikit/content/browser-test.js:1040:9",
-  "[32mTEST-OK[39m browser_dbg-sourcemaps2.js",
-  "101 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 6",
-  "[34mFailed[39m: 1",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-sourcemaps2.js ",
-]
+"[34mTEST-START[39m browser_dbg-sourcemaps2.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m [22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
+[33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
+ [36mTEST-PASS[39m Original sources exist -
+[33m[2m   Selecting source: [object Object][22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m2 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [31m[done][39m [22m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Invoking function logMessage in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting for state change:[22m[39m
+   [2m[34m1 PAUSED[39m[22m[2m breakpoint: server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04:4:2[22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Finished waiting for state change:[22m[39m
+[33m[2m   Finished waiting for state change:[22m[39m
+   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m3 ADD_TAB[39m[22m[2m [22m
+   [2m[34m3 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [31mConsole Error[39m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+ [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
+[33m stack: null[39m
+
+
+chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449
+testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11
+run@chrome://mochikit/content/browser-test.js:1040:9
+[32mTEST-OK[39m browser_dbg-sourcemaps2.js
+101 INFO TEST-START | Shutdown
+[34mPassed[39m: 6
+[34mFailed[39m: 1
+[34mTodo[39m: 0
+[34mMode[39m: e10s
+[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-sourcemaps2.js "
+`;
+
+exports[`mochi error2.txt 2`] = `
+"[34mTEST-START[39m browser_dbg-sourcemaps2.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m [22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
+[33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
+ [36mTEST-PASS[39m Original sources exist -
+[33m[2m   Selecting source: [object Object][22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m2 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [31m[done][39m [22m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Invoking function logMessage in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting for state change:[22m[39m
+   [2m[34m1 PAUSED[39m[22m[2m breakpoint: server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04:4:2[22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Finished waiting for state change:[22m[39m
+[33m[2m   Finished waiting for state change:[22m[39m
+   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m3 ADD_TAB[39m[22m[2m [22m
+   [2m[34m3 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [31mConsole Error[39m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+ [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
+[33m stack: null[39m
+
+
+chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449
+testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11
+run@chrome://mochikit/content/browser-test.js:1040:9
+[32mTEST-OK[39m browser_dbg-sourcemaps2.js"
 `;
 
 exports[`mochi frame.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-pretty-print.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m",
-  "   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "[33m[2m   Resuming[22m[39m",
-  "   [2m[34m1 COMMAND[39m[22m[2m undefined[22m",
-  "[33m[2m   Waiting for state change: resumed[22m[39m",
-  "   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m",
-  "   [31mConsole Error[39m",
-  "     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m",
-  "     handler [2mdevtools/shared/protocol.js 1106:19[22m",
-  "     onPacket [2mdevtools/server/main.js 1791:15[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  "     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m",
-  "     handler [2mdevtools/shared/protocol.js 1106:19[22m",
-  "     onPacket [2mdevtools/server/main.js 1791:15[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  "   [2m[34m1 RESUME[39m[22m[2m [22m",
-  "[33m[2m   Finished waiting for state change: resumed[22m[39m",
-  " [36mTEST-PASS[39m Footer is hidden -",
-  "[33m[2m   Selecting source: math.min.js[22m[39m",
-  "   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_TAB[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m",
-  "   [2m[34m1 CLEAR_COMMAND[39m[22m[2m [22m",
-  "   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m",
-  " [36mTEST-PASS[39m Footer is hidden -",
-  " [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
-[33m stack: null[39m",
-  "
-",
-  "chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449",
-  "testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11",
-  "run@chrome://mochikit/content/browser-test.js:1040:9",
-  "[32mTEST-OK[39m browser_dbg-pretty-print.js",
-  "196 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 9",
-  "[34mFailed[39m: 1",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-pretty-print.js ",
-]
+"[34mTEST-START[39m browser_dbg-pretty-print.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+[33m[2m   Resuming[22m[39m
+   [2m[34m1 COMMAND[39m[22m[2m undefined[22m
+[33m[2m   Waiting for state change: resumed[22m[39m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
+   [31mConsole Error[39m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+   [2m[34m1 RESUME[39m[22m[2m [22m
+[33m[2m   Finished waiting for state change: resumed[22m[39m
+ [36mTEST-PASS[39m Footer is hidden -
+[33m[2m   Selecting source: math.min.js[22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+   [2m[34m1 CLEAR_COMMAND[39m[22m[2m [22m
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+ [36mTEST-PASS[39m Footer is hidden -
+ [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
+[33m stack: null[39m
+
+
+chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449
+testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11
+run@chrome://mochikit/content/browser-test.js:1040:9
+[32mTEST-OK[39m browser_dbg-pretty-print.js
+196 INFO TEST-START | Shutdown
+[34mPassed[39m: 9
+[34mFailed[39m: 1
+[34mTodo[39m: 0
+[34mMode[39m: e10s
+[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-pretty-print.js "
+`;
+
+exports[`mochi frame.txt 2`] = `
+"[34mTEST-START[39m browser_dbg-pretty-print.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+[33m[2m   Resuming[22m[39m
+   [2m[34m1 COMMAND[39m[22m[2m undefined[22m
+[33m[2m   Waiting for state change: resumed[22m[39m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
+   [31mConsole Error[39m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+     getEnvironment [2mdevtools/server/actors/frame.js 53:9[22m
+     handler [2mdevtools/shared/protocol.js 1106:19[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+   [2m[34m1 RESUME[39m[22m[2m [22m
+[33m[2m   Finished waiting for state change: resumed[22m[39m
+ [36mTEST-PASS[39m Footer is hidden -
+[33m[2m   Selecting source: math.min.js[22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m undefined - [22m
+   [2m[34m1 CLEAR_COMMAND[39m[22m[2m [22m
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m undefined - [22m
+ [36mTEST-PASS[39m Footer is hidden -
+ [31mTEST-UNEXPECTED-FAIL[39m A promise chain failed to handle a rejection: Debugger.Frame is not live 
+[33m stack: null[39m
+
+
+chrome://mochikit/content/browser-test.js:Tester.prototype.nextTest<:449
+testScope/test_finish/<@chrome://mochikit/content/browser-test.js:1103:11
+run@chrome://mochikit/content/browser-test.js:1040:9
+[32mTEST-OK[39m browser_dbg-pretty-print.js"
 `;
 
 exports[`mochi full.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-chrome-create.js",
-  "[34mTEST-SKIP[39m browser_dbg-chrome-create.js",
-  "[34mTEST-START[39m browser_dbg-chrome-debugging.js",
-  "[34mTEST-SKIP[39m browser_dbg-chrome-debugging.js",
-  "[34mTEST-START[39m browser_dbg-breaking-from-console.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-breaking-from-console.js",
-  "[34mTEST-START[39m browser_dbg-breaking.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Invoking function doEval in tab[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  " [36mTEST-PASS[39m It is an eval source -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function evaledFunc in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-breaking.js",
-  "[34mTEST-START[39m browser_dbg-breakpoints-cond.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m breakpoint is created with the condition -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 5 -",
-  "[33m[2m   Waiting for SET_BREAKPOINT_CONDITION to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SET_BREAKPOINT_CONDITION dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m breakpoint is created with the condition -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 5 -",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m breakpoint was removed -",
-  " [36mTEST-PASS[39m Breakpoint does not exist on line 5 -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for SET_BREAKPOINT_CONDITION to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SET_BREAKPOINT_CONDITION dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m breakpoint is created with the condition -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 5 -",
-  "[32mTEST-OK[39m browser_dbg-breakpoints-cond.js",
-  "[34mTEST-START[39m browser_dbg-breakpoints-reloading.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting on sources: simple1[22m[39m",
-  "[33m[2m   Waiting for SYNC_BREAKPOINT to dispatch 2 time(s)[22m[39m",
-  "[33m[2m   SYNC_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   SYNC_BREAKPOINT dispatched 2 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Breakpoint exists on line 4 -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 5 -",
-  "[32mTEST-OK[39m browser_dbg-breakpoints-reloading.js",
-  "[34mTEST-START[39m browser_dbg-breakpoints.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m first breakpoint is disabled -",
-  " [36mTEST-PASS[39m second breakpoint is enabled -",
-  "[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for ENABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ENABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m second breakpoint is enabled -",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 2 time(s)[22m[39m",
-  "[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   DISABLE_BREAKPOINT dispatched 2 time(s)[22m[39m",
-  " [36mTEST-PASS[39m first breakpoint is disabled -",
-  " [36mTEST-PASS[39m second breakpoint is disabled -",
-  "[33m[2m   Waiting for ENABLE_BREAKPOINT to dispatch 2 time(s)[22m[39m",
-  "[33m[2m   ENABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   ENABLE_BREAKPOINT dispatched 2 time(s)[22m[39m",
-  " [36mTEST-PASS[39m first breakpoint is enabled -",
-  " [36mTEST-PASS[39m second breakpoint is enabled -",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m breakpoints are removed -",
-  "[32mTEST-OK[39m browser_dbg-breakpoints.js",
-  "[34mTEST-START[39m browser_dbg-call-stack.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  " [36mTEST-PASS[39m Not paused message is shown -",
-  "[33m[2m   Invoking function firstCall in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m the first frame is selected -",
-  " [36mTEST-PASS[39m toggle button shouldn't be there -",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-frames.html[22m[39m",
-  "[33m[2m   Invoking function startRecursion in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m the first frame is selected -",
-  " [36mTEST-PASS[39m toggle button should be expand -",
-  " [36mTEST-PASS[39m There should be at most seven frames -",
-  " [36mTEST-PASS[39m toggle button should be collapsed -",
-  " [36mTEST-PASS[39m All of the frames should be shown -",
-  "[32mTEST-OK[39m browser_dbg-call-stack.js",
-  "[34mTEST-START[39m browser_dbg-console.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  "[33m[2m   Selecting source: switching-01[22m[39m",
-  " [36mTEST-PASS[39m Split console is shown. -",
-  " [36mTEST-PASS[39m Split console is shown. -",
-  " [36mTEST-PASS[39m Split console is hidden. -",
-  "[32mTEST-OK[39m browser_dbg-console.js",
-  "[34mTEST-START[39m browser_dbg-debugger-buttons.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-debugger-buttons.js",
-  "[34mTEST-START[39m browser_dbg-editor-gutter.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 4 -",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m No breakpoints exist -",
-  " [36mTEST-PASS[39m Breakpoint does not exist on line 4 -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  " [36mTEST-PASS[39m Breakpoint does not exist on line 2 -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 4 -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint does not exist on line 2 -",
-  " [36mTEST-PASS[39m Breakpoint exists on line 4 -",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m No breakpoints exist -",
-  " [36mTEST-PASS[39m Breakpoint does not exist on line 4 -",
-  "[32mTEST-OK[39m browser_dbg-editor-gutter.js",
-  "[34mTEST-START[39m browser_dbg-editor-highlight.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Selecting source: long.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  " [36mTEST-PASS[39m Highlighted line is visible -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  "[33m[2m   Selecting source: long.js[22m[39m",
-  "[33m[2m   Selecting source: long.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  " [36mTEST-PASS[39m Highlighted line is visible -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  " [36mTEST-PASS[39m Only 1 line is highlighted -",
-  "[33m[2m   Selecting source: simple1.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  " [36mTEST-PASS[39m Highlighted line is visible -",
-  " [36mTEST-PASS[39m Line is highlighted -",
-  "[32mTEST-OK[39m browser_dbg-editor-highlight.js",
-  "[34mTEST-START[39m browser_dbg-editor-select.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m No selected source -",
-  "[33m[2m   Invoking function main in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping in[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping out[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Stepping out[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function testModel in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  " [36mTEST-PASS[39m Breakpoint is visible -",
-  "[32mTEST-OK[39m browser_dbg-editor-select.js",
-  "[34mTEST-START[39m browser_dbg-expressions.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  "[33m[2m   Invoking function firstCall in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Adding an expression[22m[39m",
-  "[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   updating the expression[22m[39m",
-  "[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Adding an expression[22m[39m",
-  "[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m has a value -",
-  "[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Resuming[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[32mTEST-OK[39m browser_dbg-expressions.js",
-  "[34mTEST-START[39m browser_dbg-iframes.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-iframes.js",
-  "[34mTEST-START[39m browser_dbg-navigation.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  "[33m[2m   Invoking function firstCall in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Waiting on sources: simple1.js[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function main in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  " [36mTEST-PASS[39m 4 sources are loaded. -",
-  "[33m[2m   Waiting for NAVIGATE to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   NAVIGATE dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m 0 sources are loaded. -",
-  " [36mTEST-PASS[39m No pause state exists -",
-  "[33m[2m   Waiting on sources: simple1.js, simple2.js, long.js, scripts.html[22m[39m",
-  " [36mTEST-PASS[39m 4 sources are loaded. -",
-  "[33m[2m   Selecting source: long.js[22m[39m",
-  "[33m[2m   Waiting on sources: long.js[22m[39m",
-  " [36mTEST-PASS[39m Selected source is long.js -",
-  " Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m",
-  "     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m",
-  "     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m",
-  "     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m",
-  "     run [2mbrowser-test.js 1031:9[22m",
-  " Line: 1689, column: 0",
-  "[32mTEST-OK[39m browser_dbg-navigation.js",
-  "     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]",
-  "   [31mConsole Error[39m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m",
-  "     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m",
-  "     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m",
-  " Line: 1689, column: 0",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]",
-  "[34mTEST-START[39m browser_dbg-pause-exceptions.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m[39m",
-  "[33m[2m   Invoking function uncaughtException in tab[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Invoking function uncaughtException in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Invoking function caughtException in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Invoking function caughtException in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[32mTEST-OK[39m browser_dbg-pause-exceptions.js",
-  "[34mTEST-START[39m browser_dbg-pretty-print-paused.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m",
-  "[33m[2m   Selecting source: math.min.js[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function arithmetic in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[32mTEST-OK[39m browser_dbg-pretty-print-paused.js",
-  "[34mTEST-START[39m browser_dbg-pretty-print.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m",
-  "[33m[2m   Selecting source: math.min.js[22m[39m",
-  "[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Pretty-printed source exists -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function arithmetic in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping over[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  " [36mTEST-PASS[39m Footer is hidden -",
-  "[33m[2m   Selecting source: math.min.js[22m[39m",
-  " [36mTEST-PASS[39m Footer is hidden -",
-  "[32mTEST-OK[39m browser_dbg-pretty-print.js",
-  "[34mTEST-START[39m browser_dbg-scopes-mutations.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-mutate.html[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Invoking function mutate in tab[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m The second element in the scope panel is \\"<this>\\" -",
-  " [36mTEST-PASS[39m The third element in the scope panel is \\"phonebook\\" -",
-  "[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m The fourth element in the scope panel is \\"S\\" -",
-  "[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m The fifth element in the scope panel is \\"sarah\\" -",
-  " [36mTEST-PASS[39m The sixth element in the scope panel is \\"serena\\" -",
-  "[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m The sixth element in the scope panel is now \\"lastName\\" -",
-  " [36mTEST-PASS[39m The \\"lastName\\" element has the expected \\"Doe\\" value -",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Resuming[22m[39m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m The second element in the scope panel is \\"<this>\\" -",
-  " [36mTEST-PASS[39m The third element in the scope panel is \\"phonebook\\" -",
-  "[32mTEST-OK[39m browser_dbg-scopes-mutations.js",
-  "[34mTEST-START[39m browser_dbg-scopes.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  "[33m[2m   Invoking function firstCall in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Stepping over[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[32mTEST-OK[39m browser_dbg-scopes.js",
-  "[34mTEST-START[39m browser_dbg-search-file.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[32mTEST-OK[39m browser_dbg-search-file.js",
-  "[34mTEST-START[39m browser_dbg-search-sources.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m first source is selected -",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m second source is selected -",
-  "[32mTEST-OK[39m browser_dbg-search-sources.js",
-  "[34mTEST-START[39m browser_dbg-search-symbols.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m",
-  "[33m[2m   Selecting source: switching-01[22m[39m",
-  "[33m[2m   Synthesizing key shortcut: CmdOrCtrl+Shift+O[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Synthesizing key shortcut: CmdOrCtrl+Shift+O[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[32mTEST-OK[39m browser_dbg-search-symbols.js",
-  "[34mTEST-START[39m browser_dbg-sourcemaps-bogus.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemap-bogus.html[22m[39m",
-  "[33m[2m   Selecting source: bogus-map.js[22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Invoking function runCode in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  " [36mTEST-PASS[39m Only 1 source exists -",
-  "[32mTEST-OK[39m browser_dbg-sourcemaps-bogus.js",
-  "[34mTEST-START[39m browser_dbg-sourcemaps-reloading.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html[22m[39m",
-  "[33m[2m   Waiting on sources: entry.js, output.js, times2.js, opts.js[22m[39m",
-  " [36mTEST-PASS[39m Original sources exist -",
-  "[33m[2m   Selecting source: [object Object][22m[39m",
-  " [36mTEST-PASS[39m Original source text loaded correctly -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  "[33m[2m   Waiting on sources: opts.js[22m[39m",
-  "[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  " JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/shared/source-map/index.js, line 590: TypeError: this.worker is null",
-  "  [31mJS Error: [39m
-    \\"TypeError: this.worker is null\\" {file: \\"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/shared/source-map/index.js\\" line: 590}]",
-  "[32mTEST-OK[39m browser_dbg-sourcemaps-reloading.js",
-  "[34mTEST-START[39m browser_dbg-sourcemaps.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html[22m[39m",
-  "[33m[2m   Waiting on sources: entry.js, output.js, times2.js, opts.js[22m[39m",
-  " [36mTEST-PASS[39m Original sources exist -",
-  "[33m[2m   Selecting source: [object Object][22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Breakpoint exists on line 13 -",
-  "[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m No breakpoints exists -",
-  "[33m[2m   Selecting source: [object Object][22m[39m",
-  " [36mTEST-PASS[39m Original source text loaded correctly -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Two breakpoints exist -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  "[33m[2m   Invoking function keepMeAlive in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping in[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping over[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Stepping out[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  "[33m[2m   Stepping out[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-sourcemaps.js",
-  "[34mTEST-START[39m browser_dbg-sourcemaps2.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m",
-  "[33m[2m   Waiting on sources: main.js, main.min.js[22m[39m",
-  " [36mTEST-PASS[39m Original sources exist -",
-  "[33m[2m   Selecting source: [object Object][22m[39m",
-  "[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m One breakpoint exists -",
-  " [36mTEST-PASS[39m Breakpoint has correct line -",
-  "[33m[2m   Invoking function logMessage in tab[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg-sourcemaps2.js",
-  "[34mTEST-START[39m browser_dbg-sources.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
-  "[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Source is not focused -",
-  "[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Source is focused -",
-  " [36mTEST-PASS[39m The right source is selected -",
-  " [36mTEST-PASS[39m The dynamic script exists -",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
-  "[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m",
-  " [36mTEST-PASS[39m the folder exists -",
-  " [36mTEST-PASS[39m the eval script exists -",
-  "[32mTEST-OK[39m browser_dbg-sources.js",
-  "[34mTEST-START[39m browser_dbg-tabs.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple1[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting on sources: simple1, simple2[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Waiting on sources: simple1, simple2[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple1[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  "[33m[2m   Closing tab: simple1[22m[39m",
-  "[33m[2m   Closing tab: simple2[22m[39m",
-  "[33m[2m   Waiting on sources: simple1, simple2[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]",
-  "[32mTEST-OK[39m browser_dbg-tabs.js",
-  "[34mTEST-START[39m browser_dbg-toggling-tools.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: long[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "[32mTEST-OK[39m browser_dbg-toggling-tools.js",
-  "[34mTEST-START[39m browser_dbg_keyboard-shortcuts.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m",
-  "[33m[2m   Thread event 'paused' fired.[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[32mTEST-OK[39m browser_dbg_keyboard-shortcuts.js",
-  "[34mTEST-START[39m browser_dbg_keyboard_navigation.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m",
-  "[33m[2m   Selecting source: simple2[22m[39m",
-  " [36mTEST-PASS[39m Editor is enabled -",
-  " [36mTEST-PASS[39m Focused on container -",
-  " [36mTEST-PASS[39m Editor is enabled -",
-  "[32mTEST-OK[39m browser_dbg_keyboard_navigation.js",
-  "5639 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 313",
-  "[34mFailed[39m: 0",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-]
+"[34mTEST-START[39m browser_dbg-chrome-create.js
+[34mTEST-SKIP[39m browser_dbg-chrome-create.js
+[34mTEST-START[39m browser_dbg-chrome-debugging.js
+[34mTEST-SKIP[39m browser_dbg-chrome-debugging.js
+[34mTEST-START[39m browser_dbg-breaking-from-console.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-breaking-from-console.js
+[34mTEST-START[39m browser_dbg-breaking.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Invoking function doEval in tab[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+ [36mTEST-PASS[39m It is an eval source -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function evaledFunc in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-breaking.js
+[34mTEST-START[39m browser_dbg-breakpoints-cond.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m breakpoint is created with the condition -
+ [36mTEST-PASS[39m Breakpoint exists on line 5 -
+[33m[2m   Waiting for SET_BREAKPOINT_CONDITION to dispatch 1 time(s)[22m[39m
+[33m[2m   SET_BREAKPOINT_CONDITION dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m breakpoint is created with the condition -
+ [36mTEST-PASS[39m Breakpoint exists on line 5 -
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m breakpoint was removed -
+ [36mTEST-PASS[39m Breakpoint does not exist on line 5 -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for SET_BREAKPOINT_CONDITION to dispatch 1 time(s)[22m[39m
+[33m[2m   SET_BREAKPOINT_CONDITION dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m breakpoint is created with the condition -
+ [36mTEST-PASS[39m Breakpoint exists on line 5 -
+[32mTEST-OK[39m browser_dbg-breakpoints-cond.js
+[34mTEST-START[39m browser_dbg-breakpoints-reloading.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting on sources: simple1[22m[39m
+[33m[2m   Waiting for SYNC_BREAKPOINT to dispatch 2 time(s)[22m[39m
+[33m[2m   SYNC_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   SYNC_BREAKPOINT dispatched 2 time(s)[22m[39m
+ [36mTEST-PASS[39m Breakpoint exists on line 4 -
+ [36mTEST-PASS[39m Breakpoint exists on line 5 -
+[32mTEST-OK[39m browser_dbg-breakpoints-reloading.js
+[34mTEST-START[39m browser_dbg-breakpoints.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m first breakpoint is disabled -
+ [36mTEST-PASS[39m second breakpoint is enabled -
+[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for ENABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ENABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m second breakpoint is enabled -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 2 time(s)[22m[39m
+[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   DISABLE_BREAKPOINT dispatched 2 time(s)[22m[39m
+ [36mTEST-PASS[39m first breakpoint is disabled -
+ [36mTEST-PASS[39m second breakpoint is disabled -
+[33m[2m   Waiting for ENABLE_BREAKPOINT to dispatch 2 time(s)[22m[39m
+[33m[2m   ENABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   ENABLE_BREAKPOINT dispatched 2 time(s)[22m[39m
+ [36mTEST-PASS[39m first breakpoint is enabled -
+ [36mTEST-PASS[39m second breakpoint is enabled -
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m breakpoints are removed -
+[32mTEST-OK[39m browser_dbg-breakpoints.js
+[34mTEST-START[39m browser_dbg-call-stack.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+ [36mTEST-PASS[39m Not paused message is shown -
+[33m[2m   Invoking function firstCall in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m the first frame is selected -
+ [36mTEST-PASS[39m toggle button shouldn't be there -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-frames.html[22m[39m
+[33m[2m   Invoking function startRecursion in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m the first frame is selected -
+ [36mTEST-PASS[39m toggle button should be expand -
+ [36mTEST-PASS[39m There should be at most seven frames -
+ [36mTEST-PASS[39m toggle button should be collapsed -
+ [36mTEST-PASS[39m All of the frames should be shown -
+[32mTEST-OK[39m browser_dbg-call-stack.js
+[34mTEST-START[39m browser_dbg-console.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+[33m[2m   Selecting source: switching-01[22m[39m
+ [36mTEST-PASS[39m Split console is shown. -
+ [36mTEST-PASS[39m Split console is shown. -
+ [36mTEST-PASS[39m Split console is hidden. -
+[32mTEST-OK[39m browser_dbg-console.js
+[34mTEST-START[39m browser_dbg-debugger-buttons.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-debugger-buttons.js
+[34mTEST-START[39m browser_dbg-editor-gutter.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint exists on line 4 -
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m No breakpoints exist -
+ [36mTEST-PASS[39m Breakpoint does not exist on line 4 -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+ [36mTEST-PASS[39m Breakpoint does not exist on line 2 -
+ [36mTEST-PASS[39m Breakpoint exists on line 4 -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint does not exist on line 2 -
+ [36mTEST-PASS[39m Breakpoint exists on line 4 -
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m No breakpoints exist -
+ [36mTEST-PASS[39m Breakpoint does not exist on line 4 -
+[32mTEST-OK[39m browser_dbg-editor-gutter.js
+[34mTEST-START[39m browser_dbg-editor-highlight.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+[33m[2m   Selecting source: long.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted -
+ [36mTEST-PASS[39m Highlighted line is visible -
+ [36mTEST-PASS[39m Line is highlighted -
+[33m[2m   Selecting source: long.js[22m[39m
+[33m[2m   Selecting source: long.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted -
+ [36mTEST-PASS[39m Highlighted line is visible -
+ [36mTEST-PASS[39m Line is highlighted -
+ [36mTEST-PASS[39m Only 1 line is highlighted -
+[33m[2m   Selecting source: simple1.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted -
+ [36mTEST-PASS[39m Highlighted line is visible -
+ [36mTEST-PASS[39m Line is highlighted -
+[32mTEST-OK[39m browser_dbg-editor-highlight.js
+[34mTEST-START[39m browser_dbg-editor-select.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m No selected source -
+[33m[2m   Invoking function main in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping in[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping out[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Stepping out[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function testModel in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m Breakpoint is visible -
+[32mTEST-OK[39m browser_dbg-editor-select.js
+[34mTEST-START[39m browser_dbg-expressions.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+[33m[2m   Invoking function firstCall in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Adding an expression[22m[39m
+[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m
+[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   updating the expression[22m[39m
+[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m
+[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Adding an expression[22m[39m
+[33m[2m   Waiting for EVALUATE_EXPRESSION to dispatch 1 time(s)[22m[39m
+[33m[2m   EVALUATE_EXPRESSION dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m has a value -
+[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m
+[33m[2m   Resuming[22m[39m
+[33m[2m   Resuming[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[32mTEST-OK[39m browser_dbg-expressions.js
+[34mTEST-START[39m browser_dbg-iframes.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-iframes.html[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-iframes.js
+[34mTEST-START[39m browser_dbg-navigation.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+[33m[2m   Invoking function firstCall in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Waiting on sources: simple1.js[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function main in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m 4 sources are loaded. -
+[33m[2m   Waiting for NAVIGATE to dispatch 1 time(s)[22m[39m
+[33m[2m   NAVIGATE dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m 0 sources are loaded. -
+ [36mTEST-PASS[39m No pause state exists -
+[33m[2m   Waiting on sources: simple1.js, simple2.js, long.js, scripts.html[22m[39m
+ [36mTEST-PASS[39m 4 sources are loaded. -
+[33m[2m   Selecting source: long.js[22m[39m
+[33m[2m   Waiting on sources: long.js[22m[39m
+ [36mTEST-PASS[39m Selected source is long.js -
+ Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     NetworkResponseListener.prototype._getSecurityInfo< [2mdevtools/shared/webconsole/network-monitor.js 495:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     onStartRequest [2mdevtools/shared/webconsole/network-monitor.js 436:5[22m
+     ensureDOMPromiseRejectionsProcessed [2mtesting-common/PromiseTestUtils.jsm 117:5[22m
+     Tester.prototype.nextTest< [2mbrowser-test.js 447:7[22m
+     testScope/test_finish/< [2mbrowser-test.js 1094:11[22m
+     run [2mbrowser-test.js 1031:9[22m
+ Line: 1689, column: 0
+[32mTEST-OK[39m browser_dbg-navigation.js
+     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+     NetworkEventActorProxy.methodFactory/< [2mdevtools/shared/webconsole/network-monitor.js 1689:5[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+   Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... \\"Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]\\"  nsresult: \\"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\\"  location: \\"JS frame :: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1689\\"  data: no]
+   [31mConsole Error[39m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     _onComplete [2mdevtools/shared/webconsole/network-monitor.js 620:5[22m
+     onStreamClose [2mdevtools/shared/webconsole/network-monitor.js 569:7[22m
+     onInputStreamReady [2mdevtools/shared/webconsole/network-monitor.js 668:7[22m
+ Line: 1689, column: 0
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]
+[34mTEST-START[39m browser_dbg-pause-exceptions.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m[39m
+[33m[2m   Invoking function uncaughtException in tab[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Invoking function uncaughtException in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Invoking function caughtException in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Invoking function caughtException in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[32mTEST-OK[39m browser_dbg-pause-exceptions.js
+[34mTEST-START[39m browser_dbg-pretty-print-paused.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m
+[33m[2m   Selecting source: math.min.js[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function arithmetic in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m
+[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[32mTEST-OK[39m browser_dbg-pretty-print-paused.js
+[34mTEST-START[39m browser_dbg-pretty-print.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-minified.html[22m[39m
+[33m[2m   Selecting source: math.min.js[22m[39m
+[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m
+[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Pretty-printed source exists -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function arithmetic in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping over[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+ [36mTEST-PASS[39m Footer is hidden -
+[33m[2m   Selecting source: math.min.js[22m[39m
+ [36mTEST-PASS[39m Footer is hidden -
+[32mTEST-OK[39m browser_dbg-pretty-print.js
+[34mTEST-START[39m browser_dbg-scopes-mutations.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-mutate.html[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Invoking function mutate in tab[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m The second element in the scope panel is \\"<this>\\" -
+ [36mTEST-PASS[39m The third element in the scope panel is \\"phonebook\\" -
+[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m The fourth element in the scope panel is \\"S\\" -
+[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m The fifth element in the scope panel is \\"sarah\\" -
+ [36mTEST-PASS[39m The sixth element in the scope panel is \\"serena\\" -
+[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m The sixth element in the scope panel is now \\"lastName\\" -
+ [36mTEST-PASS[39m The \\"lastName\\" element has the expected \\"Doe\\" value -
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Resuming[22m[39m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m The second element in the scope panel is \\"<this>\\" -
+ [36mTEST-PASS[39m The third element in the scope panel is \\"phonebook\\" -
+[32mTEST-OK[39m browser_dbg-scopes-mutations.js
+[34mTEST-START[39m browser_dbg-scopes.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+[33m[2m   Invoking function firstCall in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting for LOAD_OBJECT_PROPERTIES to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_OBJECT_PROPERTIES dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Stepping over[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[32mTEST-OK[39m browser_dbg-scopes.js
+[34mTEST-START[39m browser_dbg-search-file.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Selecting source: simple2[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[32mTEST-OK[39m browser_dbg-search-file.js
+[34mTEST-START[39m browser_dbg-search-sources.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m first source is selected -
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m second source is selected -
+[32mTEST-OK[39m browser_dbg-search-sources.js
+[34mTEST-START[39m browser_dbg-search-symbols.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-script-switching.html[22m[39m
+[33m[2m   Selecting source: switching-01[22m[39m
+[33m[2m   Synthesizing key shortcut: CmdOrCtrl+Shift+O[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Synthesizing key shortcut: CmdOrCtrl+Shift+O[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+[32mTEST-OK[39m browser_dbg-search-symbols.js
+[34mTEST-START[39m browser_dbg-sourcemaps-bogus.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemap-bogus.html[22m[39m
+[33m[2m   Selecting source: bogus-map.js[22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Invoking function runCode in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m Only 1 source exists -
+[32mTEST-OK[39m browser_dbg-sourcemaps-bogus.js
+[34mTEST-START[39m browser_dbg-sourcemaps-reloading.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html[22m[39m
+[33m[2m   Waiting on sources: entry.js, output.js, times2.js, opts.js[22m[39m
+ [36mTEST-PASS[39m Original sources exist -
+[33m[2m   Selecting source: [object Object][22m[39m
+ [36mTEST-PASS[39m Original source text loaded correctly -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting for DISABLE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   DISABLE_BREAKPOINT dispatched 1 time(s)[22m[39m
+[33m[2m   Waiting on sources: opts.js[22m[39m
+[33m[2m   Waiting for LOAD_SOURCE_TEXT to dispatch 1 time(s)[22m[39m
+[33m[2m   LOAD_SOURCE_TEXT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+ JavaScript error: resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/shared/source-map/index.js, line 590: TypeError: this.worker is null
+  [31mJS Error: [39m
+    \\"TypeError: this.worker is null\\" {file: \\"resource://gre/modules/commonjs/toolkit/loader.js -> resource://devtools/client/shared/source-map/index.js\\" line: 590}]
+[32mTEST-OK[39m browser_dbg-sourcemaps-reloading.js
+[34mTEST-START[39m browser_dbg-sourcemaps.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html[22m[39m
+[33m[2m   Waiting on sources: entry.js, output.js, times2.js, opts.js[22m[39m
+ [36mTEST-PASS[39m Original sources exist -
+[33m[2m   Selecting source: [object Object][22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Breakpoint exists on line 13 -
+[33m[2m   Waiting for REMOVE_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   REMOVE_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m No breakpoints exists -
+[33m[2m   Selecting source: [object Object][22m[39m
+ [36mTEST-PASS[39m Original source text loaded correctly -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Two breakpoints exist -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Invoking function keepMeAlive in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping in[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping over[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Stepping out[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+[33m[2m   Stepping out[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-sourcemaps.js
+[34mTEST-START[39m browser_dbg-sourcemaps2.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m[39m
+[33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
+ [36mTEST-PASS[39m Original sources exist -
+[33m[2m   Selecting source: [object Object][22m[39m
+[33m[2m   Waiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m[39m
+[33m[2m   ADD_BREAKPOINT dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m One breakpoint exists -
+ [36mTEST-PASS[39m Breakpoint has correct line -
+[33m[2m   Invoking function logMessage in tab[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg-sourcemaps2.js
+[34mTEST-START[39m browser_dbg-sources.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Source is not focused -
+[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m
+[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Source is focused -
+ [36mTEST-PASS[39m The right source is selected -
+ [36mTEST-PASS[39m The dynamic script exists -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [36mTEST-PASS[39m the folder exists -
+ [36mTEST-PASS[39m the eval script exists -
+[32mTEST-OK[39m browser_dbg-sources.js
+[34mTEST-START[39m browser_dbg-tabs.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple1[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting on sources: simple1, simple2[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Waiting on sources: simple1, simple2[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple1[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+[33m[2m   Closing tab: simple1[22m[39m
+[33m[2m   Closing tab: simple2[22m[39m
+[33m[2m   Waiting on sources: simple1, simple2[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/simple1.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html\\" line: 11}]
+[32mTEST-OK[39m browser_dbg-tabs.js
+[34mTEST-START[39m browser_dbg-toggling-tools.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: long[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+[32mTEST-OK[39m browser_dbg-toggling-tools.js
+[34mTEST-START[39m browser_dbg_keyboard-shortcuts.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m[39m
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Waiting for thread event 'paused' to fire.[22m[39m
+[33m[2m   Thread event 'paused' fired.[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[32mTEST-OK[39m browser_dbg_keyboard-shortcuts.js
+[34mTEST-START[39m browser_dbg_keyboard_navigation.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-scripts.html[22m[39m
+[33m[2m   Selecting source: simple2[22m[39m
+ [36mTEST-PASS[39m Editor is enabled -
+ [36mTEST-PASS[39m Focused on container -
+ [36mTEST-PASS[39m Editor is enabled -
+[32mTEST-OK[39m browser_dbg_keyboard_navigation.js
+5639 INFO TEST-START | Shutdown
+[34mPassed[39m: 313
+[34mFailed[39m: 0
+[34mTodo[39m: 0
+[34mMode[39m: e10s"
+`;
+
+exports[`mochi full.txt 2`] = `
+"[32mTEST-OK[39m browser_dbg-breaking-from-console.js
+[32mTEST-OK[39m browser_dbg-breaking.js
+[32mTEST-OK[39m browser_dbg-breakpoints-cond.js
+[32mTEST-OK[39m browser_dbg-breakpoints-reloading.js
+[32mTEST-OK[39m browser_dbg-breakpoints.js
+[32mTEST-OK[39m browser_dbg-call-stack.js
+[32mTEST-OK[39m browser_dbg-console.js
+[32mTEST-OK[39m browser_dbg-debugger-buttons.js
+[32mTEST-OK[39m browser_dbg-editor-gutter.js
+[32mTEST-OK[39m browser_dbg-editor-highlight.js
+[32mTEST-OK[39m browser_dbg-editor-select.js
+[32mTEST-OK[39m browser_dbg-expressions.js
+[32mTEST-OK[39m browser_dbg-iframes.js
+[32mTEST-OK[39m browser_dbg-navigation.js
+[32mTEST-OK[39m browser_dbg-pause-exceptions.js
+[32mTEST-OK[39m browser_dbg-pretty-print-paused.js
+[32mTEST-OK[39m browser_dbg-pretty-print.js
+[32mTEST-OK[39m browser_dbg-scopes-mutations.js
+[32mTEST-OK[39m browser_dbg-scopes.js
+[32mTEST-OK[39m browser_dbg-search-file.js
+[32mTEST-OK[39m browser_dbg-search-sources.js
+[32mTEST-OK[39m browser_dbg-search-symbols.js
+[32mTEST-OK[39m browser_dbg-sourcemaps-bogus.js
+[32mTEST-OK[39m browser_dbg-sourcemaps-reloading.js
+[32mTEST-OK[39m browser_dbg-sourcemaps.js
+[32mTEST-OK[39m browser_dbg-sourcemaps2.js
+[32mTEST-OK[39m browser_dbg-sources.js
+[32mTEST-OK[39m browser_dbg-tabs.js
+[32mTEST-OK[39m browser_dbg-toggling-tools.js
+[32mTEST-OK[39m browser_dbg_keyboard-shortcuts.js
+[32mTEST-OK[39m browser_dbg_keyboard_navigation.js"
 `;
 
 exports[`mochi mochi-fail.txt 1`] = `
-Array [
-  "Error running mach:",
-  "['mochitest', 'browser_dbg-minified.js']",
-  "The error occurred in code that was called by the mach command. This is either",
-  "a bug in the called code itself or in the way that mach is calling it.",
-  "You should consider filing a bug for this issue.",
-  "If filing a bug, please include the full output of mach, including this error",
-  "message.",
-  "The details of the failure are as follows:",
-  "ErrorMessage: Symlink target path does not exist: /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/examples/doc-minified2.html",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 315, in run_mochitest_general",
-  "driver.install_tests(tests)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/controller/building.py\\", line 696, in install_tests",
-  "'_tests', test_objs)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py\\", line 513, in install_test_files",
-  "remove_unaccounted=False)",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/copier.py\\", line 431, in copy",
-  "copy_results.append((destfile, f.copy(destfile, skip_if_older)))",
-  "File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/files.py\\", line 336, in copy",
-  "raise ErrorMessage('Symlink target path does not exist: %s' % self.path)",
-]
+"Error running mach:
+['mochitest', 'browser_dbg-minified.js']
+The error occurred in code that was called by the mach command. This is either
+a bug in the called code itself or in the way that mach is calling it.
+You should consider filing a bug for this issue.
+If filing a bug, please include the full output of mach, including this error
+message.
+The details of the failure are as follows:
+ErrorMessage: Symlink target path does not exist: /Users/jlaster/src/mozilla/debugger.html/firefox/devtools/client/debugger/new/test/mochitest/examples/doc-minified2.html
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/testing/mochitest/mach_commands.py\\", line 315, in run_mochitest_general
+driver.install_tests(tests)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/controller/building.py\\", line 696, in install_tests
+'_tests', test_objs)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozbuild/testing.py\\", line 513, in install_test_files
+remove_unaccounted=False)
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/copier.py\\", line 431, in copy
+copy_results.append((destfile, f.copy(destfile, skip_if_older)))
+File \\"/Users/jlaster/src/mozilla/debugger.html/firefox/python/mozbuild/mozpack/files.py\\", line 336, in copy
+raise ErrorMessage('Symlink target path does not exist: %s' % self.path)"
 `;
 
+exports[`mochi mochi-fail.txt 2`] = `""`;
+
 exports[`mochi ufail.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-sources.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
-  "[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  " [36mTEST-PASS[39m Source is not focused -",
-  "[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m",
-  "[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m",
-  " [36mTEST-PASS[39m Source is focused -",
-  " [36mTEST-PASS[39m The right source is selected -",
-  " [36mTEST-PASS[39m The dynamic script exists -",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m",
-  "  [31mJS warning: [39m
-   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]",
-  "[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m",
-  " [31mTEST-UNEXPECTED-FAIL[39m the folder exists 
-[33m Got (no domain), expected (sdf)[39m",
-  "
-",
-  "chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79",
-  " [36mTEST-PASS[39m the eval script exists -",
-  "[32mTEST-OK[39m browser_dbg-sources.js",
-  "174 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 8",
-  "[34mFailed[39m: 1",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-  "[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js ",
-]
+"[34mTEST-START[39m browser_dbg-sources.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Source is not focused -
+[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m
+[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Source is focused -
+ [36mTEST-PASS[39m The right source is selected -
+ [36mTEST-PASS[39m The dynamic script exists -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [31mTEST-UNEXPECTED-FAIL[39m the folder exists 
+[33m Got (no domain), expected (sdf)[39m
+
+
+chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79
+ [36mTEST-PASS[39m the eval script exists -
+[32mTEST-OK[39m browser_dbg-sources.js
+174 INFO TEST-START | Shutdown
+[34mPassed[39m: 8
+[34mFailed[39m: 1
+[34mTodo[39m: 0
+[34mMode[39m: e10s
+[31mfailed test[39m:  devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js "
+`;
+
+exports[`mochi ufail.txt 2`] = `
+"[34mTEST-START[39m browser_dbg-sources.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m undefined assertion name -
+ [36mTEST-PASS[39m Source is not focused -
+[33m[2m   Waiting for SELECT_SOURCE to dispatch 1 time(s)[22m[39m
+[33m[2m   SELECT_SOURCE dispatched 1 time(s)[22m[39m
+ [36mTEST-PASS[39m Source is focused -
+ [36mTEST-PASS[39m The right source is selected -
+ [36mTEST-PASS[39m The dynamic script exists -
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m
+  [31mJS warning: [39m
+   \\"Loading failed for the <script> with source “http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/nested/deeper/deeper-source.js”.\\" {file: \\"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html\\" line: 22}]
+[33m[2m   Waiting on sources: simple1, simple2, nested-source, long.js[22m[39m
+ [31mTEST-UNEXPECTED-FAIL[39m the folder exists 
+[33m Got (no domain), expected (sdf)[39m
+
+
+chrome://mochitests/content/browser/devtools/client/debugger/new/test/mochitest/browser_dbg-sources.js:null:79
+ [36mTEST-PASS[39m the eval script exists -
+[32mTEST-OK[39m browser_dbg-sources.js"
 `;
 
 exports[`mochi unformatted_stack.txt 1`] = `
-Array [
-  "[34mTEST-START[39m browser_dbg-pause-exceptions.js",
-  "[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m[39m",
-  "   [2m[34m1 SET_WORKERS[39m[22m[2m [22m",
-  "   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - exceptions.js[22m",
-  "   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m",
-  "   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m",
-  "[33m[2m   Invoking function uncaughtException in tab[22m[39m",
-  " [36mTEST-PASS[39m undefined assertion name -",
-  "   [2m[34m1 PAUSE_ON_EXCEPTIONS[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m",
-  "[33m[2m   Thread event 'resumed' fired.[22m[39m",
-  "[33m[2m   Invoking function caughtException in tab[22m[39m",
-  "[33m[2m   Waiting for state change: paused[22m[39m",
-  "[33m[2m   waiting for paused {\\"paused\\":false,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [31mConsole Error[39m",
-  "     onPacket [2mdevtools/shared/client/debugger-client.js 787:9[22m",
-  "     send/< [2mdevtools/shared/transport/transport.js 570:13[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     DevToolsUtils.executeSoon*exports.executeSoon [2mdevtools/shared/DevToolsUtils.js 57:19[22m",
-  "     send [2mdevtools/shared/transport/transport.js 563:9[22m",
-  "     send [2mdevtools/server/main.js 1513:5[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  " Line: 787, column: 9",
-  "   [31mConsole Error[39m",
-  "     onPacket [2mdevtools/shared/client/debugger-client.js 787:9[22m",
-  "     send/< [2mdevtools/shared/transport/transport.js 570:13[22m",
-  "     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m",
-  "     DevToolsUtils.executeSoon*exports.executeSoon [2mdevtools/shared/DevToolsUtils.js 57:19[22m",
-  "     send [2mdevtools/shared/transport/transport.js 563:9[22m",
-  "     send [2mdevtools/server/main.js 1513:5[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  " Line: 787, column: 9",
-  "  [31mJS Error: [39m
-    \\"error occurred while processing 'prototypeAndProperties: Error: Object grip requested while not paused.",
-  "     pauseObjectGrip [2mdevtools/server/actors/script.js 1748:13[22m",
-  "     createValueGrip [2mdevtools/server/actors/object.js 2374:14[22m",
-  "     createValueGrip [2mdevtools/server/actors/script.js 1725:29[22m",
-  "     _propertyDescriptor [2mdevtools/server/actors/object.js 541:22[22m",
-  "     onPrototypeAndProperties [2mdevtools/server/actors/object.js 302:29[22m",
-  "     onPacket [2mdevtools/server/main.js 1791:15[22m",
-  "     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m",
-  "Line: 1748, column: 13\\" {file: \\"resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js\\" line: 1654}]",
-  "   [2m[34m1 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:17:4[22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 ADD_TAB[39m[22m[2m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - exceptions.js[22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - exceptions.js[22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 TOGGLE_PANE[39m[22m[2m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m",
-  "   [2m[34m1 ADD_SCOPES[39m[22m[2m [22m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":false}[22m[39m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":false}[22m[39m",
-  "   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m",
-  "[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":true}[22m[39m",
-  "[33m[2m   Finished waiting for state change: paused[22m[39m",
-  " [36mTEST-PASS[39m top frame's source is selected -",
-  " [36mTEST-PASS[39m Line is highlighted as paused -",
-  " [36mTEST-PASS[39m expression is highlighted as paused -",
-  "[33m[2m   Resuming[22m[39m",
-  "   [2m[34m1 COMMAND[39m[22m[2m [32m[start][39m resume[22m",
-  "   [2m[34m1 RESUME[39m[22m[2m [22m",
-  "   [2m[34m1 COMMAND[39m[22m[2m [31m[done][39m resume[22m",
-  "[32mTEST-OK[39m browser_dbg-pause-exceptions.js",
-  "285 INFO TEST-START | Shutdown",
-  "[34mPassed[39m: 10",
-  "[34mFailed[39m: 0",
-  "[34mTodo[39m: 0",
-  "[34mMode[39m: e10s",
-]
+"[34mTEST-START[39m browser_dbg-pause-exceptions.js
+[33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m[39m
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - exceptions.js[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-exceptions.html[22m
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+[33m[2m   Invoking function uncaughtException in tab[22m[39m
+ [36mTEST-PASS[39m undefined assertion name -
+   [2m[34m1 PAUSE_ON_EXCEPTIONS[39m[22m[2m [32m[start][39m [22m
+[33m[2m   Waiting for thread event 'resumed' to fire.[22m[39m
+[33m[2m   Thread event 'resumed' fired.[22m[39m
+[33m[2m   Invoking function caughtException in tab[22m[39m
+[33m[2m   Waiting for state change: paused[22m[39m
+[33m[2m   waiting for paused {\\"paused\\":false,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [31mConsole Error[39m
+     onPacket [2mdevtools/shared/client/debugger-client.js 787:9[22m
+     send/< [2mdevtools/shared/transport/transport.js 570:13[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     DevToolsUtils.executeSoon*exports.executeSoon [2mdevtools/shared/DevToolsUtils.js 57:19[22m
+     send [2mdevtools/shared/transport/transport.js 563:9[22m
+     send [2mdevtools/server/main.js 1513:5[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+ Line: 787, column: 9
+   [31mConsole Error[39m
+     onPacket [2mdevtools/shared/client/debugger-client.js 787:9[22m
+     send/< [2mdevtools/shared/transport/transport.js 570:13[22m
+     exports.makeInfallible/< [2mdevtools/shared/ThreadSafeDevToolsUtils.js 109:14[22m
+     DevToolsUtils.executeSoon*exports.executeSoon [2mdevtools/shared/DevToolsUtils.js 57:19[22m
+     send [2mdevtools/shared/transport/transport.js 563:9[22m
+     send [2mdevtools/server/main.js 1513:5[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+ Line: 787, column: 9
+  [31mJS Error: [39m
+    \\"error occurred while processing 'prototypeAndProperties: Error: Object grip requested while not paused.
+     pauseObjectGrip [2mdevtools/server/actors/script.js 1748:13[22m
+     createValueGrip [2mdevtools/server/actors/object.js 2374:14[22m
+     createValueGrip [2mdevtools/server/actors/script.js 1725:29[22m
+     _propertyDescriptor [2mdevtools/server/actors/object.js 541:22[22m
+     onPrototypeAndProperties [2mdevtools/server/actors/object.js 302:29[22m
+     onPacket [2mdevtools/server/main.js 1791:15[22m
+     receiveMessage [2mdevtools/shared/transport/transport.js 761:7[22m
+Line: 1748, column: 13\\" {file: \\"resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js\\" line: 1654}]
+   [2m[34m1 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:17:4[22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - exceptions.js[22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - exceptions.js[22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 TOGGLE_PANE[39m[22m[2m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":false,\\"loaded\\":true}[22m[39m
+   [2m[34m1 ADD_SCOPES[39m[22m[2m [22m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [32m[start][39m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":false}[22m[39m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":false}[22m[39m
+   [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
+[33m[2m   waiting for paused {\\"paused\\":true,\\"scope\\":true,\\"loaded\\":true}[22m[39m
+[33m[2m   Finished waiting for state change: paused[22m[39m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+[33m[2m   Resuming[22m[39m
+   [2m[34m1 COMMAND[39m[22m[2m [32m[start][39m resume[22m
+   [2m[34m1 RESUME[39m[22m[2m [22m
+   [2m[34m1 COMMAND[39m[22m[2m [31m[done][39m resume[22m
+[32mTEST-OK[39m browser_dbg-pause-exceptions.js
+285 INFO TEST-START | Shutdown
+[34mPassed[39m: 10
+[34mFailed[39m: 0
+[34mTodo[39m: 0
+[34mMode[39m: e10s"
 `;
+
+exports[`mochi unformatted_stack.txt 2`] = `"[32mTEST-OK[39m browser_dbg-pause-exceptions.js"`;
