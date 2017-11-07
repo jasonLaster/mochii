@@ -21,6 +21,10 @@ function testPassed(lines) {
 }
 
 function onFrame(line, data) {
+  if (!line.match(/(.*)@(.*):(.*):(.*)/)) {
+    return line;
+  }
+
   const [, fnc, _path, _line, column] = line.match(/(.*)@(.*):(.*):(.*)/);
 
   const resourcePath = _path.match(/->/) ? _path.match(/-> (.*)/)[1] : _path;
