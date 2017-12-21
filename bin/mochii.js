@@ -6,7 +6,7 @@ const path = require("path");
 const fs = require("fs");
 
 const { getArgs, getArgString } = require("../src/args");
-const { runMochitests, readOutput } = require("../index");
+const { runMochitests, readOutput, tryTask } = require("../index");
 
 function moveDirectory(args) {
   if (!shell.test("-d", args.mc)) {
@@ -33,7 +33,9 @@ const args = getArgs(argString);
 if (args.read) {
   const _path = path.join(__dirname, "..", args.read);
   const text = fs.readFileSync(_path, { encoding: "utf8" });
-  console.log(readOutput(text).join("\n"));
+  console.log(readOutput(text));
+} else if (args.task) {
+  tryTask(args.task);
 } else {
   run(args);
 }

@@ -26,7 +26,8 @@ const map = {
   SELECT_SOURCE: d => formatSource(d.source),
   LOAD_SOURCE_TEXT: d => formatSource(d.source),
   EVALUATE_EXPRESSION: d => `${d.input}`,
-  COMMAND: d => `${d.command}`
+  COMMAND: d => `${d.command}`,
+  ADD_SOURCES: d => d.sources.map(formatSource).join(", ")
 };
 
 // const emojis = {
