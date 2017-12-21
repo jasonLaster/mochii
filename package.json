@@ -7,8 +7,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix . && yarn prettier",
-    "prettier":
-      "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
+    "prettier": "prettier --write --trailing-comma=none bin/*.js tests/*.js index.js"
   },
   "repository": {
     "type": "git",

@@ -5,7 +5,7 @@ function getArgs (argString) {
     argString.shift();
   }
   return minimist(argString, {
-    string: ["default-test-path", "mc", "read"],
+    string: ["default-test-path", "mc", "read", "task"],
     boolean: ["interactive", "ci"],
     default: {
       mc: ".",

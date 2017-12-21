@@ -75,6 +75,21 @@ mochii --read result.log
 [dh]:https://github.com/devtools-html/debugger.html
 
 
+### Prettifying a Try Task
+
+Try runs can be difficult to understand. Try tasks can be especially difficult to follow because the logs have to be verbose to pinpoint when a test failed. Mochii can help format a try task so that you can focus on the failure.
+
+**Step 1:** Go to the task and copy the task id
+
+<img src='https://shipusercontent.com/cd3a65058dd13292d2584351b332b275/Screen%20Shot%202017-12-21%20at%209.21.56%20AM.png' title='Screen Shot 2017-12-21 at 9.21.56 AM.png' width=1022>
+
+**Step 2:** Go to your project and run `mochii --task <task-id>`
+
+<img src='https://shipusercontent.com/d9d3e2db7efe564fb42ee9354f162733/Screen%20Shot%202017-12-21%20at%209.34.13%20AM.png' title='Screen Shot 2017-12-21 at 9.34.13 AM.png' width=1080>
+
+
+You'll get the same mochii output you'd get if you ran `yarn mochi` locally :smiley:!
+
 ### Contributing to Mochii
 
 There are two ways to contribute to Mochii

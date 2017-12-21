@@ -219,7 +219,7 @@ exports[`mochi error2.txt 1`] = `
    [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - main.min.js[22m
    [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
    [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
-   [2m[34m1 ADD_SOURCES[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
    [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
 [33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
  [36mTEST-PASS[39m Original sources exist -
@@ -294,7 +294,7 @@ exports[`mochi error2.txt 2`] = `
    [2m[34m1 ADD_SOURCE[39m[22m[2m server1.conn0.child1/source27 - main.min.js[22m
    [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
    [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
-   [2m[34m1 ADD_SOURCES[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
    [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
 [33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
  [36mTEST-PASS[39m Original sources exist -

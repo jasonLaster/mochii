@@ -1,11 +1,13 @@
 const shell = require("shelljs");
 
 const fs = require("fs");
+const path = require("path");
 const chalk = require("chalk");
 const inquirer = require("inquirer");
 
 const { runner } = require("./src/runner");
 const { asyncExec } = require("./src/utils");
+const { fetchTaskLog, sanitizeTaskLog } = require("./src/try");
 
 async function rerun() {
   const { rerun } = await inquirer.prompt([
@@ -62,4 +64,16 @@ function readOutput(text, options = { ci: true }) {
   return out;
 }
 
-module.exports = { runMochitests, readOutput };
+async function tryTask(task) {
+  const body = await fetchTaskLog(task);
+  const sanitizedBody = sanitizeTaskLog(body);
+  const logPath = path.join(__dirname, `./logs/${task}.log`);
+  console.log(
+    `${chalk.blue("Mochii")} ${chalk.dim(`Task is available at ${logPath}`)}`
+  );
+  fs.writeFileSync(logPath, sanitizedBody);
+  const out = readOutput(sanitizedBody);
+  console.log(out);
+}
+
+module.exports = { runMochitests, readOutput, tryTask };
