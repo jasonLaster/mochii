@@ -1,9 +1,10 @@
 var request = require("request");
 
-async function fetchTaskLog (task) {
+async function fetchTaskLog(task) {
   return new Promise(resolve => {
+    console.log({ task });
     const uri = `https://public-artifacts.taskcluster.net/${task}/0/public/logs/log_info.log`;
-    request({ uri, method: "GET", gzip: true }, function (
+    request({ uri, method: "GET", gzip: true }, function(
       error,
       response,
       body
@@ -15,11 +16,11 @@ async function fetchTaskLog (task) {
     });
   });
 }
-function sanitizeLine (line) {
+function sanitizeLine(line) {
   return line.replace(/^.*INFO - /, "");
 }
 
-function sanitizeTaskLog (log) {
+function sanitizeTaskLog(log) {
   return log
     .split("\n")
     .map(sanitizeLine)

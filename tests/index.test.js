@@ -26,6 +26,7 @@ cases(
     { name: "actions.txt" },
     { name: "frame.txt" },
     { name: "error2.txt" },
-    { name: "unformatted_stack.txt" }
+    { name: "unformatted_stack.txt" },
+    { name: "new-logs.txt" }
   ]
 );

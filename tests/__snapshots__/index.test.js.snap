@@ -1360,6 +1360,90 @@ raise ErrorMessage('Symlink target path does not exist: %s' % self.path)"
 
 exports[`mochi mochi-fail.txt 2`] = `""`;
 
+exports[`mochi new-logs.txt 1`] = `
+"[34mTEST-START[39m browser_dbg-preview-source-maps.js
+Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27 - bundle.js[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html[22m
+ PREVIEW: renderItems
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+ PREVIEW: renderItems
+Waiting on sources: entry.js, output.js, times2.js, opts.js
+Waiting for state change:
+Waiting for state change:
+Waiting for state change:
+Waiting for state change:
+ [ACTION] LOAD_SOURCE_TEXT [start] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27\\",\\"seqId\\":\\"1\\",\\"status\\":\\"start\\"}
+ [ACTION] LOAD_SOURCE_TEXT [done] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27\\",\\"seqId\\":\\"1\\",\\"status\\":\\"done\\",\\"value\\":{\\"id\\":\\"server1.conn0.child1/source27\\",\\"text\\":\\"\\",\\"contentType\\":\\"text/javascript\\"}}
+   [2m[34m2 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-f3184632a961169cc45a1932488bd1ce - bootstrap 4ef8c7ec7c1df790781e, server1.conn0.child1/source27/originalSource-fe2c41d3535b76c158e39ba4f3ff826a - entry.js, server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js, server1.conn0.child1/source27/originalSource-eeb15f0c7c3ee09d65acda165a34dcce - output.js, server1.conn0.child1/source27/originalSource-026022a1ecae37cc5d066aae79817b85 - opts.js[22m
+Finished waiting for state change:
+Finished waiting for state change:
+Finished waiting for state change:
+Finished waiting for state change:
+Selecting source: times2
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+ [ACTION] LOAD_SOURCE_TEXT [start] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36\\",\\"seqId\\":\\"2\\",\\"status\\":\\"start\\"}
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
+ PREVIEW: renderItems
+ PREVIEW: componentDidMount
+   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m1 SET_SOURCE_METADATA[39m[22m[2m [22m
+ [ACTION] LOAD_SOURCE_TEXT [done] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36\\",\\"seqId\\":\\"2\\",\\"status\\":\\"done\\",\\"value\\":{\\"text\\":\\"\\",\\"contentType\\":\\"text/javascript\\"}}
+ PREVIEW: renderItems
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m1 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [32m[start][39m [22m
+Waiting for ADD_BREAKPOINT to dispatch 1 time(s)
+   [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m2 SET_SOURCE_METADATA[39m[22m[2m [22m
+ PREVIEW: renderItems
+   [2m[34m1 RESUME[39m[22m[2m [22m
+   [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [31m[done][39m [22m
+ADD_BREAKPOINT dispatched 1 time(s)
+Invoking in tab: keepMeAlive()
+Waiting for state change: paused
+   [2m[34m1 PAUSED[39m[22m[2m breakpoint: server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36:2:0[22m
+   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m2 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
+ PREVIEW: renderItems
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m1 ADD_SCOPES[39m[22m[2m [22m
+Finished waiting for state change: paused
+Waiting for state change: selected source
+Waiting for SET_PREVIEW to dispatch 1 time(s)
+Hovering
+hoverAtPos: 2, 9
+hover: x
+   [2m[34m1 MAP_SCOPES[39m[22m[2m [22m
+ HI!!!
+ PREVIEW: x
+ PREVIEW: server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36
+ PREVIEW: 1
+   [2m[34m1 SET_PREVIEW[39m[22m[2m [32m[start][39m [22m
+   [2m[34m3 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source43 - [22m
+   [2m[34m1 SET_PREVIEW[39m[22m[2m [31m[done][39m [22m
+SET_PREVIEW dispatched 1 time(s)
+Hovered
+ [36mTEST-PASS[39m yay -
+ PREVIEW: componentWillUnmount
+[32mTEST-OK[39m browser_dbg-preview-source-maps.js
+TEST-START | Shutdown
+Passed:  1
+Failed:  0
+Todo:    0
+Mode:    e10s"
+`;
+
+exports[`mochi new-logs.txt 2`] = `"[32mTEST-OK[39m browser_dbg-preview-source-maps.js"`;
+
 exports[`mochi ufail.txt 1`] = `
 "[34mTEST-START[39m browser_dbg-sources.js
 [33m[2m   Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sources.html[22m[39m

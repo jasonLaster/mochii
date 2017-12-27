@@ -23,7 +23,6 @@ async function rerun() {
 
 async function runMochitests(argString, args) {
   const command = `./mach mochitest --setpref=javascript.options.asyncstack=true ${argString}`;
-
   console.log(chalk.blue(command));
   const { onLine, onDone } = runner({ ci: args.ci });
   async function mochiOnDone(code) {

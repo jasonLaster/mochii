@@ -12,7 +12,8 @@ function paramDefaults(overrides) {
       mc: ".",
       ci: false,
       "default-test-path": "",
-      interactive: false
+      interactive: false,
+      task: false
     },
     overrides
   );

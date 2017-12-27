@@ -4,14 +4,14 @@ const path = require("path");
 const hooks = require("./debugger");
 const blacklist = require("../blacklist.json");
 
-function sanitizeLine (line) {
+function sanitizeLine(line) {
   return line
     .trim()
-    .replace(/\\"/g, "\"")
-    .replace(/\\"/g, "\"");
+    .replace(/\\"/g, '"')
+    .replace(/\\"/g, '"');
 }
 
-function onFrame (line, data) {
+function onFrame(line, data) {
   if (!line.match(/(.*)@(.*):(.*):(.*)/)) {
     return line;
   }
@@ -31,7 +31,7 @@ function onFrame (line, data) {
   return `     ${fnc.trim()} ${chalk.dim(`${mappedPath} ${_line}:${column}`)}`;
 }
 
-function onGecko (line, data) {
+function onGecko(line, data) {
   const [, msg] = line.match(/^GECKO.*?\|(.*)$/);
 
   if (data.mode === "starting") {
@@ -83,24 +83,28 @@ function onGecko (line, data) {
   return `${msg}`;
 }
 
-function onDone (line) {
+function onDone(line) {
   if (line.includes("TEST-UNEXPECTED-FAIL")) {
     const [, file] = line.match(/.*\|(.*?)\|.*/);
     return `${chalk.red("failed test")}: ${file}`;
   }
 }
 
-function handleLine (line, data) {
+function handleLine(line, data) {
   line = sanitizeLine(line);
-  // console.log(chalk.yellow(`> handleLine -- ${line}, ${JSON.stringify(data)}`));
-  // line += data.mode;
-
   if (data.extra && data.extra.testFinish) {
     delete data.extra.testFinish;
   }
 
+  if (
+    line.includes("Start BrowserChrome Test Results") &&
+    data.mode === "starting"
+  ) {
+    data.mode = null;
+    return;
+  }
+
   if (line.includes("Stack:")) {
-    // console.log("Stack", line);
   }
 
   if (!line.includes("GECKO") && data.mode === "console-error") {
@@ -169,13 +173,12 @@ function handleLine (line, data) {
     return;
   }
 
-  // console.log(">>>> YOOOOO wtf");
   if (data.mode !== "starting") {
     return `${line}`;
   }
 }
 
-function onTestInfo (line, data) {
+function onTestInfo(line, data) {
   const res = line.match(/(TEST-[A-Z-]*).*\|\s*(.*\.js)\s*(\|(.*))?$/);
 
   if (!res) {
@@ -209,16 +212,8 @@ function onTestInfo (line, data) {
   return `${prefix} ${file}`;
 }
 
-function onInfo (line, data) {
+function onInfo(line, data) {
   const [, msg] = line.match(/.*INFO(.*)$/);
-
-  if (
-    msg.includes("Start BrowserChrome Test Results") &&
-    data.mode === "starting"
-  ) {
-    data.mode = null;
-    return;
-  }
 
   if (data.mode === "starting") {
     return;
@@ -232,7 +227,7 @@ function onInfo (line, data) {
   return chalk.yellow.dim(`  ${msg}`);
 }
 
-function onConsole (line, data) {
+function onConsole(line, data) {
   if (line.match(/JavaScript Warning/)) {
     const res = line.match(/^.*JavaScript Warning: (.*)$/);
     if (!res) {

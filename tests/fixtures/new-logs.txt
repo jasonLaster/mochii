@@ -1,0 +1,272 @@
+
+######
+### Now running mochitest-browser with subsuite devtools.
+######
+
+Checking for ssltunnel processes...
+Checking for xpcshell processes...
+SUITE-START | Running 1 tests
+Running manifest: devtools/client/debugger/new/test/mochitest/browser.ini
+pk12util: PKCS12 IMPORT SUCCESSFUL
+MochitestServer : launching [u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/xpcshell', '-g', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/Nightly.app/Contents/Resources', '-f', u'/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/dist/bin/components/httpd.js', '-e', "const _PROFILE_PATH = '/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpYHS5Zn.mozrunner'; const _SERVER_PORT = '8888'; const _SERVER_ADDR = '127.0.0.1'; const _TEST_PREFIX = undefined; const _DISPLAY_RESULTS = false;", '-f', '/Users/jlaster/src/mozilla/debugger.html/firefox/objdir-frontend/_tests/testing/mochitest/server.js']
+runtests.py | Server pid: 49343
+runtests.py | Websocket server pid: 49344
+runtests.py | SSL tunnel pid: 49345
+runtests.py | Running with e10s: True
+runtests.py | Running tests: start.
+
+Found 'firefox' running before starting test browser!
+{'username': 'jlaster', 'cmdline': ['/Applications/FirefoxNightly.app/Contents/MacOS/firefox', '-foreground'], 'ppid': 1, 'pid': 46149, 'name': 'firefox'}
+
+runtests.py | Application pid: 49346
+TEST-INFO | started process GECKO(49346)
+GECKO(49346) | 1514156301379	Marionette	DEBUG	Received observer notification "profile-after-change"
+GECKO(49346) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(49346) | 1514156301467	Marionette	DEBUG	Received observer notification "command-line-startup"
+GECKO(49346) | 1514156301468	Marionette	INFO	Enabled via --marionette
+GECKO(49346) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(49346) | 2017-12-24 17:58:22.205 plugin-container[49347:1402358] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb537, name = 'com.apple.tsm.portname'
+GECKO(49346) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+GECKO(49346) | 1514156302289	Marionette	DEBUG	Received observer notification "sessionstore-windows-restored"
+GECKO(49346) | 1514156302443	Marionette	DEBUG	New connections are accepted
+GECKO(49346) | 1514156302444	Marionette	INFO	Listening on port 2828
+GECKO(49346) | 1514156302481	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:59855
+GECKO(49346) | 1514156302485	Marionette	DEBUG	Closed connection 0
+GECKO(49346) | 1514156302487	Marionette	DEBUG	Accepted connection 1 from 127.0.0.1:59856
+GECKO(49346) | 1514156302493	Marionette	TRACE	1 -> [0,1,"newSession",{}]
+GECKO(49346) | 1514156302580	Marionette	DEBUG	Register listener.js for window 2147483649
+GECKO(49346) | 1514156302591	Marionette	TRACE	1 <- [1,1,null,{"sessionId":"349d7930-02f9-ed44-95a8-08c9caf58ae6","capabilities":{"browserName":"firefox","browserVersion":"59.0a ... ssID":49346,"moz:profile":"/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpYHS5Zn.mozrunner","moz:webdriverClick":true}}]
+GECKO(49346) | 1514156302607	Marionette	TRACE	1 -> [0,2,"addon:install",{"path":"/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpSxf1vd.zip","temporary":false}]
+GECKO(49346) | 1514156302650	Marionette	TRACE	1 <- [1,2,null,{"value":"special-powers@mozilla.org"}]
+GECKO(49346) | 1514156302691	Marionette	TRACE	1 -> [0,3,"addon:install",{"path":"/var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpmXuUPx.zip","temporary":false}]
+GECKO(49346) | 1514156302733	Marionette	TRACE	1 <- [1,3,null,{"value":"mochikit@mozilla.org"}]
+GECKO(49346) | 1514156302735	Marionette	TRACE	1 -> [0,4,"getContext",{}]
+GECKO(49346) | 1514156302735	Marionette	TRACE	1 <- [1,4,null,{"value":"content"}]
+GECKO(49346) | 1514156302736	Marionette	TRACE	1 -> [0,5,"setContext",{"value":"chrome"}]
+GECKO(49346) | 1514156302737	Marionette	TRACE	1 <- [1,5,null,{}]
+GECKO(49346) | 1514156302757	Marionette	TRACE	1 -> [0,6,"executeScript",{"scriptTimeout":null,"newSandbox":true,"args":[{"testUrl":"about:blank","flavor":"browser-chrome"}],"fi ...  = new CustomEvent('mochitest-load', {'detail': [flavor, url]});\nwin.dispatchEvent(ev);\n","sandbox":"default","line":1734}]
+GECKO(49346) | 1514156302762	Marionette	TRACE	1 <- [1,6,null,{"value":null}]
+GECKO(49346) | 1514156302796	Marionette	TRACE	1 -> [0,7,"setContext",{"value":"content"}]
+GECKO(49346) | 1514156302796	Marionette	TRACE	1 <- [1,7,null,{}]
+GECKO(49346) | 1514156302803	Marionette	TRACE	1 -> [0,8,"deleteSession",{}]
+GECKO(49346) | 1514156302804	Marionette	TRACE	1 <- [1,8,null,{}]
+runtests.py | Waiting for browser...
+GECKO(49346) | 1514156302809	Marionette	DEBUG	Closed connection 1
+*** Start BrowserChrome Test Results ***
+checking window state
+GECKO(49346) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+TEST-START | devtools/client/debugger/new/test/mochitest/browser_dbg-preview-source-maps.js
+Entering test bound 
+Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html
+GECKO(49346) | 2017-12-24 17:58:23.252 plugin-container[49348:1402459] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xaf3b, name = 'com.apple.tsm.portname'
+GECKO(49346) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(49346) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(49346) | 2017-12-24 17:58:23.544 plugin-container[49349:1402507] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb233, name = 'com.apple.tsm.portname'
+GECKO(49346) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+Tab added and finished loading
+Opening the toolbox
+Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 232 column: 29 source: ".CodeMirror-gutter-wrapper ::selection { background-color: transparent }"}]
+Console message: [JavaScript Warning: "Unknown property ‘-moz-border-radius’.  Declaration dropped." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 241 column: 20 source: "  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;"}]
+Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘selection’.  Ruleset ignored due to bad selector." {file: "chrome://devtools/content/sourceeditor/codemirror/lib/codemirror.css" line: 324 column: 18 source: ".CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #d7d4f0; }"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 45 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 117 column: 2 source: "::-webkit-scrollbar {"}]
+Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-track’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 123 column: 2 source: "::-webkit-scrollbar-track {"}]
+Console message: [JavaScript Warning: "Unknown pseudo-class or pseudo-element ‘-webkit-scrollbar-thumb’.  Ruleset ignored due to bad selector." {file: "resource://devtools/client/debugger/new/debugger.css" line: 128 column: 2 source: "::-webkit-scrollbar-thumb {"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 640 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1086 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1251 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1349 column: 11 source: "  display: "flex";"}]
+Console message: [JavaScript Warning: "Unknown property ‘grow’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1350 column: 6 source: "  grow: 1;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1402 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1464 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1480 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1564 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘appearance’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1623 column: 12 source: "  appearance: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1716 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1728 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 1820 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2136 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Error in parsing value for ‘display’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2360 column: 11 source: "  display: -ms-flexbox;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2741 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘content’.  Error in parsing value for ‘flex’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 2813 column: 12 source: "  flex: 0 1 content;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3026 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3124 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3160 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3203 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3549 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3594 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3673 column: 13 source: "  user-select: none;"}]
+Console message: [JavaScript Warning: "Unknown property ‘user-select’.  Declaration dropped." {file: "resource://devtools/client/debugger/new/debugger.css" line: 3815 column: 13 source: "  user-select: none;"}]
+GECKO(49346) | [ACTION] SET_WORKERS  - {"type":"SET_WORKERS","workers":{"from":"server1.conn0.child1/tab1","workers":[]}}
+GECKO(49346) | [ACTION] ADD_SOURCES  - {"type":"ADD_SOURCES","sources":[{"id":"server1.conn0.child1/source27","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/sourcemaps/bundle.js","isPrettyPrinted":false,"isWasm":false,"sourceMapURL":"bundle.js.map","isBlackBoxed":false,"loadedState":"unloaded"}]}
+GECKO(49346) | [ACTION] CONNECT  - {"type":"CONNECT","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html"}
+GECKO(49346) | PREVIEW: renderItems
+GECKO(49346) | [ACTION] SET_EXPANDED_STATE  - {"type":"SET_EXPANDED_STATE","expanded":{}}
+GECKO(49346) | PREVIEW: renderItems
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 27572 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+Console message: [JavaScript Warning: "unreachable code after return statement" {file: "resource://devtools/client/debugger/new/parser-worker.js" line: 27572 column: 1 source: "	eval("o" + o); // ensure no dead code elimination
+"}]
+Toolbox opened and focused
+Waiting on sources: entry.js, output.js, times2.js, opts.js
+Waiting for state change: 
+Waiting for state change: 
+Waiting for state change: 
+Waiting for state change: 
+GECKO(49346) | [ACTION] LOAD_SOURCE_TEXT [start] - {"type":"LOAD_SOURCE_TEXT","sourceId":"server1.conn0.child1/source27","seqId":"1","status":"start"}
+GECKO(49346) | [ACTION] LOAD_SOURCE_TEXT [done] - {"type":"LOAD_SOURCE_TEXT","sourceId":"server1.conn0.child1/source27","seqId":"1","status":"done","value":{"id":"server1.conn0.child1/source27","text":"","contentType":"text/javascript"}}
+GECKO(49346) | [ACTION] ADD_SOURCES  - {"type":"ADD_SOURCES","sources":[{"url":"webpack:///webpack/bootstrap 4ef8c7ec7c1df790781e","id":"server1.conn0.child1/source27/originalSource-f3184632a961169cc45a1932488bd1ce","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},{"url":"webpack:///entry.js","id":"server1.conn0.child1/source27/originalSource-fe2c41d3535b76c158e39ba4f3ff826a","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},{"url":"webpack:///output.js","id":"server1.conn0.child1/source27/originalSource-eeb15f0c7c3ee09d65acda165a34dcce","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},{"url":"webpack:///opts.js","id":"server1.conn0.child1/source27/originalSource-026022a1ecae37cc5d066aae79817b85","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"}]}
+Finished waiting for state change: 
+Finished waiting for state change: 
+Finished waiting for state change: 
+Finished waiting for state change: 
+Selecting source: times2
+GECKO(49346) | [ACTION] TOGGLE_ACTIVE_SEARCH  - {"type":"TOGGLE_ACTIVE_SEARCH","value":null}
+GECKO(49346) | [ACTION] ADD_TAB  - {"type":"ADD_TAB","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},"tabIndex":0}
+GECKO(49346) | Unable to read VR Path Registry from /Users/jlaster/Library/Application Support/OpenVR/.openvr/openvrpaths.vrpath
+GECKO(49346) | [ACTION] LOAD_SOURCE_TEXT [start] - {"type":"LOAD_SOURCE_TEXT","sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","seqId":"2","status":"start"}
+GECKO(49346) | [ACTION] SELECT_SOURCE [start] - {"type":"SELECT_SOURCE","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},"tabIndex":"","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36"},"seqId":"3","status":"start"}
+GECKO(49346) | PREVIEW: renderItems
+GECKO(49346) | PREVIEW: componentDidMount
+GECKO(49346) | 2017-12-24 17:58:24.904 plugin-container[49350:1402578] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xb233, name = 'com.apple.tsm.portname'
+GECKO(49346) | See /usr/include/servers/bootstrap_defs.h for the error codes.
+GECKO(49346) | [ACTION] SET_SYMBOLS  - {}
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+GECKO(49346) | [ACTION] SET_EMPTY_LINES  - {"type":"SET_EMPTY_LINES","source":{"isPrettyPrinted":false,"loadedState":"loaded","text":"","sourceMapURL":"bundle.js.map","isWasm":false,"url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/sourcemaps/bundle.js","contentType":"text/javascript","isBlackBoxed":false,"id":"server1.conn0.child1/source27"},"emptyLines":[2,4,5,7,8,11,12,18,19,21,22,24,25,28,29,30,32,33,35,36,38,39,42,44,46,50,53,57,59,60,63,64,66,68,72,73,75,77,81,83,84,86,88,92,93,96]}
+GECKO(49346) | [ACTION] SET_SOURCE_METADATA  - {"type":"SET_SOURCE_METADATA","sourceId":"server1.conn0.child1/source27","sourceMetaData":{"isReactComponent":false}}
+GECKO(49346) | [ACTION] LOAD_SOURCE_TEXT [done] - {"type":"LOAD_SOURCE_TEXT","sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","seqId":"2","status":"done","value":{"text":"","contentType":"text/javascript"}}
+GECKO(49346) | PREVIEW: renderItems
+GECKO(49346) | [ACTION] OUT_OF_SCOPE_LOCATIONS  - {}
+GECKO(49346) | [ACTION] IN_SCOPE_LINES  - {"type":"IN_SCOPE_LINES","lines":[1,2,3,4,5,6,7,8,9,10,11]}
+GECKO(49346) | [ACTION] SELECT_SOURCE [done] - {"type":"SELECT_SOURCE","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"unloaded"},"tabIndex":"","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36"},"seqId":"3","status":"done"}
+GECKO(49346) | [ACTION] ADD_BREAKPOINT [start] - {"type":"ADD_BREAKPOINT","breakpoint":{"condition":null,"disabled":false,"hidden":false,"loading":false,"text":"","astLocation":{"offset":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2}},"generatedLocation":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2},"location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2}},"seqId":"4","status":"start"}
+Waiting for ADD_BREAKPOINT to dispatch 1 time(s)
+GECKO(49346) | [ACTION] SET_SYMBOLS  - {}
+GECKO(49346) | [ACTION] SET_EMPTY_LINES  - {"type":"SET_EMPTY_LINES","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"loaded","text":"","contentType":"text/javascript"},"emptyLines":[4,5,6,7,8,9,10,11]}
+GECKO(49346) | [ACTION] SET_SOURCE_METADATA  - {"type":"SET_SOURCE_METADATA","sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceMetaData":{"isReactComponent":false}}
+GECKO(49346) | PREVIEW: renderItems
+GECKO(49346) | [ACTION] RESUME  - {"type":"RESUME"}
+GECKO(49346) | [ACTION] ADD_BREAKPOINT [done] - {"type":"ADD_BREAKPOINT","breakpoint":{"condition":null,"disabled":false,"hidden":false,"loading":false,"text":"","astLocation":{"offset":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2}},"generatedLocation":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2},"location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2}},"seqId":"4","status":"done","value":{"breakpoint":{"id":"server1.conn0.child1/source27:70:","disabled":false,"hidden":false,"loading":false,"condition":null,"location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"astLocation":{"name":"exports","offset":{"line":1}},"generatedLocation":{"line":70,"sourceId":"server1.conn0.child1/source27","sourceUrl":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/sourcemaps/bundle.js"}},"previousLocation":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","line":2,"sourceUrl":"webpack:///times2.js"}}}
+ADD_BREAKPOINT dispatched 1 time(s)
+Invoking in tab: keepMeAlive()
+Waiting for state change: paused
+GECKO(49346) | [ACTION] PAUSED  - {"type":"PAUSED","pauseInfo":{"why":{"type":"breakpoint","actors":["server1.conn0.child1/breakpoint29"]}},"frames":[{"id":"server1.conn0.child1/frame31","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"displayName":"module.exports"},{"id":"server1.conn0.child1/frame34","location":{"sourceId":"server1.conn0.child1/source27/originalSource-fe2c41d3535b76c158e39ba4f3ff826a","sourceUrl":"webpack:///entry.js","line":15,"column":0},"displayName":"window.keepMeAlive"}],"selectedFrameId":"server1.conn0.child1/frame31","loadedObjects":[],"scopes":[]}
+GECKO(49346) | [ACTION] TOGGLE_ACTIVE_SEARCH  - {"type":"TOGGLE_ACTIVE_SEARCH","value":null}
+GECKO(49346) | [ACTION] ADD_TAB  - {"type":"ADD_TAB","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"loaded","text":"","contentType":"text/javascript"},"tabIndex":0}
+GECKO(49346) | [ACTION] SELECT_SOURCE [start] - {"type":"SELECT_SOURCE","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"loaded","text":"","contentType":"text/javascript"},"tabIndex":"","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"seqId":"5","status":"start"}
+GECKO(49346) | PREVIEW: renderItems
+GECKO(49346) | [ACTION] SELECT_SOURCE [done] - {"type":"SELECT_SOURCE","source":{"url":"webpack:///times2.js","id":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","isPrettyPrinted":false,"isWasm":false,"isBlackBoxed":false,"loadedState":"loaded","text":"","contentType":"text/javascript"},"tabIndex":"","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"seqId":"5","status":"done"}
+GECKO(49346) | [ACTION] OUT_OF_SCOPE_LOCATIONS  - {}
+GECKO(49346) | [ACTION] IN_SCOPE_LINES  - {"type":"IN_SCOPE_LINES","lines":[1,2,3,4,5,6,7,8,9,10,11]}
+GECKO(49346) | [ACTION] ADD_SCOPES  - {"type":"ADD_SCOPES","frame":{"id":"server1.conn0.child1/frame31","displayName":"module.exports","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"generatedLocation":{"sourceId":"server1.conn0.child1/source27","line":70,"column":3},"this":{"type":"object","actor":"server1.conn0.child1/pausedobj33","class":"Window","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":830,"preview":{"kind":"ObjectWithURL","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html"}}},"scopes":{"actor":"server1.conn0.child1/environment36","type":"block","parent":{"actor":"server1.conn0.child1/environment37","type":"function","parent":{"actor":"server1.conn0.child1/environment38","type":"block","parent":{"actor":"server1.conn0.child1/environment39","type":"object","object":{"type":"object","actor":"server1.conn0.child1/pausedobj40","class":"Window","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":830,"preview":{"kind":"ObjectWithURL","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html"}}},"bindings":{"arguments":[],"variables":{}}},"function":{"type":"object","actor":"server1.conn0.child1/pausedobj41","class":"Function","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":3,"parameterNames":["module","exports"],"location":{"url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/sourcemaps/bundle.js","line":67}},"bindings":{"arguments":[{"module":{"enumerable":true,"configurable":false,"value":{"type":"null","optimizedOut":true},"writable":false}},{"exports":{"enumerable":true,"configurable":false,"value":{"type":"null","optimizedOut":true},"writable":false}}],"variables":{"arguments":{"enumerable":true,"configurable":false,"value":{"type":"null","missingArguments":true},"writable":false}}}},"bindings":{"arguments":[],"variables":{"arguments":{"enumerable":true,"configurable":false,"value":{"type":"object","actor":"server1.conn0.child1/pausedobj42","class":"Arguments","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":3,"preview":{"kind":"Object","ownProperties":{"0":{"configurable":true,"enumerable":true,"writable":true,"value":4}},"ownSymbols":[],"ownPropertiesLength":3,"ownSymbolsLength":1,"safeGetterValues":{}}},"writable":true},"x":{"enumerable":true,"configurable":false,"value":4,"writable":true}}},"from":"server1.conn0.child1/frame31"}}
+Finished waiting for state change: paused
+Waiting for state change: selected source
+Waiting for SET_PREVIEW to dispatch 1 time(s)
+Hovering 
+hoverAtPos: 2, 9
+ 
+hover: x
+ 
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘width’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘height’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘padding’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 2 source: "0 !important"}]
+Console message: [JavaScript Warning: "Expected end of value but found ‘!’.  Error in parsing value for ‘margin-inline-start’.  Declaration dropped." {file: "chrome://devtools/content/debugger/new/index.html" line: 0 column: 8 source: "-1000px !important"}]
+GECKO(49346) | [ACTION] MAP_SCOPES  - {"type":"MAP_SCOPES","frame":{"id":"server1.conn0.child1/frame31","displayName":"module.exports","location":{"sourceId":"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36","sourceUrl":"webpack:///times2.js","line":2,"column":0},"generatedLocation":{"sourceId":"server1.conn0.child1/source27","line":70,"column":3},"this":{"type":"object","actor":"server1.conn0.child1/pausedobj33","class":"Window","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":830,"preview":{"kind":"ObjectWithURL","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html"}}},"scopes":{"actor":"server1.conn0.child1/environment36","type":"block","parent":{"actor":"server1.conn0.child1/environment37","type":"function","parent":{"actor":"server1.conn0.child1/environment38","type":"block","parent":{"actor":"server1.conn0.child1/environment39","type":"object","object":{"type":"object","actor":"server1.conn0.child1/pausedobj40","class":"Window","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":830,"preview":{"kind":"ObjectWithURL","url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps.html"}}},"bindings":{"arguments":[],"variables":{}},"sourceBindings":{}},"function":{"type":"object","actor":"server1.conn0.child1/pausedobj41","class":"Function","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":3,"parameterNames":["module","exports"],"location":{"url":"http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/sourcemaps/bundle.js","line":67}},"bindings":{"arguments":[{"module":{"enumerable":true,"configurable":false,"value":{"type":"null","optimizedOut":true},"writable":false}},{"exports":{"enumerable":true,"configurable":false,"value":{"type":"null","optimizedOut":true},"writable":false}}],"variables":{"arguments":{"enumerable":true,"configurable":false,"value":{"type":"null","missingArguments":true},"writable":false}}},"sourceBindings":{},"syntheticScopes":{"scopes":[{"type":"script","bindingsNames":[]}],"groupIndex":0,"groupLength":1}},"bindings":{"arguments":[],"variables":{"arguments":{"enumerable":true,"configurable":false,"value":{"type":"object","actor":"server1.conn0.child1/pausedobj42","class":"Arguments","extensible":true,"frozen":false,"sealed":false,"ownPropertyLength":3,"preview":{"kind":"Object","ownProperties":{"0":{"configurable":true,"enumerable":true,"writable":true,"value":4}},"ownSymbols":[],"ownPropertiesLength":3,"ownSymbolsLength":1,"safeGetterValues":{}}},"writable":true},"x":{"enumerable":true,"configurable":false,"value":4,"writable":true}}},"from":"server1.conn0.child1/frame31","sourceBindings":{},"syntheticScopes":{"scopes":[{"type":"function","bindingsNames":["x"]}],"groupIndex":0,"groupLength":1}}}
+GECKO(49346) | HI!!!
+GECKO(49346) | PREVIEW: x
+GECKO(49346) | PREVIEW: server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36
+GECKO(49346) | PREVIEW: 1
+GECKO(49346) | [ACTION] SET_PREVIEW [start] - {"type":"SET_PREVIEW","seqId":"6","status":"start"}
+GECKO(49346) | [ACTION] ADD_SOURCES  - {"type":"ADD_SOURCES","sources":[{"id":"server1.conn0.child1/source43","url":null,"isPrettyPrinted":false,"isWasm":false,"sourceMapURL":null,"isBlackBoxed":false,"loadedState":"unloaded"}]}
+GECKO(49346) | [ACTION] SET_PREVIEW [done] - {"type":"SET_PREVIEW","seqId":"6","status":"done","value":{"expression":"x","result":4,"location":{"start":{"line":2,"column":9},"end":{"line":2,"column":10}},"tokenPos":{"line":2,"column":10},"cursorPos":{},"extra":{"react":{"displayName":{"type":"undefined"}},"immutable":{"isImmutable":false,"type":null,"entries":null}}}}
+SET_PREVIEW dispatched 1 time(s)
+Hovered 
+TEST-PASS | devtools/client/debugger/new/test/mochitest/browser_dbg-preview-source-maps.js | yay - 
+Leaving test bound 
+GECKO(49346) | PREVIEW: componentWillUnmount
+Removing tab.
+Waiting for event: 'TabClose' on [object XULElement].
+Got event: 'TabClose' on [object XULElement].
+Tab removed and finished closing
+GECKO(49346) | MEMORY STAT vsizeMaxContiguous not supported in this build configuration.
+GECKO(49346) | MEMORY STAT | vsize 4540MB | residentFast 630MB | heapAllocated 212MB
+TEST-OK | devtools/client/debugger/new/test/mochitest/browser_dbg-preview-source-maps.js | took 2784ms
+checking window state
+Console message: [JavaScript Warning: "Use of nsIFile in content process is deprecated." {file: "resource://gre/modules/FileUtils.jsm" line: 174}]
+GECKO(49346) | Completed ShutdownLeaks collections in process 49350
+GECKO(49346) | Completed ShutdownLeaks collections in process 49348
+GECKO(49346) | Completed ShutdownLeaks collections in process 49349
+GECKO(49346) | Completed ShutdownLeaks collections in process 49347
+GECKO(49346) | Completed ShutdownLeaks collections in process 49346
+TEST-START | Shutdown
+Browser Chrome Test Summary
+Passed:  1
+Failed:  0
+Todo:    0
+Mode:    e10s
+*** End BrowserChrome Test Results ***
+GECKO(49346) | *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+GECKO(49346) | 1514156308197	Marionette	DEBUG	Received observer notification "xpcom-shutdown"
+GECKO(49346) | 1514156308197	Marionette	DEBUG	New connections will no longer be accepted
+TEST-INFO | Main app process: exit 0
+runtests.py | Application ran for: 0:00:07.786974
+zombiecheck | Reading PID log: /var/folders/wn/0pxdh48551d4xw9h93k3bb600000gn/T/tmpGFrHgPpidlog
+==> process 49346 launched child process 49347
+==> process 49346 launched child process 49348
+==> process 49346 launched child process 49349
+==> process 49346 launched child process 49350
+zombiecheck | Checking for orphan process with PID: 49347
+zombiecheck | Checking for orphan process with PID: 49348
+zombiecheck | Checking for orphan process with PID: 49349
+zombiecheck | Checking for orphan process with PID: 49350
+Stopping web server
+Stopping web socket server
+Stopping ssltunnel
+leakcheck | refcount logging is off, so leaks can't be detected!
+runtests.py | Running tests: end.
+Buffered messages finished
+TEST-INFO | checking window state
+Browser Chrome Test Summary
+	Passed: 1
+	Failed: 0
+	Todo: 0
+	Mode: e10s
+*** End BrowserChrome Test Results ***
+Buffered messages finished
+SUITE-END | took 8s
+
+Overall Summary
+mochitest-browser: 2/2
