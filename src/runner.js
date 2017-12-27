@@ -1,11 +1,11 @@
 const { handleLine } = require("./handleLine");
 
-function testPassed (lines) {
+function testPassed(lines) {
   const text = lines.join("\n");
   return !text.includes("TEST-UNEXPECTED-FAIL");
 }
 
-function handleCILine (testData, testLines) {
+function handleCILine(testData, testLines) {
   if (!testPassed(testLines)) {
     return testLines.join("\n");
   } else {
@@ -21,12 +21,12 @@ function handleCILine (testData, testLines) {
   }
 }
 
-function runner (options) {
+function runner(options) {
   let testData = { mode: "starting", extra: null };
   let testLines = [];
   const rawLines = [];
 
-  function onLine (line) {
+  function onLine(line) {
     rawLines.push(line);
     const out = handleLine(line.trim(), testData);
     if (out) {
@@ -43,7 +43,7 @@ function runner (options) {
     }
   }
 
-  function onDone (code) {
+  function onDone(code) {
     return rawLines.join("\n");
   }
 

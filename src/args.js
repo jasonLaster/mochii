@@ -1,6 +1,6 @@
 const minimist = require("minimist");
 
-function getArgs (argString) {
+function getArgs(argString) {
   if (argString[0] === "--") {
     argString.shift();
   }
@@ -10,13 +10,14 @@ function getArgs (argString) {
     default: {
       mc: ".",
       ci: false,
+      task: false,
       "default-test-path": "",
       interactive: false
     }
   });
 }
 
-function getArgString (args) {
+function getArgString(args) {
   args = Object.assign({}, args);
 
   delete args.mc;
@@ -26,6 +27,7 @@ function getArgString (args) {
 
   delete args["interactive"];
   delete args["ci"];
+  delete args["task"];
 
   const includedPaths = args._;
   delete args._;
