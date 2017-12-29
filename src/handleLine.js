@@ -174,7 +174,7 @@ function handleLine(line, data) {
   }
 
   if (data.mode !== "starting") {
-    return `${line}`;
+    return hooks.onLine(line);
   }
 }
 

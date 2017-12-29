@@ -28,6 +28,7 @@
   "Completed ShutdownLeaks",
   "SUITE-END",
   "failed to bind",
+  "Global property added",
   "Use of nsIFile in content process is deprecated.",
   "could not create service for entry 'OSX Speech Synth'",
   "The character encoding of the HTML document was not declared.",
