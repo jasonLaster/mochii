@@ -19,11 +19,11 @@ exports[`mochi actions.txt 1`] = `
 [33m[2m   Finished waiting for state change:[22m[39m
    [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m1 ADD_TAB[39m[22m[2m [22m
-   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
    [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - doc-iframes.html[22m
 [33m[2m   Waiting for state change: loaded source[22m[39m
    [2m[34m1 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
-   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - doc-iframes.html[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
 [33m[2m   Finished waiting for state change: loaded source[22m[39m
  [36mTEST-PASS[39m top frame's source is selected -
  [36mTEST-PASS[39m Line is highlighted as paused -
@@ -48,11 +48,11 @@ exports[`mochi actions.txt 1`] = `
 [33m[2m   Finished waiting for state change:[22m[39m
    [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m2 ADD_TAB[39m[22m[2m [22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
    [2m[34m2 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
 [33m[2m   Waiting for state change: loaded source[22m[39m
    [2m[34m2 LOAD_OBJECT_PROPERTIES[39m[22m[2m [31m[done][39m [22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source28 - doc-debugger-statements.html[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
 [33m[2m   Finished waiting for state change: loaded source[22m[39m
  [36mTEST-PASS[39m top frame's source is selected -
  [36mTEST-PASS[39m Line is highlighted as paused -
@@ -220,16 +220,16 @@ exports[`mochi error2.txt 1`] = `
    [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
    [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
    [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
-   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
 [33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
  [36mTEST-PASS[39m Original sources exist -
 [33m[2m   Selecting source: [object Object][22m[39m
    [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m1 ADD_TAB[39m[22m[2m [22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
    [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - main.min.js[22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
    [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
    [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
    [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
@@ -295,16 +295,16 @@ exports[`mochi error2.txt 2`] = `
    [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-sourcemaps2.html[22m
    [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
    [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
-   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27 - main.min.js[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
 [33m[2m   Waiting on sources: main.js, main.min.js[22m[39m
  [36mTEST-PASS[39m Original sources exist -
 [33m[2m   Selecting source: [object Object][22m[39m
    [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m1 ADD_TAB[39m[22m[2m [22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m undefined[22m
    [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27 - main.min.js[22m
-   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1c0ae945d47b2dab15732faa1ace1f04 - main.js[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m undefined[22m
    [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
    [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
    [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
@@ -1370,43 +1370,48 @@ Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/n
    [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
  PREVIEW: renderItems
 Waiting on sources: entry.js, output.js, times2.js, opts.js
-Waiting for state change:
-Waiting for state change:
-Waiting for state change:
-Waiting for state change:
- [ACTION] LOAD_SOURCE_TEXT [start] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27\\",\\"seqId\\":\\"1\\",\\"status\\":\\"start\\"}
- [ACTION] LOAD_SOURCE_TEXT [done] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27\\",\\"seqId\\":\\"1\\",\\"status\\":\\"done\\",\\"value\\":{\\"id\\":\\"server1.conn0.child1/source27\\",\\"text\\":\\"\\",\\"contentType\\":\\"text/javascript\\"}}
-   [2m[34m2 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27/originalSource-f3184632a961169cc45a1932488bd1ce - bootstrap 4ef8c7ec7c1df790781e, server1.conn0.child1/source27/originalSource-fe2c41d3535b76c158e39ba4f3ff826a - entry.js, server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js, server1.conn0.child1/source27/originalSource-eeb15f0c7c3ee09d65acda165a34dcce - output.js, server1.conn0.child1/source27/originalSource-026022a1ecae37cc5d066aae79817b85 - opts.js[22m
-Finished waiting for state change:
-Finished waiting for state change:
-Finished waiting for state change:
-Finished waiting for state change:
+   [2mWaiting for state change:[22m
+   [2mWaiting for state change:[22m
+   [2mWaiting for state change:[22m
+   [2mWaiting for state change:[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27[22m
+   [2m[34m2 ADD_SOURCES[39m[22m[2m [22m
+[2m     - server1.conn0.child1/source27/originalSource-f3184632a961169cc45a1932488bd1ce - bootstrap 4ef8c7ec7c1df790781e[22m
+[2m     - server1.conn0.child1/source27/originalSource-fe2c41d3535b76c158e39ba4f3ff826a - entry.js[22m
+[2m     - server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
+[2m     - server1.conn0.child1/source27/originalSource-eeb15f0c7c3ee09d65acda165a34dcce - output.js[22m
+[2m     - server1.conn0.child1/source27/originalSource-026022a1ecae37cc5d066aae79817b85 - opts.js[22m
+   [2mFinished waiting for state change:[22m
+   [2mFinished waiting for state change:[22m
+   [2mFinished waiting for state change:[22m
+   [2mFinished waiting for state change:[22m
 Selecting source: times2
    [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m1 ADD_TAB[39m[22m[2m [22m
- [ACTION] LOAD_SOURCE_TEXT [start] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36\\",\\"seqId\\":\\"2\\",\\"status\\":\\"start\\"}
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36[22m
    [2m[34m1 SELECT_SOURCE[39m[22m[2m [32m[start][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
  PREVIEW: renderItems
  PREVIEW: componentDidMount
    [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
    [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
    [2m[34m1 SET_SOURCE_METADATA[39m[22m[2m [22m
- [ACTION] LOAD_SOURCE_TEXT [done] - {\\"type\\":\\"LOAD_SOURCE_TEXT\\",\\"sourceId\\":\\"server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36\\",\\"seqId\\":\\"2\\",\\"status\\":\\"done\\",\\"value\\":{\\"text\\":\\"\\",\\"contentType\\":\\"text/javascript\\"}}
+   [2m[34m2 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36[22m
  PREVIEW: renderItems
    [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
    [2m[34m1 IN_SCOPE_LINES[39m[22m[2m [22m
    [2m[34m1 SELECT_SOURCE[39m[22m[2m [31m[done][39m server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36 - times2.js[22m
    [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [32m[start][39m [22m
-Waiting for ADD_BREAKPOINT to dispatch 1 time(s)
+   [2mWaiting for ADD_BREAKPOINT to dispatch 1 time(s)[22m
    [2m[34m2 SET_SYMBOLS[39m[22m[2m [22m
    [2m[34m2 SET_EMPTY_LINES[39m[22m[2m [22m
    [2m[34m2 SET_SOURCE_METADATA[39m[22m[2m [22m
  PREVIEW: renderItems
    [2m[34m1 RESUME[39m[22m[2m [22m
    [2m[34m1 ADD_BREAKPOINT[39m[22m[2m [31m[done][39m [22m
-ADD_BREAKPOINT dispatched 1 time(s)
+   [2mADD_BREAKPOINT dispatched 1 time(s)[22m
 Invoking in tab: keepMeAlive()
-Waiting for state change: paused
+   [2mWaiting for state change: paused[22m
    [2m[34m1 PAUSED[39m[22m[2m breakpoint: server1.conn0.child1/source27/originalSource-1a92a15cb1a72257eafcf7309e14db36:2:0[22m
    [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
    [2m[34m2 ADD_TAB[39m[22m[2m [22m
@@ -1416,9 +1421,9 @@ Waiting for state change: paused
    [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
    [2m[34m2 IN_SCOPE_LINES[39m[22m[2m [22m
    [2m[34m1 ADD_SCOPES[39m[22m[2m [22m
-Finished waiting for state change: paused
-Waiting for state change: selected source
-Waiting for SET_PREVIEW to dispatch 1 time(s)
+   [2mFinished waiting for state change: paused[22m
+   [2mWaiting for state change: selected source[22m
+   [2mWaiting for SET_PREVIEW to dispatch 1 time(s)[22m
 Hovering
 hoverAtPos: 2, 9
 hover: x
@@ -1430,7 +1435,7 @@ hover: x
    [2m[34m1 SET_PREVIEW[39m[22m[2m [32m[start][39m [22m
    [2m[34m3 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source43 - [22m
    [2m[34m1 SET_PREVIEW[39m[22m[2m [31m[done][39m [22m
-SET_PREVIEW dispatched 1 time(s)
+   [2mSET_PREVIEW dispatched 1 time(s)[22m
 Hovered
  [36mTEST-PASS[39m yay -
  PREVIEW: componentWillUnmount
@@ -1586,3 +1591,149 @@ Line: 1748, column: 13\\" {file: \\"resource://devtools/shared/base-loader.js ->
 `;
 
 exports[`mochi unformatted_stack.txt 2`] = `"[32mTEST-OK[39m browser_dbg-pause-exceptions.js"`;
+
+exports[`mochi waiting.txt 1`] = `
+"[34mTEST-START[39m browser_dbg-debugger-buttons.js
+Adding a new tab with URL: http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html
+   [2m[34m1 SET_WORKERS[39m[22m[2m [22m
+   [2m[34m1 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m1 CONNECT[39m[22m[2m http://example.com/browser/devtools/client/debugger/new/test/mochitest/examples/doc-debugger-statements.html[22m
+   [2m[34m1 SET_EXPANDED_STATE[39m[22m[2m [22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m1 NAVIGATE[39m[22m[2m [22m
+   [2m[34m2 ADD_SOURCES[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m1 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:11:6[22m
+   [2m[34m1 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m1 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m1 ADD_TAB[39m[22m[2m [22m
+   [2m[34m1 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [32m[start][39m server1.conn0.child1/source27[22m
+   [2m[34m1 LOAD_SOURCE_TEXT[39m[22m[2m [31m[done][39m server1.conn0.child1/source27[22m
+   [2m[34m1 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+   [2mWaiting for state change: loaded source[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+   [2mWaiting for COMMAND to dispatch 1 time(s)[22m
+   [2m[34m1 COMMAND[39m[22m[2m [32m[start][39m resume[22m
+   [2m[34m1 SET_SYMBOLS[39m[22m[2m [22m
+   [2m[34m1 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m1 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m1 RESUME[39m[22m[2m [22m
+   [2m[34m1 COMMAND[39m[22m[2m [31m[done][39m resume[22m
+   [2mCOMMAND dispatched 1 time(s)[22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m1 SET_EMPTY_LINES[39m[22m[2m [22m
+   [2m[34m1 SET_SOURCE_METADATA[39m[22m[2m [22m
+   [2m[34m2 PAUSED[39m[22m[2m debuggerStatement: server1.conn0.child1/source27:15:8[22m
+   [2m[34m2 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m2 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m2 ADD_TAB[39m[22m[2m [22m
+   [2m[34m2 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m2 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m2 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m2 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+   [2mWaiting for COMMAND to dispatch 1 time(s)[22m
+   [2m[34m2 COMMAND[39m[22m[2m [32m[start][39m stepOver[22m
+   [2m[34m2 RESUME[39m[22m[2m [22m
+   [2m[34m2 COMMAND[39m[22m[2m [31m[done][39m stepOver[22m
+   [2mCOMMAND dispatched 1 time(s)[22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m3 PAUSED[39m[22m[2m resumeLimit: server1.conn0.child1/source27:16:8[22m
+   [2m[34m3 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m3 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m3 ADD_TAB[39m[22m[2m [22m
+   [2m[34m3 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m3 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m3 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m3 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+   [2mWaiting for COMMAND to dispatch 1 time(s)[22m
+   [2m[34m3 COMMAND[39m[22m[2m [32m[start][39m stepIn[22m
+   [2m[34m3 RESUME[39m[22m[2m [22m
+   [2m[34m3 COMMAND[39m[22m[2m [31m[done][39m stepIn[22m
+   [2mCOMMAND dispatched 1 time(s)[22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m4 PAUSED[39m[22m[2m resumeLimit: server1.conn0.child1/source27:21:8[22m
+   [2m[34m4 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m4 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m4 ADD_TAB[39m[22m[2m [22m
+   [2m[34m4 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m4 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m4 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m4 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+   [2mWaiting for COMMAND to dispatch 1 time(s)[22m
+   [2m[34m4 COMMAND[39m[22m[2m [32m[start][39m stepOver[22m
+   [2m[34m4 RESUME[39m[22m[2m [22m
+   [2m[34m4 COMMAND[39m[22m[2m [31m[done][39m stepOver[22m
+   [2mCOMMAND dispatched 1 time(s)[22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m5 PAUSED[39m[22m[2m resumeLimit: server1.conn0.child1/source27:23:6[22m
+   [2m[34m5 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m5 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m5 ADD_TAB[39m[22m[2m [22m
+   [2m[34m5 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m5 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m5 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m5 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+   [2mWaiting for COMMAND to dispatch 1 time(s)[22m
+   [2m[34m5 COMMAND[39m[22m[2m [32m[start][39m stepOut[22m
+   [2m[34m5 RESUME[39m[22m[2m [22m
+   [2m[34m5 COMMAND[39m[22m[2m [31m[done][39m stepOut[22m
+   [2mCOMMAND dispatched 1 time(s)[22m
+   [2mWaiting for state change: paused[22m
+   [2m[34m6 PAUSED[39m[22m[2m resumeLimit: server1.conn0.child1/source27:23:6[22m
+   [2m[34m6 MAP_FRAMES[39m[22m[2m [22m
+   [2m[34m6 TOGGLE_ACTIVE_SEARCH[39m[22m[2m [22m
+   [2m[34m6 ADD_TAB[39m[22m[2m [22m
+   [2m[34m6 SELECT_SOURCE[39m[22m[2m server1.conn0.child1/source27 - doc-debugger-statements.html[22m
+   [2m[34m6 OUT_OF_SCOPE_LOCATIONS[39m[22m[2m [22m
+   [2m[34m6 IN_SCOPE_LINES[39m[22m[2m [22m
+   [2m[34m6 ADD_SCOPES[39m[22m[2m [22m
+   [2mFinished waiting for state change: paused[22m
+ [36mTEST-PASS[39m top frame's source is selected -
+ [36mTEST-PASS[39m Line is highlighted as paused -
+ [36mTEST-PASS[39m There is only one line -
+ [36mTEST-PASS[39m debug line is visible -
+ [36mTEST-PASS[39m expression is highlighted as paused -
+ [36mTEST-PASS[39m gutter is visible -
+[32mTEST-OK[39m browser_dbg-debugger-buttons.js
+TEST-START | Shutdown
+Passed:  36
+Failed:  0
+Todo:    0
+Mode:    e10s"
+`;
+
+exports[`mochi waiting.txt 2`] = `"[32mTEST-OK[39m browser_dbg-debugger-buttons.js"`;

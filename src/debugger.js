@@ -17,6 +17,9 @@ function formatSource(source) {
   return `${source.id} - ${formatUrl(source.url)}`;
 }
 
+function formatAddSource(source) {
+  return `\n     - ${formatSource(source)}`;
+}
 let counts = {};
 
 const map = {
@@ -24,10 +27,13 @@ const map = {
   CONNECT: d => `${d.url}`,
   PAUSED: d => pausedAction(d),
   SELECT_SOURCE: d => formatSource(d.source),
-  LOAD_SOURCE_TEXT: d => formatSource(d.source),
+  LOAD_SOURCE_TEXT: d => `${d.sourceId}`,
   EVALUATE_EXPRESSION: d => `${d.input}`,
   COMMAND: d => `${d.command}`,
-  ADD_SOURCES: d => d.sources.map(formatSource).join(", ")
+  ADD_SOURCES: d =>
+    d.sources.length > 1
+      ? d.sources.map(formatAddSource).join("")
+      : d.sources.map(formatSource)
 };
 
 // const emojis = {
@@ -82,7 +88,18 @@ function testFinish(type, msg) {
   counts = {};
 }
 
+function onLine(line, data) {
+  if (line.match(/waiting for/i)) {
+    return `   ${chalk.dim(line)}`;
+  }
+
+  if (line.match(/dispatched \d+ time/)) {
+    return `   ${chalk.dim(line)}`;
+  }
+  return line;
+}
 module.exports = {
   onGecko,
-  testFinish
+  testFinish,
+  onLine
 };
