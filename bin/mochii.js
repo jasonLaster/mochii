@@ -31,7 +31,7 @@ const argString = process.argv[0].includes("bin/node")
 const args = getArgs(argString);
 
 if (args.read) {
-  const _path = path.join(__dirname, "..", args.read);
+  const _path = path.join(process.cwd(), args.read);
   const text = fs.readFileSync(_path, { encoding: "utf8" });
   console.log(readOutput(text));
 } else if (args.task) {
