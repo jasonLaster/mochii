@@ -246,11 +246,10 @@ function onConsole(line, data) {
     }
 
     const [, msg] = res;
-
     return `  ${chalk.red("JS Error: ")}\n    ${msg}`;
   }
 
-  return line;
+  return `  ${chalk.dim(line)}`;
 }
 
 module.exports = {
