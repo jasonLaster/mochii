@@ -96,7 +96,7 @@ function onLine(line, data) {
   if (line.match(/dispatched \d+ time/)) {
     return `   ${chalk.dim(line)}`;
   }
-  return line;
+  return `   ${chalk.dim(line)}`;
 }
 module.exports = {
   onGecko,

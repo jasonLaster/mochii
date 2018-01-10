@@ -3,6 +3,7 @@ const { readOutput } = require("../index");
 const cases = require("jest-in-case");
 
 function simulateMochitest(file) {
+  // console.log(readOutput(readFile(file), { ci: false }));
   const out = readOutput(readFile(file), { ci: false });
   const ci = readOutput(readFile(file), { ci: true });
   return { out, ci };
