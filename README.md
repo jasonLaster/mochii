@@ -126,3 +126,8 @@ jest --watch
     expect(out).toMatchSnapshot();
   });
 ```
+
+### Screenshots
+
+<img src='https://shipusercontent.com/c86ca703138748aaba56dfdfd6ea52ea/Screen%20Shot%202018-01-12%20at%209.45.28%20AM.png' title='Screen Shot 2018-01-12 at 9.45.28 AM.png' width=1179>
+<img src='https://shipusercontent.com/5b56f7a5c06122063129912e76d485ca/Screen%20Shot%202018-01-12%20at%209.43.40%20AM.png' title='Screen Shot 2018-01-12 at 9.43.40 AM.png' width=1136>
