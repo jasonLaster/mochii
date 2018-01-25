@@ -29,9 +29,14 @@ function runner(options) {
   function onLine(line) {
     rawLines.push(line);
     const out = handleLine(line.trim(), testData);
+
     if (out) {
       if (options.ci) {
         testLines.push(out);
+        if (testData.extra && testData.extra.testStart) {
+          return out;
+        }
+
         if (testData.extra && testData.extra.testFinish) {
           const out = handleCILine(testData, testLines);
           testLines = [];
