@@ -22,7 +22,7 @@ async function rerun() {
 }
 
 async function runMochitests(argString, args) {
-  const command = `./mach mochitest --setpref=javascript.options.asyncstack=true ${argString}`;
+  const command = `./mach mochitest ${argString}`;
   console.log(chalk.blue(command));
   const { onLine, onDone } = runner({ ci: args.ci });
   async function mochiOnDone(code) {
@@ -34,7 +34,9 @@ async function runMochitests(argString, args) {
         setTimeout(() => runMochitests(argString, args), 0);
       }
     } else {
-      shell.exit(code);
+      const match = text.match(/Failed:\s+(\d+)/);
+      const failCount = match ? parseInt(match[1]) : 0;
+      shell.exit(failCount > 0 ? 1 : 0);
     }
   }
 

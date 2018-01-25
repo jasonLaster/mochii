@@ -96,6 +96,10 @@ function handleLine(line, data) {
     delete data.extra.testFinish;
   }
 
+  if (data.extra && data.extra.testStart) {
+    delete data.extra.testStart;
+  }
+
   if (
     line.includes("Start BrowserChrome Test Results") &&
     data.mode === "starting"
@@ -205,10 +209,14 @@ function onTestInfo(line, data) {
   }
 
   const testFinish = type === "TEST-OK";
-  let prefix = testFinish ? chalk.green(type) : chalk.blue(type);
   data.extra = { testFinish };
   hooks.testFinish(type, msg);
 
+  const testStart = type === "TEST-START";
+  data.extra = { testStart };
+  hooks.testStart(type, msg);
+
+  let prefix = testStart || testStart ? chalk.green(type) : chalk.blue(type);
   return `${prefix} ${file}`;
 }
 

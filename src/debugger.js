@@ -88,6 +88,8 @@ function testFinish(type, msg) {
   counts = {};
 }
 
+function testStart(type, msg) {}
+
 function onLine(line, data) {
   if (line.match(/waiting for/i)) {
     return `   ${chalk.dim(line)}`;
@@ -101,5 +103,6 @@ function onLine(line, data) {
 module.exports = {
   onGecko,
   testFinish,
+  testStart,
   onLine
 };
