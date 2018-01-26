@@ -98,7 +98,7 @@ function handleLine(line, data) {
 
   if (
     line.includes("Start BrowserChrome Test Results") &&
-    data.mode === "starting"
+    (data.mode === "starting" || data.mode === "done")
   ) {
     data.mode = null;
     return;
