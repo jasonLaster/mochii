@@ -25,6 +25,7 @@ async function runMochitests(argString, args) {
   const command = `./mach mochitest ${argString}`;
   console.log(chalk.blue(command));
   const { onLine, onDone } = runner({ ci: args.ci });
+
   async function mochiOnDone(code) {
     const text = onDone(code);
     fs.writeFileSync("./mochi_log.txt", text);
