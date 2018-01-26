@@ -33,10 +33,6 @@ function runner(options) {
     if (out) {
       if (options.ci) {
         testLines.push(out);
-        if (testData.extra && testData.extra.testStart) {
-          return out;
-        }
-
         if (testData.extra && testData.extra.testFinish) {
           const out = handleCILine(testData, testLines);
           testLines = [];
