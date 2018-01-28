@@ -1,8 +1,10 @@
 const chalk = require("chalk");
 const path = require("path");
+const quickGist = require("quick-gist");
 
 const hooks = require("./debugger");
 const blacklist = require("../blacklist.json");
+var emoji = require("node-emoji");
 
 function sanitizeLine(line) {
   return line
@@ -83,6 +85,40 @@ function onGecko(line, data) {
   return `${msg}`;
 }
 
+function onScreenshot(line, data) {
+  const base64 = line.slice(line.indexOf("data"), -1);
+  if (!data.imageIndex) {
+    data.imageIndex = 1;
+  }
+  const imageIndex = data.imageIndex++;
+
+  const content = `<html><img src="${base64}" /></html>`;
+  quickGist(
+    {
+      content,
+      description: "image",
+      public: true,
+      fileExtension: "html"
+    },
+    function(err, resp, data) {
+      if (err) {
+        return console.error(err);
+      }
+
+      const id = data.id;
+      const url = `https://bitty.io/anonymous/${id}`;
+      console.log(
+        chalk.blue(`${emoji.get("camera")} Screenshot ${imageIndex} ${url}`)
+      );
+    }
+  );
+
+  return (
+    "   " +
+    chalk.blue(`${emoji.get("camera")} Saving Screenshot ${imageIndex}!`)
+  );
+}
+
 function onDone(line) {
   if (line.includes("TEST-UNEXPECTED-FAIL")) {
     const [, file] = line.match(/.*\|(.*?)\|.*/);
@@ -91,6 +127,10 @@ function onDone(line) {
 }
 
 function handleLine(line, data) {
+  if (line.includes("[SCREENSHOT]")) {
+    return onScreenshot(line, data);
+  }
+
   line = sanitizeLine(line);
   if (data.extra && data.extra.testFinish) {
     delete data.extra.testFinish;
