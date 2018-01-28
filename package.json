@@ -1,6 +1,6 @@
 {
   "name": "mochii",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "description": "A Mochitest CLI & Reporter",
   "main": "index.js",
   "bin": "bin/mochii.js",
@@ -28,7 +28,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "jest": "^21.1.0",
     "prettier": "^1.7.0",
-    "quick-gist": "^1.4.0",
     "request": "^2.83.0"
   },
   "jest": {},
@@ -36,6 +35,7 @@
     "chalk": "^2.1.0",
     "eslint": "^4.7.2",
     "hankey": "^0.0.2",
+    "quick-gist": "^1.4.0",
     "inquirer": "^3.3.0",
     "jest-in-case": "^1.0.2",
     "jsesc": "^2.5.1",
