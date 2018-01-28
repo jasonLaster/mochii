@@ -1,6 +1,9 @@
 const shell = require("shelljs");
 
-async function asyncExec (command, options) {
+let base64 = null;
+let isProcessingBase64 = false;
+
+async function asyncExec(command, options) {
   const onDone = options.onDone || (() => {});
   const onLine = options.onLine || (() => {});
 
@@ -8,9 +11,27 @@ async function asyncExec (command, options) {
     onDone(code)
   );
 
-  child.stdout.on("data", function (data) {
-    data = data.trim();
-    data.split("\n").forEach(async line => onLine(line));
+  child.stdout.on("data", function(data) {
+    data.split("\n").forEach(line => {
+      if (data.includes("[SCREENSHOT]")) {
+        isProcessingBase64 = true;
+        base64 = line;
+        return;
+      }
+
+      if (isProcessingBase64) {
+        if (line.match(/^\S{50,}/)) {
+          base64 = `${base64}\n${line}`;
+          return;
+        } else {
+          onLine(base64);
+          base64 = null;
+          isProcessingBase64 = false;
+        }
+      }
+
+      onLine(line.trim());
+    });
   });
 }
 
