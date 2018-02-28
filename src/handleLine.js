@@ -9,8 +9,8 @@ var emoji = require("node-emoji");
 function sanitizeLine(line) {
   return line
     .trim()
-    .replace(/\\"/g, '"')
-    .replace(/\\"/g, '"');
+    .replace(/\\"/g, "\"")
+    .replace(/\\"/g, "\"");
 }
 
 function onFrame(line, data) {

@@ -12,7 +12,8 @@
     "jest/no-identical-title": "error",
     "jest/valid-expect": "error",
     "semi": ["error", "always"],
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "space-before-function-paren": ["error", "never"],
   }
 
 }
