@@ -21,6 +21,19 @@ async function rerun() {
   return rerun;
 }
 
+function getFailCount(text) {
+  const match = text.match(/Failed:\s+(\d+)/);
+  if (!match) {
+    return false;
+  }
+
+  return parseInt(match[1]);
+}
+
+function hasFailure(text) {
+  return text.includes("TEST-UNEXPECTED-FAIL");
+}
+
 async function runMochitests(argString, args) {
   const command = `./mach mochitest ${argString}`;
   console.log(chalk.blue(command));
@@ -35,9 +48,12 @@ async function runMochitests(argString, args) {
         setTimeout(() => runMochitests(argString, args), 0);
       }
     } else {
-      const match = text.match(/Failed:\s+(\d+)/);
-      const failCount = match ? parseInt(match[1]) : 0;
-      shell.exit(failCount > 0 ? 1 : 0);
+      const failed = getFailCount(text) > 0 || hasFailure(text);
+      if (failed) {
+        console.log(chalk.red(`The test run failed`));
+      }
+
+      shell.exit(failed ? 1 : 0);
     }
   }
 
