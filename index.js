@@ -35,7 +35,7 @@ function hasFailure(text) {
 }
 
 async function runMochitests(argString, args) {
-  const command = `./mach mochitest ${argString}`;
+  const command = `./mach mochitest --log-tbpl=- ${argString}`;
   console.log(chalk.blue(command));
   const { onLine, onDone } = runner({ ci: args.ci });
 
