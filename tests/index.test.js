@@ -29,6 +29,7 @@ cases(
     { name: "error2.txt" },
     { name: "unformatted_stack.txt" },
     { name: "new-logs.txt" },
-    { name: "waiting.txt" }
+    { name: "waiting.txt" },
+    { name: "ci-fails.txt" }
   ]
 );
