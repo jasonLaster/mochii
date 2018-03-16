@@ -9,8 +9,8 @@ var emoji = require("node-emoji");
 function sanitizeLine(line) {
   return line
     .trim()
-    .replace(/\\"/g, "\"")
-    .replace(/\\"/g, "\"");
+    .replace(/\\"/g, '"')
+    .replace(/\\"/g, '"');
 }
 
 function onFrame(line, data) {
@@ -167,7 +167,8 @@ function handleLine(line, data) {
   }
 
   if (data.mode === "done") {
-    return onDone(line);
+    const out = onDone(line);
+    return out;
   }
 
   if (data.mode === "stack-trace") {
@@ -187,7 +188,11 @@ function handleLine(line, data) {
     return line;
   }
 
-  if (line.includes("End BrowserChrome Test Results")) {
+  if (
+    line.includes("End BrowserChrome Test Results") ||
+    line.includes("SUITE-END")
+  ) {
+    data.testFinish = false;
     data.mode = "done";
     return;
   }

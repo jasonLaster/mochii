@@ -79,6 +79,7 @@ function readOutput(text, options = { ci: true }) {
     .map(line => onLine(line))
     .filter(i => i)
     .join("\n");
+
   return out;
 }
 

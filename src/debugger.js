@@ -51,8 +51,7 @@ function onAction(line, data) {
   try {
     dataObj = JSON.parse(actionData);
   } catch (e) {
-    console.error(e);
-    console.log(`${action} FAILED`);
+    return `    ${action} failed to parse`;
   }
 
   if (action in counts) {
