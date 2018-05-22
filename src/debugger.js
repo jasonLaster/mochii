@@ -51,7 +51,7 @@ function onAction(line, data) {
   try {
     dataObj = JSON.parse(actionData);
   } catch (e) {
-    return `    ${action} failed to parse`;
+    return `    ${action} ${actionData}`;
   }
 
   if (action in counts) {
