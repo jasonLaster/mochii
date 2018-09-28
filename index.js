@@ -31,7 +31,9 @@ function getFailCount(text) {
 }
 
 function hasFailure(text) {
-  return text.includes("TEST-UNEXPECTED-FAIL");
+  return text.includes("TEST-UNEXPECTED-FAIL")
+    || text.includes("Error running mach")
+    || !text.includes("TEST-START");
 }
 
 async function runMochitests(argString, args) {
@@ -48,7 +50,7 @@ async function runMochitests(argString, args) {
         setTimeout(() => runMochitests(argString, args), 0);
       }
     } else {
-      const failed = getFailCount(text) > 0 || hasFailure(text);
+      const failed = getFailCount(text) > 0 || hasFailure(text) || code !== 0;
       if (failed) {
         console.log(chalk.red(`The test run failed`));
       }
@@ -95,4 +97,4 @@ async function tryTask(task) {
   console.log(out);
 }
 
-module.exports = { runMochitests, readOutput, tryTask };
+module.exports = { runMochitests, readOutput, tryTask, hasFailure };
