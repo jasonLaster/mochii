@@ -1,5 +1,5 @@
 const readFile = require("./helpers/readFile");
-const { readOutput } = require("../index");
+const { readOutput, hasFailure } = require("../index");
 const cases = require("jest-in-case");
 
 function simulateMochitest(file) {
@@ -33,3 +33,10 @@ cases(
     { name: "ci-fails.txt" }
   ]
 );
+
+describe("hasFailure", () => {
+  it("failed to build", () => {
+    const text = readFile("error-build.txt")
+    expect(hasFailure(text)).toEqual(true)
+  })
+})
