@@ -26,7 +26,13 @@ function runner(options) {
 
   function onLine(line) {
     rawLines.push(line);
-    const out = handleLine(line.trim(), testData);
+    let out = line.trim();
+    try {
+      out = handleLine(out, testData);
+    } catch (e) {
+      console.error(`${chalk.red("mochii failed to parse line:")} ${out}`)
+    }
+
     if (out) {
       if (options.ci) {
         testLines.push(out);
