@@ -50,7 +50,7 @@ async function runMochitests(argString, args) {
         setTimeout(() => runMochitests(argString, args), 0);
       }
     } else {
-      const failed = getFailCount(text) > 0 || hasFailure(text) || code !== 0;
+      const failed = getFailCount(text) > 0 || hasFailure(text);
       if (failed) {
         console.log(chalk.red(`The test run failed`));
       }
